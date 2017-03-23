@@ -1,4 +1,7 @@
 # vim-galore 中文翻译
+
+[![掘金翻译计划](https://rawgit.com/aleen42/badges/master/src/juejin_translation.svg)](https://github.com/xitu/gold-miner/)
+
 > Vim from zero to hero - Vim 从入门到精通
 
 - 原文地址：https://github.com/mhinz/vim-galore
