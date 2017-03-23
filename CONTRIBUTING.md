@@ -1,5 +1,19 @@
-## [Intro](#intro-1)
+有兴趣加入本项目的话，请关注下面的认领列表，选择相应的章节翻译，或者协助校验正在翻译的项目。如果有兴趣加入，可以fork本项目，开始翻译后提交PR，便于我们协助校验，不必翻译结束后才提交PR.
 
+## 认领方式
+
+**开issue**
+
+```md
+章节名称：*****
+译者：******
+PR: PR的链接
+```
+
+
+|章节名称|认领状态|中文链接|
+|:------|:------|:------|
+| [Intro](https://github.com/mhinz/vim-galore#intro) | | |
 - [What is Vim?](#what-is-vim)
 - [The Vim Philosophy](#the-vim-philosophy)
 - [First steps](#first-steps)
