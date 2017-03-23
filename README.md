@@ -1,16 +1,18 @@
 # vim-galore 中文翻译
-> Vim from zero to hero
+> Vim from zero to hero - Vim 从入门到精通
+> 原文地址：https://github.com/mhinz/vim-galore
+> 原文作者：Marco Hinz
 
-## [简介](#简介)
+## [简介](#简介-1)
 
-- [什么是Vim](#什么是-vim)
+- [什么是Vim](#什么是-vim-)
 - [Vim 哲学](#vim-哲学)
 - [起步](#起步)
 - [精简的vimrc](#精简的vimrc)
-- [我正在使用的是什么样的vim](#what-kind-of-vim-am-i-running)
-- [备忘录](#cheatsheets)
+- [我正在使用的是什么样的vim](#我正在使用什么样的-vim)
+- [备忘录](#备忘录)
 
-## [基础](#basics-1)
+## [基础](#基础-1)
 
 - [缓冲区, 窗口, 标签?](#buffers-windows-tabs)
 - [当前缓冲区, 加载缓冲区, 缓冲区列表,命名缓冲区?](#active-loaded-listed-named-buffers)
@@ -149,7 +151,7 @@ Vim 基于一个 [vi](https://en.wikipedia.org/wiki/Vi) 克隆， 叫做 [Stevie
 
 最后一个建议：在你开始使用那些只是实现 vim 原生功能的[插件](#managing-plugins)之前，请先学会恰当地使用 vim。
 
-#### 精简的 vimrc
+## 精简的 vimrc
 
 用户的 vimrc 配置文件可以放在 `~/.vimrc`，或者为了更好的分离放在 `~/.vim/vimrc`，后者更便于通过版本控制软件备份和同步整个配置，比方说github。
 
@@ -163,24 +165,21 @@ Vim 基于一个 [vi](https://en.wikipedia.org/wiki/Vi) 克隆， 叫做 [Stevie
 
 **建议**：大多数插件作者都维护一些插件并且将他们的 vimrc 放在 Github 上展示(通常放在叫做 "vim-config" 或者 "dotfiles" 的仓库中)，所以当你发现你喜欢的插件时，去插件维护者的 Github 主页看看有没有这样的仓库。
 
-#### What kind of Vim am I running?
+## 我正在使用什么样的 Vim
 
-使用`:version`命令将给你展示你所需要知道的当前正在运行的vim是如何编译的的所有信息.
+使用 `:version` 命令将向你展示你所需要知道的当前正在运行的 vim 是如何编译的的所有信息。
 
-第一行告诉你这个二进制文件的编译时间和版本号 e.g. 7.4.
-接下来的一行呈现`Included patches: 1-1051`, 这是补丁版本. 因此你VIM确切的版本号是7.4.1051.
+第一行告诉你这个二进制文件的编译时间和版本号，比如：7.4。接下来的一行呈现`Included patches: 1-1051`, 这是补丁版本包. 因此你 vim 确切的版本号是 7.4.1051。
 
-另一行显示着一些向`Tiny version without GUI` 或者`Huge version
-with GUI`的信息. 很显然这些信息告诉你你的VIM是否包含着GUI支持, e.g. 从Shell中运行`gvim` 或者从VIM内部的终端仿真器运行`:gui` . 另一个重要的信息是 `Tiny` 和`Huge`. Vim的特性集区分被叫做`tiny`, `small`, `normal`,
-`big`, and `huge`, 所有的都实现不同的功能子集.
+另一行显示着一些像 `Tiny version without GUI` 或者 `Huge version with GUI` 的信息。很显然这些信息告诉你你的 vim 是否包含着 GUI 支持， 例如：从终端中运行 `gvim` 或者从终端模拟器中的 vim 内运行 `:gui` 命令。另一个重要的信息是 `Tiny` 和 `Huge`。Vim 的特性集区分被叫做 `tiny`，`small`，`normal`，`big` and `huge`，所有的都实现不同的功能子集.
 
-`:version` 主要的输出内容是特性列表.`+clipboard` 意味这剪贴板功能被编译了, `-clipboard` 意味着剪贴板特性没有被编译.
+`:version` 主要的输出内容是特性列表.`+clipboard` 意味这剪贴板功能被编译支持了, `-clipboard` 意味着剪贴板特性没有被编译支持.
 
-为了让他们工作一些VIM功能需要被编译. E.g. 为了让`:prof`工作, 你需要带有huge 功能集合的VIM, 因为那个功能集确保了`+profile` 特性.
+一些功能特性需要编译支持才能正常工作。例如：为了让 `:prof` 工作, 你需要使用 `huge` 模式编译的 vim, 因为那种模式启用了 `+profile` 特性。
 
-如果你的输出情况并不是那样并且你是从包管理器安装Vim的, 确保你安装了`vim-x`, `vim-x11`, `vim-gtk`, `vim-gnome` 这些包或者相似的, 因为这些包通常带有较大的功能集.
+如果你的输出情况并不是那样，并且你是从包管理器安装 vim 的, 确保你安装了 `vim-x`，`vim-x11`，`vim-gtk`，`vim-gnome` 这些包或者相似的, 因为这些包通常都是 `huge` 模式编译的.
 
-你也可以测试你的VIM的版本或者编程功能：
+你也可以测试你的 vim 的版本或者特性支持：
 
 ```viml
 " Do something if running at least Vim 7.4.42 with +profile enabled.
@@ -197,7 +196,7 @@ endif
 :h +feature-list
 ```
 
-#### Cheatsheets
+## 备忘录
 
 为了避免版权问题, 我只贴出链接:
 
@@ -207,17 +206,19 @@ endif
 - http://michael.peopleofhonoronly.com/vim/vim_cheat_sheet_for_programmers_screen.png
 - http://www.rosipov.com/images/posts/vim-movement-commands-cheatsheet.png
 
-## Basics
+或者在 vim 中快速打开备忘录：[vim-cheat40](https://github.com/lifepillar/vim-cheat40)。
 
-#### Buffers, windows, tabs?
+# 基础
 
-Vim 是一个文本编辑器. 每次文本都是作为**缓冲区**的一部分显示的.每一份文件都是在他们自己独有的缓冲区打开的. 插件显示的东西在他们自己的缓冲区中.
+## 缓冲区，窗口，标签？
 
-缓冲区有很多属性, 比如这个缓冲区的内容是否可以修改,或者这个缓冲区是否和文件相关联，是否需要同步保存到磁盘上.
+Vim 是一个文本编辑器。每次文本都是作为**缓冲区**的一部分显示的。每一份文件都是在他们自己独有的缓冲区打开的。插件显示的东西在他们自己的缓冲区中。
 
-**窗口** 是缓冲区的视窗. 如果你想同时查看几个文件或者查看同一文件的不同位置，那样你会需要窗口.
+缓冲区有很多属性，比如这个缓冲区的内容是否可以修改，或者这个缓冲区是否和文件相关联，是否需要同步保存到磁盘上。
 
-请别把他们叫做_分离_. 你可以把一个窗口分割成两个, 但是这并没有让这两个窗口_分离_.
+**窗口** 是缓冲区上一层的视窗. 如果你想同时查看几个文件或者查看同一文件的不同位置，那样你会需要窗口.
+
+请别把他们叫做_分屏_. 你可以把一个窗口分割成两个, 但是这并没有让这两个窗口完全_分离_.
 
 窗口可以水平或者竖直分割并且现有窗口的高度和宽度都是可以被调节设置的.因此你可以使用你喜欢的窗口布局.
 
