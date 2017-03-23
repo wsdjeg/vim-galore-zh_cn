@@ -1,12 +1,12 @@
 # vim-galore 中文翻译
 > Vim from zero to hero
 
-## [介绍](#intro-1)
+## [简介](#简介)
 
-- [什么是Vim](#what-is-vim)
-- [Vim中的哲学](#the-vim-philosophy)
-- [起步](#first-steps)
-- [精简的vimrc](#minimal-vimrc)
+- [什么是Vim](#什么是-vim)
+- [Vim 哲学](#vim-哲学)
+- [起步](#起步)
+- [精简的vimrc](#精简的vimrc)
 - [我正在使用的是什么样的vim](#what-kind-of-vim-am-i-running)
 - [备忘录](#cheatsheets)
 
@@ -99,9 +99,9 @@
 
 ---
 
-# Intro
+# 简介
 
-## What is Vim?
+## 什么是 Vim ？
 
 [Vim](http://www.vim.org) 是一个历史悠久的文本编辑器,可以追溯到 [qed](https://en.wikipedia.org/wiki/QED_(text_editor)). [Bram
 Moolenaar](https://en.wikipedia.org/wiki/Bram_Moolenaar) 于1991年发布初始版本.
@@ -127,46 +127,41 @@ around paragraph_）。
 
 如果你能看见 Vim 高级用户工作,你会发现他们使用 Vim 脚本语言就如同钢琴师操作自己的乐器一样。复杂的操作只需要几个案件就能完成。他们甚至不用刻意去想，因为这已经成为[肌肉记忆](https://en.wikipedia.org/wiki/Muscle_memory)了. 这减少[认识负荷](https://en.wikipedia.org/wiki/Cognitive_load)并帮助人们专注与实际任务。
 
-#### 开始
+## 起步
 
-Vim自带一个交互式的教程,内含你需要了解的最基础的信息,你可以通过运行以下命令打开教程:
+Vim 自带一个交互式的教程，内含你需要了解的最基础的信息，你可以通过终端运行以下命令打开教程：
 
 ```
 $ vimtutor
 ```
 
-不要因为这个看上去很无聊而推迟，按照此教程多练习。你以前用的IDEs或者其他编辑器大多数都是无模式的。
-因此一开始在模式之间切换将会看上去很笨拙。但是你使用VIM越多，
-[肌肉记忆](https://en.wikipedia.org/wiki/Muscle_memory)将更加强大。
+不要因为这个看上去很无聊而推迟，按照此教程多练习。你以前用的IDEs或者其他编辑器大多数都是无模式的。因此一开始在模式之间切换将会看上去很笨拙。但是你 Vim 使用的越多，[肌肉记忆](https://en.wikipedia.org/wiki/Muscle_memory) 将越容易形成。
 
-Vim 基于 [Stevie](https://en.wikipedia.org/wiki/Stevie_(text_editor)), a
-[vi](https://en.wikipedia.org/wiki/Vi) 克隆, 支持两种操作模式:
-"compatible" 和 "nocompatible". 使用兼容模式 vim 意味着 使用vi默认设置
-, 相对于VIM 默认设置. 只要你没有新建一个用户的vimrc 或者使用 `vim -N` 命令启动VIM ， 兼容模式将被使用! 不要使用VIM的兼容模式.
+Vim 基于一个 [vi](https://en.wikipedia.org/wiki/Vi) 克隆， 叫做 [Stevie](https://en.wikipedia.org/wiki/Stevie_(text_editor))，支持两种操作模式:"compatible" 和 "nocompatible"。使用兼容模式 vim 意味着使用 vi 默认设置，不同于 vim 的默认设置。只要你没有新建一个用户的 vimrc 或者使用 `vim -N` 命令启动 vim，那么使用的就是兼容模式! 不要使用 vim 的兼容模式.
 
-下一步:
+下一步：
 
-1. 创建你自己的[vimrc](#minimal-vimrc). TODO
-2. 在第一周准备 [备忘录](#cheatsheets).
-3. 通读[基础](#basics-1) 一节知道做什么是可能的.
-4. 了解需求! 你永远不能够学完VIM. 如果你遇到了任何问题，那就在网络上去寻找。你的问题可能早就被解决了。VIM 拥有大量的参考文档，所有知道如何去利用这些参考文档就很有必要了:[获取离线帮助](#getting-help-offline).
-5. 浏览[附加资源](#additional-resources).
+1. 创建你自己的 [vimrc](#精简的vimrc)。
+2. 在第一周准备[备忘录](#cheatsheets)。
+3. 通读[基础](#basics-1) 一节知道做什么是可能的。
+4. 了解需求! 你永远不能够学完VIM. 如果你遇到了任何问题，那就在网络上去寻找。你的问题可能早就被解决了。VIM 拥有大量的参考文档，知道如何去利用这些参考文档是有必要了：[获取离线帮助](#getting-help-offline)。
+5. 浏览[附加资源](#additional-resources)。
 
-最后一个建议: 请先学会正确使用VIM在你开始使用那些只是实现VIM原生功能的[插件](#managing-plugins).
+最后一个建议：在你开始使用那些只是实现 vim 原生功能的[插件](#managing-plugins)之前，请先学会恰当地使用 vim。
 
-#### Minimal vimrc
+#### 精简的 vimrc
 
-用户的vimrc配置文件可以放在`~/.vimrc`或者为了更好的分离放在`~/.vim/vimrc`. 后者更容易让整个配置处于版本控制之下并且上传, 比方说github.
+用户的 vimrc 配置文件可以放在 `~/.vimrc`，或者为了更好的分离放在 `~/.vim/vimrc`，后者更便于通过版本控制软件备份和同步整个配置，比方说github。
 
-你可以在网上发现许多精简的vimrc配置文件, 我的版本可能并不是最简单的版本, 但是我的版本提供了一套我认为良好的，理智的设置.
+你可以在网上发现许多精简的 vimrc 配置文件, 我的版本可能并不是最简单的版本, 但是我的版本提供了一套我认为良好的，非常适合入门的设置.
 
 最终你需要阅读完那些设置，然后自行决定需要使用哪些. :-)
 
-vimrc地址: [minimal-vimrc](content/minimal-vimrc.vim)
+精简的 vimrc 地址: [minimal-vimrc](https://github.com/mhinz/vim-galore/blob/master/contents/minimal-vimrc.vim)
 
 如果你有兴趣, 这里是我的 [vimrc](https://github.com/mhinz/dotfiles/blob/master/vim/vimrc).
 
-**建议**: 大多数插件作者都维护一些插件并且将他们的vimrc放在Github上展示(通常放在叫做"vim-config" 或者 "dotfiles"的仓库中), 所以当你发现你喜欢的插件时, 去插件维护者的 Github 主页看看有没有这样的仓库.
+**建议**：大多数插件作者都维护一些插件并且将他们的 vimrc 放在 Github 上展示(通常放在叫做 "vim-config" 或者 "dotfiles" 的仓库中)，所以当你发现你喜欢的插件时，去插件维护者的 Github 主页看看有没有这样的仓库。
 
 #### What kind of Vim am I running?
 
