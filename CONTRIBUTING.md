@@ -10,6 +10,14 @@
 PR: PR的链接
 ```
 
+## 提交方式
+
+每个章节独立翻译，并提交至 [chapter/](chapter/) 文件夹，文件名为英文标题小写，以`-`链接单词。例如翻译`What is Vim？`章节， 文件名即为`chapter/what-is-vim.md`. 合并到主仓库后，将定期将这些章节文件合并到`README.dm`。
+
+## 章节列表
+
+基于[mhinz/vim-galore@d50d48b](https://github.com/mhinz/vim-galore/tree/d50d48bce40bbbd99a0528a2893b00cf54a6f4b9), 后期如果有改动，定期在更新。
+
 |章节名称|认领状态|中文链接|
 |:------|:------|:------|
 | [Intro](https://github.com/mhinz/vim-galore#intro) | | |
