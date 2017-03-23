@@ -20,18 +20,18 @@ PR: PR的链接
 
 |章节名称|认领状态|中文链接|
 |:------|:------|:------|
-| [Intro](https://github.com/mhinz/vim-galore#intro) | | |
-| [What is Vim?](https://github.com/mhinz/vim-galore#what-is-vim) | | |
-| [The Vim Philosophy](https://github.com/mhinz/vim-galore#the-vim-philosophy) | | |
-| [First steps](https://github.com/mhinz/vim-galore#first-steps) | | |
-| [Minimal vimrc](https://github.com/mhinz/vim-galore#minimal-vimrc) | | |
-| [What kind of Vim am I running?](https://github.com/mhinz/vim-galore#what-kind-of-vim-am-i-running) | | |
-| [Cheatsheets](https://github.com/mhinz/vim-galore#cheatsheets) | | |
-| [Basics](https://github.com/mhinz/vim-galore#basics-1) | | |
-| [Buffers, windows, tabs](https://github.com/mhinz/vim-galore#buffers-windows-tabs) | | |
-| [Active, loaded, listed, named buffers](https://github.com/mhinz/vim-galore#active-loaded-listed-named-buffers) | | |
-| [Argument list](https://github.com/mhinz/vim-galore#argument-list) | | |
-| [Mappings](https://github.com/mhinz/vim-galore#mappings) | | |
+| [Intro](https://github.com/mhinz/vim-galore#intro) | [#4] | |
+| [What is Vim?](https://github.com/mhinz/vim-galore#what-is-vim) | [#4] | |
+| [The Vim Philosophy](https://github.com/mhinz/vim-galore#the-vim-philosophy) | [#4] | |
+| [First steps](https://github.com/mhinz/vim-galore#first-steps) | [#4] | |
+| [Minimal vimrc](https://github.com/mhinz/vim-galore#minimal-vimrc) | [#4] | |
+| [What kind of Vim am I running?](https://github.com/mhinz/vim-galore#what-kind-of-vim-am-i-running) | [#4] | |
+| [Cheatsheets](https://github.com/mhinz/vim-galore#cheatsheets) | [#4] | |
+| [Basics](https://github.com/mhinz/vim-galore#basics-1) | [#4] | |
+| [Buffers, windows, tabs](https://github.com/mhinz/vim-galore#buffers-windows-tabs) | [#4] | |
+| [Active, loaded, listed, named buffers](https://github.com/mhinz/vim-galore#active-loaded-listed-named-buffers) | [#4] | |
+| [Argument list](https://github.com/mhinz/vim-galore#argument-list) | [#4] | |
+| [Mappings](https://github.com/mhinz/vim-galore#mappings) | [#4] | |
 | [Mapleader](https://github.com/mhinz/vim-galore#mapleader) | | |
 | [Registers](https://github.com/mhinz/vim-galore#registers) | | |
 | [Ranges](https://github.com/mhinz/vim-galore#ranges) | | |
@@ -109,3 +109,7 @@ PR: PR的链接
 | [Newline used for NUL](https://github.com/mhinz/vim-galore#newline-used-for-nul) | | |
 | [List of colorschemes](https://github.com/mhinz/vim-galore#list-of-colorschemes-1) | | |
 | [List of plugins](https://github.com/mhinz/vim-galorecontents/plugins.md) | | |
+
+
+<!-- plublic links -->
+[#4]: https://github.com/wsdjeg/vim-galore-zh_cn/pull/4
