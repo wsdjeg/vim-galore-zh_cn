@@ -1,7 +1,7 @@
 # vim-galore 中文翻译
 > Vim from zero to hero
 
-#### [介绍](#intro-1)
+## [介绍](#intro-1)
 
 - [什么是Vim](#what-is-vim)
 - [Vim中的哲学](#the-vim-philosophy)
@@ -10,7 +10,7 @@
 - [我正在使用的是什么样的vim](#what-kind-of-vim-am-i-running)
 - [备忘录](#cheatsheets)
 
-#### [基础](#basics-1)
+## [基础](#basics-1)
 
 - [缓冲区, 窗口, 标签?](#buffers-windows-tabs)
 - [当前缓冲区, 加载缓冲区, 缓冲区列表,命名缓冲区?](#active-loaded-listed-named-buffers)
@@ -27,7 +27,7 @@
 - [会话?](#sessions)
 - [局部化?](#locality)
 
-#### [用法](#usage-1)
+## [用法](#usage-1)
 
 - [获取离线帮助](#getting-help-offline)
 - [获取离线帮助(可选择的)](#getting-help-offline-alternative)
@@ -43,7 +43,7 @@
 - [使用外部程序和过滤器](#running-external-programs-and-using-filters)
 - [MatchIt](#matchit)
 
-#### [技巧](#tips-1)
+## [技巧](#tips-1)
 
 - [聪明的使用n和N](#saner-behavior-of-n-and-n)
 - [聪明的使用命令行历史](#saner-command-line-history)
@@ -59,13 +59,13 @@
 - [智能当前行](#smarter-cursorline)
 - [更快的关键字补全](#faster-keyword-completion)
 
-#### [命令](#commands-1)
+## [命令](#commands-1)
 
 - [:global](#global) - 在所有匹配行执行命令
 - [:normal and :execute](#normal-and-execute) - 脚本梦之队
 - [:redir](#redir) - 重定向消息
 
-#### [调试](#debugging-1)
+## [调试](#debugging-1)
 
 - [常规建议](#general-tips)
 - [启动时刨视](#profiling-startup-time)
@@ -74,7 +74,7 @@
 - [vim脚本调试](#debugging-vim-scripts)
 - [语法文件调试](#debugging-syntax-files)
 
-#### [杂项](#miscellaneous-1)
+## [杂项](#miscellaneous-1)
 
 - [附加资源](#additional-resources)
 - [Vim 发布](#vim-distributions)
@@ -83,7 +83,7 @@
 - [复活节彩蛋](#easter-eggs)
 - [为何使用hjkl](#why-hjkl-for-navigation)
 
-#### [奇事](#quirks-1)
+## [奇事](#quirks-1)
 
 - [编辑小文件很慢](#editing-small-files-is-slow)
 - [编辑打文件很慢](#editing-huge-files-is-slow)
@@ -91,17 +91,17 @@
 - [相同部分粘贴 (要不为什么我总要设置‘粘贴’?)](#bracketed-paste-or-why-do-i-have-to-set-paste-all-the-time)
 - [在终端使用Esc延时](#delays-when-using-escape-key-in-terminal)
 
-#### [配色主题](#list-of-colorschemes-1)
+## [配色主题](#list-of-colorschemes-1)
 
-#### [插件列表](content/plugins.md)
+## [插件列表](content/plugins.md)
 
-#### [Neovim](content/neovim.md)
+## [Neovim](content/neovim.md)
 
 ---
 
-## Intro
+# Intro
 
-#### What is Vim?
+## What is Vim?
 
 [Vim](http://www.vim.org) 是一个历史悠久的文本编辑器,可以追溯到 [qed](https://en.wikipedia.org/wiki/QED_(text_editor)). [Bram
 Moolenaar](https://en.wikipedia.org/wiki/Bram_Moolenaar) 于1991年发布初始版本.
@@ -110,17 +110,14 @@ Moolenaar](https://en.wikipedia.org/wiki/Bram_Moolenaar) 于1991年发布初始�
 
 获取Vim: 使用你最喜欢的包管理器安装,或者在vim.org上[下载](http://www.vim.org/download.php) .
 
-讨论使用相关问题最好在
-[vim_use](https://groups.google.com/forum/#!forum/vim_use) 邮件列表或者使用IRC ([Freenode](https://freenode.net)) 的 `#vim` 频道.
+讨论使用相关问题最好使用 [vim_use](https://groups.google.com/forum/#!forum/vim_use) 邮件列表或者使用IRC ([Freenode](https://freenode.net)) 的 `#vim` 频道.
 
-项目开发在 [Github](https://github.com/vim/vim), 项目讨论请至
-[vim_dev](https://groups.google.com/forum/#!forum/vim_dev) 邮件列表.
+项目在 [Github](https://github.com/vim/vim) 上开发, 项目讨论请订阅 [vim_dev](https://groups.google.com/forum/#!forum/vim_dev) 邮件列表.
 
-阅读 [Why, oh WHY, do those #?@! nutheads use
-vi?](http://www.viemu.com/a-why-vi-vim.html), 对Vim有一个大致的了解.
+通过阅读 [Why, oh WHY, do those #?@! nutheads use vi?](http://www.viemu.com/a-why-vi-vim.html) 来对Vim进行大致的了解.
 
 
-#### Vim 哲学
+## Vim 哲学
 
 Vim 坚持着模式编辑的理念. 这意味着他提供了多种模式，并根据模式，同一按键有不同含义。你可以在 _普通模式_下浏览文件, 在_ 插入模式_下插入文本, 在_可视模式_下选择行, 在_命令模式_下执行命令.
 这一开始听起来可能很复杂, 但是这有一个很大的优点: 你不需要让你的手指因为一次要同时按住很多键而受苦, 大多数时候你只要一个接着一个按.越常用的任务，所需要的按键数量越少. 
