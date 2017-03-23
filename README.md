@@ -157,7 +157,7 @@ Vim 基于一个 [vi](https://en.wikipedia.org/wiki/Vi) 克隆， 叫做 [Stevie
 
 最终你需要阅读完那些设置，然后自行决定需要使用哪些. :-)
 
-精简的 vimrc 地址: [minimal-vimrc](https://github.com/mhinz/vim-galore/blob/master/contents/minimal-vimrc.vim)
+精简的 vimrc 地址: [minimal-vimrc](contents/minimal-vimrc.vim)
 
 如果你有兴趣, 这里是我的 [vimrc](https://github.com/mhinz/dotfiles/blob/master/vim/vimrc).
 
