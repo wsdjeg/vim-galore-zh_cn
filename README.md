@@ -41,8 +41,8 @@
 - [获取离线帮助(备选)](#获取离线帮助备选)
 - [获取在线帮助](#获取在线帮助)
 - [执行自动命令](#执行自动命令)
-  - [用户自定义事件](#用户自定义事件)
-  - [内部自带事件](#内部自带事件)
+  - [用户自定义事件](#用户自定义事件)
+  - [内部自带事件](#内部自带事件)
 - [剪贴板](#剪切板)
   - [剪贴板使用 (Windows, OSX)](#剪贴板使用-windows-osx)
   - [剪贴板使用 (Linux, BSD, ...)](#剪贴板使用-linux-bsd-)
@@ -115,30 +115,31 @@
 # 简介
 
 ## 什么是 Vim？
-[Vim](http://www.vim.org) 是一个历史悠久的文本编辑器,可以追溯到 [qed](https://en.wikipedia.org/wiki/QED_(text_editor)). [Bram
-Moolenaar](https://en.wikipedia.org/wiki/Bram_Moolenaar) 于1991年发布初始版本.
+[Vim](http://www.vim.org) 是一个历史悠久的文本编辑器，可以追溯到 [qed](https://en.wikipedia.org/wiki/QED_(text_editor))。[Bram
+Moolenaar](https://en.wikipedia.org/wiki/Bram_Moolenaar) 于1991年发布初始版本。
 
-该项目托管在 [vim.org](http://www.vim.org/index.php).
+该项目托管在 [vim.org](http://www.vim.org/index.php)。
 
-获取Vim: 用包管理器安装或者直接到 vim.org [下载](http://www.vim.org/download.php) .
+获取Vim：用包管理器安装或者直接到 vim.org [下载](http://www.vim.org/download.php)。
 
-讨论使用相关问题最好使用 [vim_use](https://groups.google.com/forum/#!forum/vim_use) 邮件列表或者使用IRC ([Freenode](https://freenode.net)) 的 `#vim` 频道。
+讨论使用相关问题最好使用 [vim_use](https://groups.google.com/forum/#!forum/vim_use) 邮件列表或者使用 IRC([Freenode](https://freenode.net)) 的 `#vim` 频道。
+
 欢迎加入我们的中文讨论群：[![QQ](https://img.shields.io/badge/QQ群-121056965-blue.svg)](https://jq.qq.com/?_wv=1027&k=43DB6SG)
 
-项目在 [Github](https://github.com/vim/vim) 上开发, 项目讨论请订阅 [vim_dev](https://groups.google.com/forum/#!forum/vim_dev) 邮件列表.
+项目在 [Github](https://github.com/vim/vim) 上开发，项目讨论请订阅 [vim_dev](https://groups.google.com/forum/#!forum/vim_dev) 邮件列表。
 
-通过阅读 [Why, oh WHY, do those #?@! nutheads use vi?](http://www.viemu.com/a-why-vi-vim.html) 来对Vim进行大致的了解.
-
+通过阅读 [Why, oh WHY, do those #?@! nutheads use vi?](http://www.viemu.com/a-why-vi-vim.html) 来对Vim进行大致的了解。
 
 ## Vim 哲学
 
-Vim 采用模式编辑的理念，即它提供了多种模式，按键在不同的模式下作用不同。你可以在 _普通模式_ 下浏览文件, 在 _插入模式_ 下插入文本, 在 _可视模式_ 下选择行, 在 _命令模式_ 下执行命令.
-起初这听起来可能很复杂, 但是这有一个很大的优点: 不需要通过同时按住多个键来完成操作，而是通过连续地单次按键。越常用的操作，所需要的按键数量越少. 
+Vim 采用模式编辑的理念，即它提供了多种模式，按键在不同的模式下作用不同。你可以在 _普通模式_ 下浏览文件, 在 _插入模式_ 下插入文本, 在 _可视模式_ 下选择行, 在 _命令模式_ 下执行命令。
 
-“动作”和“操作符”是一个能在模式编辑中得到良好体现的概念。_操作符_开始一些行为, 例如：修改, 删除, 或者选择文本。之后你要用一个_动作_来指定需要操作的文本区域。比如，要改变括号内的文本, 需要执行`ci(` （读做 _change inner parentheses_）；删除整个段落的内容, 需要执行 `dap` （读做： _delete
+起初这听起来可能很复杂，但是这有一个很大的优点：不需要通过同时按住多个键来完成操作，而是通过连续地单次按键。越常用的操作，所需要的按键数量越少。
+
+“动作”和“操作符”是一个能在模式编辑中得到良好体现的概念。_操作符_开始一些行为，例如：修改，删除，或者选择文本。之后你要用一个_动作_来指定需要操作的文本区域。比如，要改变括号内的文本，需要执行 `ci(` （读做 _change inner parentheses_）；删除整个段落的内容，需要执行 `dap` （读做： _delete
 around paragraph_）。
 
-如果你能看见 Vim 老司机操作,你会发现他们使用 Vim 脚本语言就如同钢琴师操作自己的乐器一样。复杂的操作只需要几个按键就能完成。他们甚至不用刻意去想，因为这已经成为[肌肉记忆](https://en.wikipedia.org/wiki/Muscle_memory)了. 这减少[认识负荷](https://en.wikipedia.org/wiki/Cognitive_load)并帮助人们专注与实际任务。
+如果你能看见 Vim 老司机操作，你会发现他们使用 Vim 脚本语言就如同钢琴师操作自己的乐器一样。复杂的操作只需要几个按键就能完成。他们甚至不用刻意去想，因为这已经成为[肌肉记忆](https://en.wikipedia.org/wiki/Muscle_memory)了。这减少[认识负荷](https://en.wikipedia.org/wiki/Cognitive_load)并帮助人们专注与实际任务。
 
 ## 起步
 
@@ -150,8 +151,9 @@ $ vimtutor
 
 不要因为这个看上去很无聊而跳过，按照此教程多练习。你以前用的 IDE 或者其他编辑器很少是有“模式”概念的，因此一开始你会很难适应模式切换。但是你 Vim 使用的越多，[肌肉记忆](https://en.wikipedia.org/wiki/Muscle_memory) 将越容易形成。
 
-Vim 基于一个 [vi](https://en.wikipedia.org/wiki/Vi) 克隆， 叫做 [Stevie](https://en.wikipedia.org/wiki/Stevie_(text_editor))，支持两种运行模式:"compatible" 和 "nocompatible"。在兼容模式下运行 vim 意味着使用 vi 的默认设置，而不是 vim 的默认设置。只要你没有新建一个用户的 vimrc 或者使用 `vim -N` 命令启动 vim，那就是在兼容模式下运行 vim! 请大家不要在兼容模式下运行 vim。
-下一步：
+Vim 基于一个 [vi](https://en.wikipedia.org/wiki/Vi) 克隆，叫做 [Stevie](https://en.wikipedia.org/wiki/Stevie_(text_editor))，支持两种运行模式："compatible" 和 "nocompatible"。在兼容模式下运行 vim 意味着使用 vi 的默认设置，而不是 vim 的默认设置。只要你没有新建一个用户的 vimrc 或者使用 `vim -N` 命令启动 vim，那就是在兼容模式下运行 vim！请大家不要在兼容模式下运行 vim。
+
+下一步
 
 1. 创建你自己的 [vimrc](#精简的vimrc)。
 2. 在第一周准备[备忘录](#cheatsheets)。
@@ -165,29 +167,29 @@ Vim 基于一个 [vi](https://en.wikipedia.org/wiki/Vi) 克隆， 叫做 [Stevie
 
 用户的 vimrc 配置文件可以放在 `~/.vimrc`，或者为了更好的分离放在 `~/.vim/vimrc`，后者更便于通过版本控制软件备份和同步整个配置，比方说github。
 
-你可以在网上找到许多精简的 vimrc 配置文件, 我的版本可能并不是最简单的版本, 但是我的版本提供了一套我认为良好的，非常适合入门的设置.
+你可以在网上找到许多精简的 vimrc 配置文件, 我的版本可能并不是最简单的版本，但是我的版本提供了一套我认为良好的，非常适合入门的设置。
 
-最终你需要阅读完那些设置，然后自行决定需要使用哪些. :-)
+最终你需要阅读完那些设置，然后自行决定需要使用哪些。 :-)
 
-精简的 vimrc 地址: [minimal-vimrc](contents/minimal-vimrc.vim)
+精简的 vimrc 地址：[minimal-vimrc](contents/minimal-vimrc.vim)
 
-如果你有兴趣, 这里是我（原作者）的 [vimrc](https://github.com/mhinz/dotfiles/blob/master/vim/vimrc).
+如果你有兴趣，这里是我（原作者）的 [vimrc](https://github.com/mhinz/dotfiles/blob/master/vim/vimrc)。
 
-**建议**：大多数插件作者都维护不止一个插件并且将他们的 vimrc 放在 Github 上展示(通常放在叫做 "vim-config" 或者 "dotfiles" 的仓库中)，所以当你发现你喜欢的插件时，去插件维护者的 Github 主页看看有没有这样的仓库。
+**建议**：大多数插件作者都维护不止一个插件并且将他们的 vimrc 放在 Github 上展示（通常放在叫做 "vim-config" 或者 "dotfiles" 的仓库中），所以当你发现你喜欢的插件时，去插件维护者的 Github 主页看看有没有这样的仓库。
 
 ## 我正在使用什么样的 Vim
 
-使用 :version 命令将向你展示当前正在运行的 vim 的所有相关信息，包括它是如何编译的。
+使用 `:version` 命令将向你展示当前正在运行的 vim 的所有相关信息，包括它是如何编译的。
 
-第一行告诉你这个二进制文件的编译时间和版本号，比如：7.4。接下来的一行呈现`Included patches: 1-1051`, 这是补丁版本包. 因此你 vim 确切的版本号是 7.4.1051。
+第一行告诉你这个二进制文件的编译时间和版本号，比如：7.4。接下来的一行呈现 `Included patches: 1-1051`，这是补丁版本包。因此你 vim 确切的版本号是  7.4.1051。
 
-另一行显示着一些像 `Tiny version without GUI` 或者 `Huge version with GUI` 的信息。很显然这些信息告诉你当前的 vim 是否支持 GUI，例如：从终端中运行 `gvim` 或者从终端模拟器中的 vim 内运行 `:gui` 命令。另一个重要的信息是 `Tiny` 和 `Huge`。Vim 的特性集区分被叫做 `tiny`，`small`，`normal`，`big` and `huge`，所有的都实现不同的功能子集.
+另一行显示着一些像 `Tiny version without GUI` 或者 `Huge version with GUI` 的信息。很显然这些信息告诉你当前的 vim 是否支持 GUI，例如：从终端中运行 `gvim` 或者从终端模拟器中的 vim 内运行 `:gui` 命令。另一个重要的信息是 `Tiny` 和 `Huge`。Vim 的特性集区分被叫做 `tiny`，`small`，`normal`，`big` and `huge`，所有的都实现不同的功能子集。
 
-`:version` 主要的输出内容是特性列表.`+clipboard` 意味这剪贴板功能被编译支持了, `-clipboard` 意味着剪贴板特性没有被编译支持.
+`:version` 主要的输出内容是特性列表。`+clipboard` 意味这剪贴板功能被编译支持了，`-clipboard` 意味着剪贴板特性没有被编译支持。
 
-一些功能特性需要编译支持才能正常工作。例如：为了让 `:prof` 工作, 你需要使用 `huge` 模式编译的 vim, 因为那种模式启用了 `+profile` 特性。
+一些功能特性需要编译支持才能正常工作。例如：为了让 `:prof` 工作，你需要使用 `huge` 模式编译的 vim，因为那种模式启用了 `+profile` 特性。
 
-如果你的输出情况并不是那样，并且你是从包管理器安装 vim 的, 确保你安装了 `vim-x`，`vim-x11`，`vim-gtk`，`vim-gnome` 这些包或者相似的, 因为这些包通常都是 `huge` 模式编译的.
+如果你的输出情况并不是那样，并且你是从包管理器安装 vim 的，确保你安装了 `vim-x`，`vim-x11`，`vim-gtk`，`vim-gnome` 这些包或者相似的, 因为这些包通常都是 `huge` 模式编译的。
 
 你也可以运行下面这段代码来测试 Vim 版本以及功能支持：
 
@@ -198,7 +200,7 @@ if (v:version > 704 || v:version == 704 && has('patch42')) && has('profile')
 endif
 ```
 
-相关帮助:
+相关帮助：
 
 ```
 :h :version
@@ -208,7 +210,7 @@ endif
 
 ## 备忘录
 
-为了避免版权问题, 我只贴出链接:
+为了避免版权问题，我只贴出链接：
 
 - http://people.csail.mit.edu/vgod/vim/vim-cheat-sheet-en.png
 - https://cdn.shopify.com/s/files/1/0165/4168/files/preview.png
@@ -226,23 +228,23 @@ Vim 是一个文本编辑器。每次文本都是作为**缓冲区**的一部分
 
 缓冲区有很多属性，比如这个缓冲区的内容是否可以修改，或者这个缓冲区是否和文件相关联，是否需要同步保存到磁盘上。
 
-**窗口** 是缓冲区上一层的视窗. 如果你想同时查看几个文件或者查看同一文件的不同位置，那样你会需要窗口.
+**窗口** 是缓冲区上一层的视窗。如果你想同时查看几个文件或者查看同一文件的不同位置，那样你会需要窗口。
 
-请别把他们叫做_分屏_. 你可以把一个窗口分割成两个, 但是这并没有让这两个窗口完全_分离_.
+请别把他们叫做_分屏_。你可以把一个窗口分割成两个，但是这并没有让这两个窗口完全_分离_。
 
 窗口可以水平或者竖直分割并且现有窗口的高度和宽度都是可以被调节设置的，因此，如果你需要多种窗口布局，请考虑使用标签。
 
-**标签页** (标签) 是窗口的集合. 因此使用标签当你想使用多种窗口布局的时候.
+**标签页** （标签）是窗口的集合。因此使用标签当你想使用多种窗口布局的时候。
 
-简单的说, 如果你启动VIM的时候没有附带任何参数,你会得到一个包含着一个呈现一个缓冲区的窗口的标签.
+简单的说，如果你启动VIM的时候没有附带任何参数，你会得到一个包含着一个呈现一个缓冲区的窗口的标签。
 
-顺带提一下, 缓冲区列表是全局可见的，你可以在任何标签中访问任何一个缓冲区.
+顺带提一下，缓冲区列表是全局可见的，你可以在任何标签中访问任何一个缓冲区。
 
 ## 已激活，已载入，已列出，已命名 缓冲区
 
 用类似 `vim file1` 的命令启动 vim 。这个文件的内容将会被加载到缓冲区中，你现在有一个**已载入的缓冲区**。如果你在 vim 中保存这个文件，缓冲区内容将会被同步到磁盘上（写回文件中）。
 
-由于这个缓冲区也在一个窗口上显示， 所以他也是一个**已激活的缓冲区**。如果你现在通过 `:e file2` 命令加载另一个文件，`file1` 将会变成一个**隐藏的缓冲区**，并且 `file2` 变成已激活缓冲区。
+由于这个缓冲区也在一个窗口上显示，所以他也是一个**已激活的缓冲区**。如果你现在通过 `:e file2` 命令加载另一个文件，`file1` 将会变成一个**隐藏的缓冲区**，并且 `file2` 变成已激活缓冲区。
 
 使用 `:ls` 我们能够列出所有可以列出的缓冲区。插件缓冲区和帮助缓冲区通常被标记为不可以列出的缓冲区，因为那并不是你经常需要在编辑器中编辑的常规文件。通过 `:ls!` 命令可以显示被放入缓冲区列表的和未被放入列表的缓冲区。
 
@@ -266,7 +268,7 @@ Vim 是一个文本编辑器。每次文本都是作为**缓冲区**的一部分
 :argdo %s/foo/bar/ge | update
 ```
 
-这条命令将替换掉当前目录下以及当前目录的子目录中所有的C源文件和头文件中的"foo"，并用"bar"代替。
+这条命令将替换掉当前目录下以及当前目录的子目录中所有的C源文件和头文件中的“foo”，并用“bar”代替。
 
 相关帮助：`:h argument-list`
 
@@ -274,7 +276,7 @@ Vim 是一个文本编辑器。每次文本都是作为**缓冲区**的一部分
 
 使用 `:map` 命令家族你可以定义属于你自己的快捷键。该家族的每一个命令都限定在特定的模式下。从技术上来说 vim 自带高达12中模式，其中6种可以被映射。另外一些命令作用于多种模式：
 
-| Recursive | Non-recursive | Modes                            |
+|    递归    |   非递归      | 模式                            |
 |-----------|---------------|----------------------------------|
 | `:map`    | `:noremap`    | normal, visual, operator-pending |
 | `:nmap`   | `:nnoremap`   | normal                           |
@@ -283,7 +285,7 @@ Vim 是一个文本编辑器。每次文本都是作为**缓冲区**的一部分
 | `:omap`   | `:onoremap`   | operator-pending                 |
 | `:imap`   | `:inoremap`   | insert                           |
 
-例如：这个自定义的快捷键只在普通模式下工作，
+例如：这个自定义的快捷键只在普通模式下工作。
 
 ```vim
 :nmap <space> :echo "foo"<cr>
@@ -295,7 +297,7 @@ Vim 是一个文本编辑器。每次文本都是作为**缓冲区**的一部分
 
 到现在为止还好，对新手而言有一个问题会困扰他们：`:nmap` 是**递归执行**的！结果是，右边执行可能的映射。
 
-你自定义了一个简单的映射去输出"Foo"：
+你自定义了一个简单的映射去输出“Foo”：
 
 ```vim
 :nmap b :echo "Foo"<cr>
@@ -315,11 +317,11 @@ Vim 是一个文本编辑器。每次文本都是作为**缓冲区**的一部分
 :nnoremap a b
 ```
 
-经验法则: 除非递归是必须的，否则总是使用非递归映射.
+经验法则：除非递归是必须的，否则总是使用非递归映射。
 
-通过不给一个右值来检查你的映射. 比如`:nmap` 显示所以普通模式下的映射， `:nmap <leader>` 显示所有以 `<leader>` 键开头的普通模式下的映射。
+通过不给一个右值来检查你的映射。比如`:nmap` 显示所以普通模式下的映射，`:nmap <leader>` 显示所有以 `<leader>` 键开头的普通模式下的映射。
 
-如果你想禁止用标准映射，把他们映射到特殊字符 `<nop>` 上， 例如：`:noremap <left> <nop>`。
+如果你想禁止用标准映射，把他们映射到特殊字符 `<nop>` 上，例如：`:noremap <left> <nop>`。
 
 相关帮助：
 
