@@ -6,14 +6,15 @@
 
 - 原文地址：https://github.com/mhinz/vim-galore
 - 原文作者：Marco Hinz
+- 本文地址：https://github.com/wsdjeg/vim-galore-zh_cn
 
 ## [简介](#简介-1)
 
-- [什么是Vim](#什么是-vim)
+- [什么是 Vim](#什么是-vim)
 - [Vim 哲学](#vim-哲学)
 - [起步](#起步)
-- [精简的vimrc](#精简的-vimrc)
-- [我正在使用的是什么样的vim](#我正在使用什么样的-vim)
+- [精简的 vimrc](#精简的-vimrc)
+- [我正在使用的是什么样的 Vim](#我正在使用什么样的-vim)
 - [备忘录](#备忘录)
 
 ## [基础](#基础-1)
@@ -22,85 +23,85 @@
 - [当前缓冲区, 加载缓冲区, 缓冲区列表,命名缓冲区](#已激活已载入已列出已命名-缓冲区)
 - [参数列表](#参数列表)
 - [按键映射](#按键映射)
-- [Mapleader?](#mapleader)
-- [寄存器?](#registers)
-- [标注?](#marks)
-- [光标移动? 动作和操作符?文本对象?](#motions-operators-text-objects)
-- [自动命令?](#autocmds)
-- [改变表? 跳转表?](#changelist-jumplist)
-- [Quickfix and 位置列表?](#quickfix-and-location-lists)
-- [配色方案?](#colorschemes)
-- [折叠?](#folding)
-- [会话?](#sessions)
-- [局部化?](#locality)
+- [快捷键前缀](#快捷键前缀)
+- [寄存器](#寄存器)
+- [标注](#标注)
+- [动作，操作符，文本对象](#动作操作符文本对象)
+- [自动命令](#自动命令)
+- [变更历史，跳转历史](#变更历史跳转历史)
+- [全局位置信息表，局部位置信息表](#全局位置信息表局部位置信息表)
+- [主题](#主题)
+- [折叠](#折叠)
+- [会话](#会话)
+- [局部化](#局部化)
 
-## [用法](#usage-1)
+## [用法](#用法-1)
 
-- [获取离线帮助](#getting-help-offline)
-- [获取离线帮助(可选择的)](#getting-help-offline-alternative)
-- [获取在线帮助](#getting-help-online)
+- [获取离线帮助](#获取离线帮助)
+- [获取离线帮助(备选)](#获取离线帮助备选)
+- [获取在线帮助](#获取在线帮助)
 - [执行自动命令](#执行自动命令)
   - [用户自定义事件](#用户自定义事件)
   - [内部自带事件](#内部自带事件)
-- [剪贴板](#clipboard)
-  - [剪贴板使用 (Windows, OSX)](#clipboard-usage-windows-osx)
-  - [剪贴板使用 (Linux, BSD, ...)](#clipboard-usage-linux-bsd-)
-- [打开文件时恢复光标位置](#restore-cursor-position-when-opening-file)
-- [备份文件，交换文件，撤销文件以及viminfo文件的处理](#handling-backup-swap-undo-and-viminfo-files)
-- [编辑远程文件](#editing-remote-files)
-- [插件管理](#managing-plugins)
-- [片段插入](#block-insert)
-- [使用外部程序和过滤器](#running-external-programs-and-using-filters)
+- [剪贴板](#剪切板)
+  - [剪贴板使用 (Windows, OSX)](#剪贴板使用-windows-osx)
+  - [剪贴板使用 (Linux, BSD, ...)](#剪贴板使用-linux-bsd-)
+- [打开文件时恢复光标位置](#打开文件时恢复光标位置)
+- [备份文件，交换文件，撤销文件以及viminfo文件的处理](#备份文件交换文件撤销文件以及viminfo文件的处理)
+- [编辑远程文件](#编辑远程文件)
+- [插件管理](#插件管理)
+- [片段插入](#片段插入)
+- [使用外部程序和过滤器](#使用外部程序和过滤器)
 - [MatchIt](#matchit)
 
-## [技巧](#tips-1)
+## [技巧](#技巧-1)
 
-- [聪明的使用n和N](#saner-behavior-of-n-and-n)
-- [聪明的使用命令行历史](#saner-command-line-history)
-- [智能CTRL-L](#智能CTRL+L) 
+- [聪明的使用n和N](#聪明的使用n和n)
+- [聪明的使用命令行历史](#聪明的使用命令行历史)
+- [智能CTRL-L](#智能ctrl-l) 
 - [禁用错误报警声音和图标](#禁用错误报警声音和图标)
-- [快速移动当前行](#quickly-move-current-line)
-- [快速添加空行](#quickly-add-empty-lines)
-- [快速编辑自定义宏](#quickly-edit-your-macros)
-- [快速跳转到源(头)文件](#quickly-jump-to-header-or-source-file)
-- [在GUI中快速改变字体大小](#quickly-change-font-size-in-gui)
-- [根据模式改变光标类型](#change-cursor-style-dependent-on-mode)
-- [防止水平滑动的时候失去选择](#dont-lose-selection-when-shifting-sidewards)
-- [重新载入保存文件](#reload-a-file-on-saving)
-- [智能当前行](#smarter-cursorline)
-- [更快的关键字补全](#faster-keyword-completion)
+- [快速移动当前行](#快速移动当前行)
+- [快速添加空行](#快速添加空行)
+- [快速编辑自定义宏](#快速编辑自定义宏)
+- [快速跳转到源(头)文件](#快速跳转到源头文件)
+- [在GUI中快速改变字体大小](#在gui中快速改变字体大小)
+- [根据模式改变光标类型](#根据模式改变光标类型)
+- [防止水平滑动的时候失去选择](#防止水平滑动的时候失去选择)
+- [重新载入保存文件](#重新载入保存文件)
+- [智能当前行](#智能当前行)
+- [更快的关键字补全](#更快的关键字补全)
 
-## [命令](#commands-1)
+## [命令](#命令-1)
 
-- [:global](#global) - 在所有匹配行执行命令
-- [:normal and :execute](#normal-and-execute) - 脚本梦之队
-- [:redir](#redir) - 重定向消息
+- [:global](#global---在所有匹配行执行命令) - 在所有匹配行执行命令
+- [:normal and :execute](#normal-and-execute---脚本梦之队) - 脚本梦之队
+- [:redir](#redir---重定向消息) - 重定向消息
 
-## [调试](#debugging-1)
+## [调试](#调试-1)
 
-- [常规建议](#general-tips)
+- [常规建议](#常规建议)
 - [查看启动日志](#查看启动日志)
 - [查看运行时日志](#查看运行时日志)
 - [调整日志等级](#调整日志等级)
-- [vim脚本调试](#debugging-vim-scripts)
-- [语法文件调试](#debugging-syntax-files)
+- [vim脚本调试](#vim脚本调试)
+- [语法文件调试](#语法文件调试)
 
-## [杂项](#miscellaneous-1)
+## [杂项](#杂项-1)
 
-- [附加资源](#additional-resources)
+- [附加资源](#附加资源)
 - [Vim 配置集合](#vim-配置集合)
 - [内置插件](#内置插件)
-- [将Control映射到CapsLock](#map-capslock-to-control)
-- [复活节彩蛋](#easter-eggs)
-- [为何使用hjkl](#why-hjkl-for-navigation)
+- [将Control映射到CapsLock](#将control映射到capslock)
+- [复活节彩蛋](#复活节彩蛋)
+- [为何使用hjkl](#为何使用hjkl)
 
 ## [怪癖](#怪癖-1)
 
 - [编辑小文件很慢](#编辑小文件很慢)
 - [编辑大文件很慢](#编辑大文件很慢)
-- [新行用于NUL](#newline-used-for-nul)
-- [相同部分粘贴 (要不为什么我总要设置‘粘贴’?)](#bracketed-paste-or-why-do-i-have-to-set-paste-all-the-time)
-- [在终端使用Esc延时](#delays-when-using-escape-key-in-terminal)
+- [新行用于NUL](#新行用于nul)
+- [相同部分粘贴 (要不为什么我总要设置‘粘贴’?)](#相同部分粘贴-要不为什么我总要设置粘贴)
+- [在终端使用Esc延时](#在终端使用esc延时)
 - [无法重复函数中执行的搜索](#无法重复函数中执行的搜索)
 
 ## [主题列表](#主题列表-1)
@@ -326,11 +327,91 @@ Vim 是一个文本编辑器。每次文本都是作为**缓冲区**的一部分
     :h mapping
     :h 05.3
 
-### 加入我们
+## 快捷键前缀
+## 寄存器
+## 标注
+## 动作，操作符，文本对象
+## 自动命令
+## 变更历史，跳转历史
+## 全局位置信息表，局部位置信息表
+## 主题
+## 折叠
+## 会话
+## 局部化
+# 用法
+
+## 获取离线帮助
+## 获取离线帮助(备选)
+## 获取在线帮助
+## 执行自动命令
+### 用户自定义事件
+### 内部自带事件
+## 剪贴板
+## 剪贴板使用 (Windows, OSX)
+## 剪贴板使用 (Linux, BSD, ...)
+## 打开文件时恢复光标位置
+## 备份文件，交换文件，撤销文件以及viminfo文件的处理
+## 编辑远程文件
+## 插件管理
+## 片段插入
+## 使用外部程序和过滤器
+## MatchIt
+# 技巧
+
+## 聪明的使用n和N
+## 聪明的使用命令行历史
+## 智能CTRL-L
+## 禁用错误报警声音和图标
+## 快速移动当前行
+## 快速添加空行
+## 快速编辑自定义宏
+## 快速跳转到源(头)文件
+## 在GUI中快速改变字体大小
+## 根据模式改变光标类型
+## 防止水平滑动的时候失去选择
+## 重新载入保存文件
+## 智能当前行
+## 更快的关键字补全
+# 命令
+
+## :global - 在所有匹配行执行命令
+## :normal and :execute - 脚本梦之队
+## :redir - 重定向消息
+# 调试
+
+## 常规建议
+## 查看启动日志
+## 查看运行时日志
+## 调整日志等级
+## vim脚本调试
+## 语法文件调试
+# 杂项
+
+## 附加资源
+## Vim 配置集合
+## 内置插件
+## 将Control映射到CapsLock
+## 复活节彩蛋
+## 为何使用hjkl
+# 怪癖
+
+## 编辑小文件很慢
+## 编辑大文件很慢
+## 新行用于NUL
+## 相同部分粘贴 (要不为什么我总要设置‘粘贴’?)
+## 在终端使用Esc延时
+## 无法重复函数中执行的搜索
+## 主题列表
+
+# 插件列表
+
+# Neovim
+
+## 加入我们
 
 可以协助我们核对翻译，或者从[章节列表](CONTRIBUTING.md)中认领章节进行翻译。
 
-### 致谢：
+## 致谢：
 
 - [Linux 中国翻译组](https://github.com/LCTT)
 - [掘金翻译计划](https://github.com/xitu/gold-miner)
