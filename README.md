@@ -39,6 +39,9 @@
 - [获取离线帮助](#getting-help-offline)
 - [获取离线帮助(可选择的)](#getting-help-offline-alternative)
 - [获取在线帮助](#getting-help-online)
+- [执行自动命令](#执行自动命令)
+  - [用户自定义事件](#用户自定义事件)
+  - [内部自带事件](#内部自带事件)
 - [剪贴板](#clipboard)
   - [剪贴板使用 (Windows, OSX)](#clipboard-usage-windows-osx)
   - [剪贴板使用 (Linux, BSD, ...)](#clipboard-usage-linux-bsd-)
@@ -108,8 +111,7 @@
 
 # 简介
 
-## 什么是 Vim ？
-
+## 什么是 Vim？
 [Vim](http://www.vim.org) 是一个历史悠久的文本编辑器,可以追溯到 [qed](https://en.wikipedia.org/wiki/QED_(text_editor)). [Bram
 Moolenaar](https://en.wikipedia.org/wiki/Bram_Moolenaar) 于1991年发布初始版本.
 
