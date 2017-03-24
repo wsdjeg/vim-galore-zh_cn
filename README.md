@@ -57,7 +57,7 @@
 
 - [聪明的使用n和N](#saner-behavior-of-n-and-n)
 - [聪明的使用命令行历史](#saner-command-line-history)
-- [聪明的使用CTRL-L](#saner-ctrl-l) 
+- [智能CTRL-L](#智能CTRL+L) 
 - [禁用错误报警声音和图标](#禁用错误报警声音和图标)
 - [快速移动当前行](#quickly-move-current-line)
 - [快速添加空行](#quickly-add-empty-lines)
@@ -79,30 +79,31 @@
 ## [调试](#debugging-1)
 
 - [常规建议](#general-tips)
-- [启动时刨视](#profiling-startup-time)
-- [运行时刨视](#profiling-at-runtime)
-- [详细模式](#verbosity)
+- [查看启动日志](#查看启动日志)
+- [查看运行时日志](#查看运行时日志)
+- [调整日志等级](#调整日志等级)
 - [vim脚本调试](#debugging-vim-scripts)
 - [语法文件调试](#debugging-syntax-files)
 
 ## [杂项](#miscellaneous-1)
 
 - [附加资源](#additional-resources)
-- [Vim 发布](#vim-distributions)
-- [标准插件](#standard-plugins)
+- [Vim 配置集合](#vim-配置集合)
+- [内置插件](#内置插件)
 - [将Control映射到CapsLock](#map-capslock-to-control)
 - [复活节彩蛋](#easter-eggs)
 - [为何使用hjkl](#why-hjkl-for-navigation)
 
-## [奇事](#quirks-1)
+## [怪癖](#怪癖-1)
 
-- [编辑小文件很慢](#editing-small-files-is-slow)
-- [编辑打文件很慢](#editing-huge-files-is-slow)
+- [编辑小文件很慢](#编辑小文件很慢)
+- [编辑大文件很慢](#编辑大文件很慢)
 - [新行用于NUL](#newline-used-for-nul)
 - [相同部分粘贴 (要不为什么我总要设置‘粘贴’?)](#bracketed-paste-or-why-do-i-have-to-set-paste-all-the-time)
 - [在终端使用Esc延时](#delays-when-using-escape-key-in-terminal)
+- [无法重复函数中执行的搜索](#无法重复函数中执行的搜索)
 
-## [配色主题](#list-of-colorschemes-1)
+## [主题列表](#主题列表-1)
 
 ## [插件列表](content/plugins.md)
 
@@ -118,7 +119,7 @@ Moolenaar](https://en.wikipedia.org/wiki/Bram_Moolenaar) 于1991年发布初始�
 
 该项目托管在 [vim.org](http://www.vim.org/index.php).
 
-获取Vim: 使用你最喜欢的包管理器安装,或者在vim.org上[下载](http://www.vim.org/download.php) .
+获取Vim: 用包管理器安装或者直接到 vim.org [下载](http://www.vim.org/download.php) .
 
 讨论使用相关问题最好使用 [vim_use](https://groups.google.com/forum/#!forum/vim_use) 邮件列表或者使用IRC ([Freenode](https://freenode.net)) 的 `#vim` 频道。
 欢迎加入我们的中文讨论群：[![QQ](https://img.shields.io/badge/QQ群-121056965-blue.svg)](https://jq.qq.com/?_wv=1027&k=43DB6SG)
@@ -130,7 +131,7 @@ Moolenaar](https://en.wikipedia.org/wiki/Bram_Moolenaar) 于1991年发布初始�
 
 ## Vim 哲学
 
-Vim 坚持着模式编辑的理念. 这意味着他提供了多种模式，并根据模式，同一按键有不同含义。你可以在 _普通模式_ 下浏览文件, 在 _插入模式_ 下插入文本, 在 _可视模式_ 下选择行, 在 _命令模式_ 下执行命令.
+Vim 采用模式编辑的理念，即它提供了多种模式，按键在不同的模式下作用不同。你可以在 _普通模式_ 下浏览文件, 在 _插入模式_ 下插入文本, 在 _可视模式_ 下选择行, 在 _命令模式_ 下执行命令.
 起初这听起来可能很复杂, 但是这有一个很大的优点: 不需要通过同时按住多个键来完成操作，而是通过连续地单次按键。越常用的操作，所需要的按键数量越少. 
 
 “动作”和“操作符”是一个能在模式编辑中得到良好体现的概念。_操作符_开始一些行为, 例如：修改, 删除, 或者选择文本。之后你要用一个_动作_来指定需要操作的文本区域。比如，要改变括号内的文本, 需要执行`ci(` （读做 _change inner parentheses_）；删除整个段落的内容, 需要执行 `dap` （读做： _delete
@@ -153,7 +154,7 @@ Vim 基于一个 [vi](https://en.wikipedia.org/wiki/Vi) 克隆， 叫做 [Stevie
 
 1. 创建你自己的 [vimrc](#精简的vimrc)。
 2. 在第一周准备[备忘录](#cheatsheets)。
-3. 通读[基础](#basics-1) 一节知道做什么是可能的。
+3. 通读[基础](#基础-1) 章节了解Vim还有哪些功能。
 4. 按需学习！vim 是学不完的。如果你遇到了任何问题，先去网上去找解决方案。你的问题可能早就被解决了。VIM 拥有大量的参考文档，知道如何去利用这些参考文档是有必要了：[获取离线帮助](#getting-help-offline)。
 5. 浏览[附加资源](#additional-resources)。
 
