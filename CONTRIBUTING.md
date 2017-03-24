@@ -32,21 +32,21 @@ PR: PR的链接
 | [Active, loaded, listed, named buffers](https://github.com/mhinz/vim-galore#active-loaded-listed-named-buffers) | [#4] | |
 | [Argument list](https://github.com/mhinz/vim-galore#argument-list) | [#4] | |
 | [Mappings](https://github.com/mhinz/vim-galore#mappings) | [#4] | |
-| [Mapleader](https://github.com/mhinz/vim-galore#mapleader) | | |
-| [Registers](https://github.com/mhinz/vim-galore#registers) | | |
-| [Ranges](https://github.com/mhinz/vim-galore#ranges) | | |
-| [Marks](https://github.com/mhinz/vim-galore#marks) | | |
-| [Completion](https://github.com/mhinz/vim-galore#completion) | | |
-| [Motions, operators, text objects](https://github.com/mhinz/vim-galore#motions-operators-text-objects) | | |
-| [Autocmds](https://github.com/mhinz/vim-galore#autocmds) | | |
-| [Changelist, jumplist](https://github.com/mhinz/vim-galore#changelist-jumplist) | | |
-| [Undo tree](https://github.com/mhinz/vim-galore#undo-tree) | | |
-| [Quickfix and location lists](https://github.com/mhinz/vim-galore#quickfix-and-location-lists) | | |
-| [Macros](https://github.com/mhinz/vim-galore#macros) | | |
-| [Colorschemes](https://github.com/mhinz/vim-galore#colorschemes) | | |
-| [Folding](https://github.com/mhinz/vim-galore#folding) | | |
-| [Sessions](https://github.com/mhinz/vim-galore#sessions) | | |
-| [Locality](https://github.com/mhinz/vim-galore#locality) | | |
+| [Mapleader](https://github.com/mhinz/vim-galore#mapleader) | 星星丶S1nG | |
+| [Registers](https://github.com/mhinz/vim-galore#registers) | 星星丶S1nG | |
+| [Ranges](https://github.com/mhinz/vim-galore#ranges) | 星星丶S1nG | |
+| [Marks](https://github.com/mhinz/vim-galore#marks) | 星星丶S1nG | |
+| [Completion](https://github.com/mhinz/vim-galore#completion) | 星星丶S1nG | |
+| [Motions, operators, text objects](https://github.com/mhinz/vim-galore#motions-operators-text-objects) | 星星丶S1nG | |
+| [Autocmds](https://github.com/mhinz/vim-galore#autocmds) | 星星丶S1nG | |
+| [Changelist, jumplist](https://github.com/mhinz/vim-galore#changelist-jumplist) | 星星丶S1nG | |
+| [Undo tree](https://github.com/mhinz/vim-galore#undo-tree) | 星星丶S1nG | |
+| [Quickfix and location lists](https://github.com/mhinz/vim-galore#quickfix-and-location-lists) | 星星丶S1nG | |
+| [Macros](https://github.com/mhinz/vim-galore#macros) | 星星丶S1nG | |
+| [Colorschemes](https://github.com/mhinz/vim-galore#colorschemes) | 星星丶S1nG | |
+| [Folding](https://github.com/mhinz/vim-galore#folding) | 星星丶S1nG | |
+| [Sessions](https://github.com/mhinz/vim-galore#sessions) | 星星丶S1nG | |
+| [Locality](https://github.com/mhinz/vim-galore#locality) | 星星丶S1nG | |
 | [Usage](https://github.com/mhinz/vim-galore#usage-1) | | |
 | [Getting help offline](https://github.com/mhinz/vim-galore#getting-help-offline) | | |
 | [Getting help offline (alternative)](https://github.com/mhinz/vim-galore#getting-help-offline-alternative) | | |
