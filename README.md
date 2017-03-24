@@ -83,7 +83,7 @@
 - [查看启动日志](#查看启动日志)
 - [查看运行时日志](#查看运行时日志)
 - [调整日志等级](#调整日志等级)
-- [vim脚本调试](#vim脚本调试)
+- [Vim脚本调试](#vim脚本调试)
 - [语法文件调试](#语法文件调试)
 
 ## [杂项](#杂项-1)
@@ -128,7 +128,7 @@ Moolenaar](https://en.wikipedia.org/wiki/Bram_Moolenaar) 于1991年发布初始�
 
 项目在 [Github](https://github.com/vim/vim) 上开发，项目讨论请订阅 [vim_dev](https://groups.google.com/forum/#!forum/vim_dev) 邮件列表。
 
-通过阅读 [Why, oh WHY, do those #?@! nutheads use vi?](http://www.viemu.com/a-why-vi-vim.html) 来对Vim进行大致的了解。
+通过阅读 [Why, oh WHY, do those #?@! nutheads use vi?](http://www.viemu.com/a-why-vi-vim.html) 来对 Vim 进行大致的了解。
 
 ## Vim 哲学
 
@@ -151,21 +151,21 @@ $ vimtutor
 
 不要因为这个看上去很无聊而跳过，按照此教程多练习。你以前用的 IDE 或者其他编辑器很少是有“模式”概念的，因此一开始你会很难适应模式切换。但是你 Vim 使用的越多，[肌肉记忆](https://en.wikipedia.org/wiki/Muscle_memory) 将越容易形成。
 
-Vim 基于一个 [vi](https://en.wikipedia.org/wiki/Vi) 克隆，叫做 [Stevie](https://en.wikipedia.org/wiki/Stevie_(text_editor))，支持两种运行模式："compatible" 和 "nocompatible"。在兼容模式下运行 vim 意味着使用 vi 的默认设置，而不是 vim 的默认设置。只要你没有新建一个用户的 vimrc 或者使用 `vim -N` 命令启动 vim，那就是在兼容模式下运行 vim！请大家不要在兼容模式下运行 vim。
+Vim 基于一个 [vi](https://en.wikipedia.org/wiki/Vi) 克隆，叫做 [Stevie](https://en.wikipedia.org/wiki/Stevie_(text_editor))，支持两种运行模式："compatible" 和 "nocompatible"。在兼容模式下运行 Vim 意味着使用 vi 的默认设置，而不是 Vim 的默认设置。只要你没有新建一个用户的 vimrc 或者使用 `vim -N` 命令启动 Vim，那就是在兼容模式下运行 Vim！请大家不要在兼容模式下运行 Vim。
 
 下一步
 
-1. 创建你自己的 [vimrc](#精简的vimrc)。
-2. 在第一周准备[备忘录](#cheatsheets)。
-3. 通读[基础](#基础-1) 章节了解Vim还有哪些功能。
-4. 按需学习！vim 是学不完的。如果你遇到了任何问题，先去网上去找解决方案。你的问题可能早就被解决了。VIM 拥有大量的参考文档，知道如何去利用这些参考文档是有必要了：[获取离线帮助](#getting-help-offline)。
-5. 浏览[附加资源](#additional-resources)。
+1. 创建你自己的 [vimrc](#精简的-vimrc)。
+2. 在第一周准备[备忘录](#备忘录)。
+3. 通读[基础](#基础-1)章节了解 Vim 还有哪些功能。
+4. 按需学习！Vim 是学不完的。如果你遇到了任何问题，先去网上去找解决方案。你的问题可能早就被解决了。Vim 拥有大量的参考文档，知道如何去利用这些参考文档是有必要了：[获取离线帮助](#获取离线帮助)。
+5. 浏览[附加资源](#附加资源)。
 
-最后一个建议：使用[插件](#managing-plugins)之前，请先掌握 vim 的基本操作。很多插件都只是对 vim 自带功能的封装。
+最后一个建议：使用[插件](#插件管理)之前，请先掌握 Vim 的基本操作。很多插件都只是对 Vim 自带功能的封装。
 
 ## 精简的 vimrc
 
-用户的 vimrc 配置文件可以放在 `~/.vimrc`，或者为了更好的分离放在 `~/.vim/vimrc`，后者更便于通过版本控制软件备份和同步整个配置，比方说github。
+用户的 vimrc 配置文件可以放在 `~/.vimrc`，或者为了更好的分离放在 `~/.vim/vimrc`，后者更便于通过版本控制软件备份和同步整个配置，比方说 Github。
 
 你可以在网上找到许多精简的 vimrc 配置文件, 我的版本可能并不是最简单的版本，但是我的版本提供了一套我认为良好的，非常适合入门的设置。
 
@@ -179,17 +179,17 @@ Vim 基于一个 [vi](https://en.wikipedia.org/wiki/Vi) 克隆，叫做 [Stevie]
 
 ## 我正在使用什么样的 Vim
 
-使用 `:version` 命令将向你展示当前正在运行的 vim 的所有相关信息，包括它是如何编译的。
+使用 `:version` 命令将向你展示当前正在运行的 Vim 的所有相关信息，包括它是如何编译的。
 
-第一行告诉你这个二进制文件的编译时间和版本号，比如：7.4。接下来的一行呈现 `Included patches: 1-1051`，这是补丁版本包。因此你 vim 确切的版本号是  7.4.1051。
+第一行告诉你这个二进制文件的编译时间和版本号，比如：7.4。接下来的一行呈现 `Included patches: 1-1051`，这是补丁版本包。因此你 Vim 确切的版本号是  7.4.1051。
 
-另一行显示着一些像 `Tiny version without GUI` 或者 `Huge version with GUI` 的信息。很显然这些信息告诉你当前的 vim 是否支持 GUI，例如：从终端中运行 `gvim` 或者从终端模拟器中的 vim 内运行 `:gui` 命令。另一个重要的信息是 `Tiny` 和 `Huge`。Vim 的特性集区分被叫做 `tiny`，`small`，`normal`，`big` and `huge`，所有的都实现不同的功能子集。
+另一行显示着一些像 `Tiny version without GUI` 或者 `Huge version with GUI` 的信息。很显然这些信息告诉你当前的 Vim 是否支持 GUI，例如：从终端中运行 `gvim` 或者从终端模拟器中的 Vim 内运行 `:gui` 命令。另一个重要的信息是 `Tiny` 和 `Huge`。Vim 的特性集区分被叫做 `tiny`，`small`，`normal`，`big` and `huge`，所有的都实现不同的功能子集。
 
 `:version` 主要的输出内容是特性列表。`+clipboard` 意味这剪贴板功能被编译支持了，`-clipboard` 意味着剪贴板特性没有被编译支持。
 
-一些功能特性需要编译支持才能正常工作。例如：为了让 `:prof` 工作，你需要使用 `huge` 模式编译的 vim，因为那种模式启用了 `+profile` 特性。
+一些功能特性需要编译支持才能正常工作。例如：为了让 `:prof` 工作，你需要使用 `huge` 模式编译的 Vim，因为那种模式启用了 `+profile` 特性。
 
-如果你的输出情况并不是那样，并且你是从包管理器安装 vim 的，确保你安装了 `vim-x`，`vim-x11`，`vim-gtk`，`vim-gnome` 这些包或者相似的, 因为这些包通常都是 `huge` 模式编译的。
+如果你的输出情况并不是那样，并且你是从包管理器安装 Vim 的，确保你安装了 `vim-x`，`vim-x11`，`vim-gtk`，`vim-gnome` 这些包或者相似的, 因为这些包通常都是 `huge` 模式编译的。
 
 你也可以运行下面这段代码来测试 Vim 版本以及功能支持：
 
@@ -218,7 +218,7 @@ endif
 - http://michael.peopleofhonoronly.com/vim/vim_cheat_sheet_for_programmers_screen.png
 - http://www.rosipov.com/images/posts/vim-movement-commands-cheatsheet.png
 
-或者在 vim 中快速打开备忘录：[vim-cheat40](https://github.com/lifepillar/vim-cheat40)。
+或者在 Vim 中快速打开备忘录：[vim-cheat40](https://github.com/lifepillar/vim-cheat40)。
 
 # 基础
 
@@ -242,7 +242,7 @@ Vim 是一个文本编辑器。每次文本都是作为**缓冲区**的一部分
 
 ## 已激活，已载入，已列出，已命名 缓冲区
 
-用类似 `vim file1` 的命令启动 vim 。这个文件的内容将会被加载到缓冲区中，你现在有一个**已载入的缓冲区**。如果你在 vim 中保存这个文件，缓冲区内容将会被同步到磁盘上（写回文件中）。
+用类似 `vim file1` 的命令启动 Vim 。这个文件的内容将会被加载到缓冲区中，你现在有一个**已载入的缓冲区**。如果你在 Vim 中保存这个文件，缓冲区内容将会被同步到磁盘上（写回文件中）。
 
 由于这个缓冲区也在一个窗口上显示，所以他也是一个**已激活的缓冲区**。如果你现在通过 `:e file2` 命令加载另一个文件，`file1` 将会变成一个**隐藏的缓冲区**，并且 `file2` 变成已激活缓冲区。
 
@@ -252,9 +252,9 @@ Vim 是一个文本编辑器。每次文本都是作为**缓冲区**的一部分
 
 ## 参数列表
 
-[全局缓冲区列表](#buffers-windows-tabs)是 vim 的特性。在这之前的 vi 中，仅仅只有参数列表，参数列表在 vim 中依旧可以使用。
+[全局缓冲区列表](#缓冲区窗口标签)是 Vim 的特性。在这之前的 vi 中，仅仅只有参数列表，参数列表在 Vim 中依旧可以使用。
 
-每一个通过 shell 命令传递给 vim 的文件名都被记录在一个参数列表中。可以有多个参数列表：默认情况下所有参数都被放在全局参数列表下，但是你可以使用 `:arglocal` 命令去创建一个新的本地窗口的参数列表。
+每一个通过 shell 命令传递给 Vim 的文件名都被记录在一个参数列表中。可以有多个参数列表：默认情况下所有参数都被放在全局参数列表下，但是你可以使用 `:arglocal` 命令去创建一个新的本地窗口的参数列表。
 
 使用 `:args` 命令可以列出当前参数。使用 `:next`，`:previous`，`:first`，`:last` 命令可以在切换在参数列表中的文件。通过使用 `:argadd`，`:argdelete` 或者 `:args` 等命令加上一个文件列表可以改变参数列表。
 
@@ -274,7 +274,7 @@ Vim 是一个文本编辑器。每次文本都是作为**缓冲区**的一部分
 
 ## 按键映射
 
-使用 `:map` 命令家族你可以定义属于你自己的快捷键。该家族的每一个命令都限定在特定的模式下。从技术上来说 vim 自带高达12中模式，其中6种可以被映射。另外一些命令作用于多种模式：
+使用 `:map` 命令家族你可以定义属于你自己的快捷键。该家族的每一个命令都限定在特定的模式下。从技术上来说 Vim 自带高达12中模式，其中6种可以被映射。另外一些命令作用于多种模式：
 
 |    递归    |   非递归      | 模式                            |
 |-----------|---------------|----------------------------------|
