@@ -190,7 +190,7 @@ Vim 基于一个 [vi](https://en.wikipedia.org/wiki/Vi) 克隆， 叫做 [Stevie
 
 你也可以运行下面这段代码来测试 Vim 版本以及功能支持：
 
-```viml
+```vim
 " Do something if running at least Vim 7.4.42 with +profile enabled.
 if (v:version > 704 || v:version == 704 && has('patch42')) && has('profile')
   " do stuff
@@ -284,7 +284,7 @@ Vim 是一个文本编辑器。每次文本都是作为**缓冲区**的一部分
 
 例如：这个自定义的快捷键只在普通模式下工作，
 
-```viml
+```vim
 :nmap <space> :echo "foo"<cr>
 ```
 
