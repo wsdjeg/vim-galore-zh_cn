@@ -20,6 +20,8 @@ function! s:check(...) abort
         let g:wsd = s:qf
         call s:update_qf(s:qf)
         copen
+    else
+        call setqflist([])
     endif
 endfunction
 
