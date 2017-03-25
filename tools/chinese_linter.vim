@@ -1,9 +1,4 @@
 scriptencoding utf-8
-let s:file = []
-let s:linenr = 0
-let s:colnr = 0
-let s:qf = []
-let s:bufnr = 0
 let s:ERRORS = {
             \ 'E001' : ['中文字符后使用英文标点', '[^a-zA-Z],'],
             \ }
@@ -12,6 +7,9 @@ command! -nargs=? CheckChinese call s:check(<q-args>)
 function! s:check(...) abort
     let s:file = getline(1,'$')
     let s:bufnr = bufnr('$')
+    let s:linenr = 0
+    let s:colnr = 0
+    let s:qf = []
     for l:line in s:file
         let s:linenr += 1
         call s:parser(l:line)
