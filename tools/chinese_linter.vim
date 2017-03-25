@@ -5,12 +5,13 @@ let s:colnr = 0
 let s:qf = []
 let s:bufnr = 0
 let s:ERRORS = {
-            \ 'E001' : ['中文字符后使用英文标点', '点'],
+            \ 'E001' : ['中文字符后使用英文标点', '[^a-zA-Z],'],
             \ }
 command! -nargs=? CheckChinese call s:check(<q-args>)
 
 function! s:check(...) abort
     let s:file = getline(1,'$')
+    let s:bufnr = bufnr('$')
     for l:line in s:file
         let s:linenr += 1
         call s:parser(l:line)
@@ -18,6 +19,7 @@ function! s:check(...) abort
     let s:linenr = 0
     let s:colnr = 0
     if !empty(s:qf)
+        let g:wsd = s:qf
         call s:update_qf(s:qf)
         copen
     endif
@@ -31,7 +33,7 @@ endfunction
 
 function! s:find_error(nr, line) abort
     let l:error = s:ERRORS[a:nr]
-    let s:colnr = stridx(a:line, l:error[1])
+    let s:colnr = match(a:line, l:error[1])
     if s:colnr != -1
         call s:add_to_qf(a:nr)
     endif
@@ -42,7 +44,7 @@ function! s:add_to_qf(nr) abort
                 \ 'bufnr' : s:bufnr,
                 \ 'lnum' : s:linenr,
                 \ 'col' : s:colnr,
-                \ 'vcol' : 1,
+                \ 'vcol' : 0,
                 \ 'text' : s:ERRORS[a:nr][0],
                 \ 'nr' : a:nr,
                 \ 'type' : 'E'
