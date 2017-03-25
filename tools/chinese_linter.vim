@@ -18,6 +18,7 @@ let s:ERRORS = {
             \ 'E002' : ['中英文之间没有空格', '\(' . s:chars_cn . s:chars . '\)\|\(' . s:chars . s:chars_cn . '\)'],
             \ 'E003' : ['中文与数字之间没有空格', '\(' . s:chars_cn . s:numbers . '\)\|\(' . s:numbers . s:chars_cn . '\)'],
             \ 'E004' : ['中文标点之后存在空格',  s:punctuation_cn . '\s\+'],
+            \ 'E005' : ['行尾含有空格', '\s\+$'],
             \ }
 
 command! -nargs=? CheckChinese call s:check(<q-args>)
