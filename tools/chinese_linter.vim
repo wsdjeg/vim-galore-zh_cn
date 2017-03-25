@@ -33,7 +33,7 @@ endfunction
 
 function! s:find_error(nr, line) abort
     let l:error = s:ERRORS[a:nr]
-    let s:colnr = match(a:line, l:error[1])
+    let s:colnr = matchend(a:line, l:error[1])
     if s:colnr != -1
         call s:add_to_qf(a:nr)
     endif
