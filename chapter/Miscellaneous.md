@@ -1,6 +1,6 @@
 # 杂项
 
-## Additional resources
+## 附加资源
 
 ## Vim distributions
 
