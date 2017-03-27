@@ -7,5 +7,5 @@
 
 键盘布局: [请点击](https://raw.githubusercontent.com/mhinz/vim-galore/master/contents/images/content-adm-3a-layout.jpg)
 
-这也告诉了我们为什么Unix系统会以`~`代表根目录。
+这也告诉了我们为什么Unix系统会以`~`代表主目录。
 
