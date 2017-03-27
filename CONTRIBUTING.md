@@ -47,24 +47,24 @@ PR: PR的链接
 | [Folding](https://github.com/mhinz/vim-galore#folding) | 星星丶S1nG | |
 | [Sessions](https://github.com/mhinz/vim-galore#sessions) | 星星丶S1nG | |
 | [Locality](https://github.com/mhinz/vim-galore#locality) | 星星丶S1nG | |
-| [Usage](https://github.com/mhinz/vim-galore#usage-1) | | |
-| [Getting help offline](https://github.com/mhinz/vim-galore#getting-help-offline) | | |
-| [Getting help offline (alternative)](https://github.com/mhinz/vim-galore#getting-help-offline-alternative) | | |
-| [Getting help online](https://github.com/mhinz/vim-galore#getting-help-online) | | |
-| [Autocmds in practice](https://github.com/mhinz/vim-galore#autocmds-in-practice) | | |
-| [User events](https://github.com/mhinz/vim-galore#user-events) | | |
-| [Nested autocmds](https://github.com/mhinz/vim-galore#nested-autocmds) | | |
-| [Clipboard](https://github.com/mhinz/vim-galore#clipboard) | | |
-| [Clipboard usage (Windows, OSX)](https://github.com/mhinz/vim-galore#clipboard-usage-windows-osx) | | |
-| [Clipboard usage (Linux, BSD, ...)](https://github.com/mhinz/vim-galore#clipboard-usage-linux-bsd-) | | |
-| [Restore cursor position when opening file](https://github.com/mhinz/vim-galore#restore-cursor-position-when-opening-file) | | |
-| [Handling backup, swap, undo, and viminfo files](https://github.com/mhinz/vim-galore#handling-backup-swap-undo-and-viminfo-files) | | |
-| [Editing remote files](https://github.com/mhinz/vim-galore#editing-remote-files) | | |
-| [Managing plugins](https://github.com/mhinz/vim-galore#managing-plugins) | | |
-| [Block insert](https://github.com/mhinz/vim-galore#block-insert) | | |
-| [Running external programs and using filters](https://github.com/mhinz/vim-galore#running-external-programs-and-using-filters) | | |
-| [Cscope](https://github.com/mhinz/vim-galore#cscope) | | |
-| [MatchIt](https://github.com/mhinz/vim-galore#matchit) | | |
+| [Usage](https://github.com/mhinz/vim-galore#usage-1) | hotleave | |
+| [Getting help offline](https://github.com/mhinz/vim-galore#getting-help-offline) | hotleave | |
+| [Getting help offline (alternative)](https://github.com/mhinz/vim-galore#getting-help-offline-alternative) | hotleave | |
+| [Getting help online](https://github.com/mhinz/vim-galore#getting-help-online) | hotleave | |
+| [Autocmds in practice](https://github.com/mhinz/vim-galore#autocmds-in-practice) | hotleave | |
+| [User events](https://github.com/mhinz/vim-galore#user-events) | hotleave | |
+| [Nested autocmds](https://github.com/mhinz/vim-galore#nested-autocmds) | hotleave | |
+| [Clipboard](https://github.com/mhinz/vim-galore#clipboard) | hotleave | |
+| [Clipboard usage (Windows, OSX)](https://github.com/mhinz/vim-galore#clipboard-usage-windows-osx) | hotleave | |
+| [Clipboard usage (Linux, BSD, ...)](https://github.com/mhinz/vim-galore#clipboard-usage-linux-bsd-) | hotleave | |
+| [Restore cursor position when opening file](https://github.com/mhinz/vim-galore#restore-cursor-position-when-opening-file) | hotleave | |
+| [Handling backup, swap, undo, and viminfo files](https://github.com/mhinz/vim-galore#handling-backup-swap-undo-and-viminfo-files) | hotleave | |
+| [Editing remote files](https://github.com/mhinz/vim-galore#editing-remote-files) | hotleave | |
+| [Managing plugins](https://github.com/mhinz/vim-galore#managing-plugins) | hotleave | |
+| [Block insert](https://github.com/mhinz/vim-galore#block-insert) | hotleave | |
+| [Running external programs and using filters](https://github.com/mhinz/vim-galore#running-external-programs-and-using-filters) | hotleave | |
+| [Cscope](https://github.com/mhinz/vim-galore#cscope) | hotleave | |
+| [MatchIt](https://github.com/mhinz/vim-galore#matchit) | hotleave | |
 | [Tips](https://github.com/mhinz/vim-galore#tips-1) | | |
 | [Saner behavior of n and N](https://github.com/mhinz/vim-galore#saner-behavior-of-n-and-n) | | |
 | [Saner command-line history](https://github.com/mhinz/vim-galore#saner-command-line-history) | | |
