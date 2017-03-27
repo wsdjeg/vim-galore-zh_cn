@@ -4,11 +4,11 @@
 
 ## Vim发行版
 
-## 标准插件
+## 内置插件
 
-## Map CapsLock to Control
+## 映射大写锁定键（CapsLock）到控制键（Ctrl）
 
-## Easter eggs
+## 复活节彩蛋
 
-## Why hjkl for navigation?
+## 为什么用hjkl移动光标?
 
