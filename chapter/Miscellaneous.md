@@ -2,9 +2,9 @@
 
 ## 附加资源
 
-## Vim distributions
+## Vim发行版
 
-## Standard plugins
+## 标准插件
 
 ## Map CapsLock to Control
 
