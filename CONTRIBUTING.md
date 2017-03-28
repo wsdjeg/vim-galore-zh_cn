@@ -65,22 +65,22 @@ PR: PR的链接
 | [Running external programs and using filters](https://github.com/mhinz/vim-galore#running-external-programs-and-using-filters) | hotleave | |
 | [Cscope](https://github.com/mhinz/vim-galore#cscope) | hotleave | |
 | [MatchIt](https://github.com/mhinz/vim-galore#matchit) | hotleave | |
-| [Tips](https://github.com/mhinz/vim-galore#tips-1) | | |
-| [Saner behavior of n and N](https://github.com/mhinz/vim-galore#saner-behavior-of-n-and-n) | | |
-| [Saner command-line history](https://github.com/mhinz/vim-galore#saner-command-line-history) | | |
-| [Saner CTRL-L](https://github.com/mhinz/vim-galore#saner-ctrl-l) | | |
-| [Disable audible and visual bells](https://github.com/mhinz/vim-galore#disable-audible-and-visual-bells) | | |
-| [Quickly move current line](https://github.com/mhinz/vim-galore#quickly-move-current-line) | | |
-| [Quickly add empty lines](https://github.com/mhinz/vim-galore#quickly-add-empty-lines) | | |
-| [Quickly edit your macros](https://github.com/mhinz/vim-galore#quickly-edit-your-macros) | | |
-| [Quickly jump to header or source file](https://github.com/mhinz/vim-galore#quickly-jump-to-header-or-source-file) | | |
-| [Quickly change font size in GUI](https://github.com/mhinz/vim-galore#quickly-change-font-size-in-gui) | | |
-| [Change cursor style dependent on mode](https://github.com/mhinz/vim-galore#change-cursor-style-dependent-on-mode) | | |
-| [Don't lose selection when shifting sidewards](https://github.com/mhinz/vim-galore#dont-lose-selection-when-shifting-sidewards) | | |
-| [Reload a file on saving](https://github.com/mhinz/vim-galore#reload-a-file-on-saving) | | |
-| [Smarter cursorline](https://github.com/mhinz/vim-galore#smarter-cursorline) | | |
-| [Faster keyword completion](https://github.com/mhinz/vim-galore#faster-keyword-completion) | | |
-| [Cosmetic changes to colorschemes](https://github.com/mhinz/vim-galore#cosmetic-changes-to-colorschemes) | | |
+| [Tips](https://github.com/mhinz/vim-galore#tips-1) | 星星丶S1nG | |
+| [Saner behavior of n and N](https://github.com/mhinz/vim-galore#saner-behavior-of-n-and-n) | 星星丶S1nG | |
+| [Saner command-line history](https://github.com/mhinz/vim-galore#saner-command-line-history) | 星星丶S1nG | |
+| [Saner CTRL-L](https://github.com/mhinz/vim-galore#saner-ctrl-l) | 星星丶S1nG | |
+| [Disable audible and visual bells](https://github.com/mhinz/vim-galore#disable-audible-and-visual-bells) | 星星丶S1nG | |
+| [Quickly move current line](https://github.com/mhinz/vim-galore#quickly-move-current-line) | 星星丶S1nG | |
+| [Quickly add empty lines](https://github.com/mhinz/vim-galore#quickly-add-empty-lines) | 星星丶S1nG | |
+| [Quickly edit your macros](https://github.com/mhinz/vim-galore#quickly-edit-your-macros) | 星星丶S1nG | |
+| [Quickly jump to header or source file](https://github.com/mhinz/vim-galore#quickly-jump-to-header-or-source-file) | 星星丶S1nG | |
+| [Quickly change font size in GUI](https://github.com/mhinz/vim-galore#quickly-change-font-size-in-gui) | 星星丶S1nG | |
+| [Change cursor style dependent on mode](https://github.com/mhinz/vim-galore#change-cursor-style-dependent-on-mode) | 星星丶S1nG | |
+| [Don't lose selection when shifting sidewards](https://github.com/mhinz/vim-galore#dont-lose-selection-when-shifting-sidewards) | 星星丶S1nG | |
+| [Reload a file on saving](https://github.com/mhinz/vim-galore#reload-a-file-on-saving) | 星星丶S1nG | |
+| [Smarter cursorline](https://github.com/mhinz/vim-galore#smarter-cursorline) | 星星丶S1nG | |
+| [Faster keyword completion](https://github.com/mhinz/vim-galore#faster-keyword-completion) | 星星丶S1nG | |
+| [Cosmetic changes to colorschemes](https://github.com/mhinz/vim-galore#cosmetic-changes-to-colorschemes) | 星星丶S1nG | |
 | [Commands](https://github.com/mhinz/vim-galore#commands-1) | | |
 | [:global and :vglobal](https://github.com/mhinz/vim-galore#global-and-vglobal) - Execute a command on all matching lines. | | |
 | [:normal and :execute](https://github.com/mhinz/vim-galore#normal-and-execute) - The scripting dream team. | | |
