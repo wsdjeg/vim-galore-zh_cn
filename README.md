@@ -60,8 +60,8 @@
 
 ## [技巧](#技巧-1)
 
-- [聪明的使用 n 和 N](#聪明的使用-n-和-n)
-- [聪明的使用命令行历史](#聪明的使用命令行历史)
+- [聪明地使用 n 和 N](#聪明地使用-n-和-n)
+- [聪明地使用命令行历史](#聪明地使用命令行历史)
 - [智能 Ctrl-l](#智能-ctrl-l)
 - [禁用错误报警声音和图标](#禁用错误报警声音和图标)
 - [快速移动当前行](#快速移动当前行)
@@ -72,8 +72,9 @@
 - [根据模式改变光标类型](#根据模式改变光标类型)
 - [防止水平滑动的时候失去选择](#防止水平滑动的时候失去选择)
 - [重新载入保存文件](#重新载入保存文件)
-- [智能当前行](#智能当前行)
+- [更加智能的当前行高亮](#更加智能的当前行高亮)
 - [更快的关键字补全](#更快的关键字补全)
+- [改变颜色主题的默认外观](#改变颜色主题的默认外观)
 
 ## [命令](#命令-1)
 
@@ -1408,20 +1409,179 @@ autocmd FileType python let b:match_words = '\<if\>:\<elif\>:\<else\>'
 ```
 
 # 技巧
-## 聪明的使用 n 和 N
-## 聪明的使用命令行历史
+
+## 聪明地使用 n 和 N
+
+<kbd>n</kbd> 与 <kbd>N</kbd> 的实际跳转方向取决于使用 `/` 还是 `?` 来执行搜索，其中 `/` 是向后搜索，`?` 是向前搜索。一开始我（原作者）觉得这里很难理解。
+
+如果你希望 <kbd>n</kbd> 始终为向后搜索，<kbd>N</kbd> 始终为向前搜索，那么只需要这样设置：
+
+```vim
+nnoremap <expr> n  'Nn'[v:searchforward]
+nnoremap <expr> N  'nN'[v:searchforward]
+```
+
+## 聪明地使用命令行历史
+
+我（原作者）习惯用 <kbd>Ctrl</kbd> + <kbd>p</kbd> 和 <kbd>Ctrl</kbd> + <kbd>n</kbd> 来跳转到上一个/下一个条目。其实这个操作也可以用在命令行中，快速调出之前执行过的命令。
+
+不仅如此，你会发现 <kbd>上</kbd> 和 <kbd>下</kbd> 其实更智能。如果命令行中已经存在了一些文字，我们可以通过按方向键来匹配已经存在的内容。比如，命令行中现在是 `:echo`，这时候我们按 <kbd>上</kbd>，就会帮我们补全成 `:echo "Vim rocks!"`（前提是，之前输入过这段命令）。
+
+当然，Vim 用户都不愿意去按方向键，事实上我们也不需要去按，只需要设置这样的映射：
+
+```vim
+cnoremap <c-n> <down>
+cnoremap <c-p> <up>
+```
+
+这个功能，我（原作者）每天都要用很多次。
+
 ## 智能 Ctrl-l
+
+<kbd>Ctrl</kbd> + <kbd>l</kbd> 的默认功能是清空并「重新绘制」当前的屏幕，就和 `:redraw!` 的功能一样。下面的这个映射就是执行重新绘制，并且取消通过 `/` 和 `?` 匹配字符的高亮，而且还可以修复代码高亮问题（有时候，由于多个代码高亮的脚本重叠，或者规则过于复杂，Vim 的代码高亮显示会出现问题）。不仅如此，还可以刷新「比较模式」（请参阅 `:help diff-mode`）的代码高亮：
+
+```vim
+nnoremap <leader>l :nohlsearch<cr>:diffupdate<cr>:syntax sync fromstart<cr><c-l>
+```
+
 ## 禁用错误报警声音和图标
+
+```vim
+set noerrorbells
+set novisualbell
+set t_vb=
+```
+
+请参阅 [Vim Wiki: Disable beeping](http://vim.wikia.com/wiki/Disable_beeping)。
+
 ## 快速移动当前行
+
+有时，我（原作者）想要快速把当前行上移或下移一行，只需要这样设置映射：
+
+```vim
+nnoremap [e  :<c-u>execute 'move -1-'. v:count1<cr>
+nnoremap ]e  :<c-u>execute 'move +'. v:count1<cr>
+```
+
+这个映射，同样可以搭配数字使用，比如连续按下 <kbd>2</kbd> <kbd>]</kbd> <kbd>e</kbd> 就可以把当前行向下移动两行。
+
 ## 快速添加空行
+
+```vim
+nnoremap [<space>  :<c-u>put! =repeat(nr2char(10), v:count1)<cr>'[
+nnoremap ]<space>  :<c-u>put =repeat(nr2char(10), v:count1)<cr>
+```
+
+设置之后，连续按下 <kbd>5</kbd> <kbd>[</kbd> <kbd>空格</kbd> 在当前行上方插入 5 个空行。
+
 ## 快速编辑自定义宏
+
+这个功能真的很实用！下面的映射，就是在一个新的命令行窗口中读取某一个寄存器（默认为 `*`）。当你设置完成后，只需要按下 <kbd>回车</kbd> 即可让它生效。
+
+在录制宏的时候，我经常用这个来更改拼写错误。
+
+```vim
+nnoremap <leader>m  :<c-u><c-r><c-r>='let @'. v:register .' = '. string(getreg(v:register))<cr><c-f><left>
+```
+
+只需要连续按下 <kbd>leader</kbd> <kbd>m</kbd> 或者 <kbd>"</kbd> <kbd>leader</kbd> <kbd>m</kbd> 就可以调用了。
+
+请注意，这里之所以要写成 `<c-r><c-r>` 是为了确保 `<c-r>` 执行了。请参阅 `:h c_^R^R`
+
 ## 快速跳转到源(头)文件
+
+这个技巧可以用在多种文件类型中。当你从源文件或者头文件中切换到其他文件的时候，这个技巧可以设置「文件标记」（请参阅 `:h marks`），然后你就可以通过连续按下 <kbd>'</kbd> <kbd>C</kbd> 或者 <kbd>'</kbd> <kbd>H</kbd> 快速跳转回去（请参阅 `:h 'A`）。
+
+```vim
+autocmd BufLeave *.{c,cpp} mark C
+autocmd BufLeave *.h       mark H
+```
+
+**注意**：由于这个标记是设置在 viminfo 文件中，因此请先确认 `:set viminfo?` 中包含了 `:h viminfo-'`。
+
 ## 在 GUI 中快速改变字体大小
+
+印象中，我（原作者）记得一下代码是来自 tpope's 的配置文件：
+
+```vim
+command! Bigger  :let &guifont = substitute(&guifont, '\d\+$', '\=submatch(0)+1', '')
+command! Smaller :let &guifont = substitute(&guifont, '\d\+$', '\=submatch(0)-1', '')
+```
+
 ## 根据模式改变光标类型
+
+我（原作者）习惯在普通模式下用块状光标，在插入模式下用条状光标（形状类似英文 "I" 的样子），然后在替换模式中使用下划线形状的光标。
+
+```vim
+if empty($TMUX)
+  let &t_SI = "\<Esc>]50;CursorShape=1\x7"
+  let &t_EI = "\<Esc>]50;CursorShape=0\x7"
+  let &t_SR = "\<Esc>]50;CursorShape=2\x7"
+else
+  let &t_SI = "\<Esc>Ptmux;\<Esc>\<Esc>]50;CursorShape=1\x7\<Esc>\\"
+  let &t_EI = "\<Esc>Ptmux;\<Esc>\<Esc>]50;CursorShape=0\x7\<Esc>\\"
+  let &t_SR = "\<Esc>Ptmux;\<Esc>\<Esc>]50;CursorShape=2\x7\<Esc>\\"
+endif
+```
+
+原理很简单，就是让 Vim 在进入和离开插入模式的时候，输出一些序列，请参考 [escape sequence](https://en.wikipedia.org/wiki/Escape_sequence)。Vim 与终端之间的中间层，比如 [tmux](https://tmux.github.io) 会处理并执行上面的代码。
+
+但上面这个还是有一个缺点的。终端环境的内部原理不尽相同，对于序列的处理方式也稍有不同。因此，上面的代码可能无法在你的环境中运行。甚至，你的运行环境也有可能不支持其他光标形状，请参阅你的 Vim 运行环境的文档。
+
+好消息是，上面这个代码，可以在 iTerm2 中完美运行。
+
 ## 防止水平滑动的时候失去选择
+
+如果你选中了一行或多行，那么你可以用 <kbd><</kbd> 或 <kbd>></kbd> 来调整他们的缩进。但在调整之后就不会保持选中状态了。
+
+你可以连续按下 <kbd>g</kbd> <kbd>v</kbd> 来重新选中他们，请参考 `:h gv`。因此，你可以这样来配置映射：
+
+```vim
+xnoremap <  <gv
+xnoremap >  >gv
+```
+
+设置好之后，在可视模式中使用 `>>>>>` 就不会再出现上面提到的问题了。
+
 ## 重新载入保存文件
-## 智能当前行
+
+通过[自动命令](#自动命令)，你可以在保存文件的同时触发一些其他功能。比如，如果这个文件是一个配置文件，那么就重新载入；或者你还可以对这个文件进行代码风格检查。
+
+```vim
+autocmd BufWritePost $MYVIMRC source $MYVIMRC
+autocmd BufWritePost ~/.Xdefaults call system('xrdb ~/.Xdefaults')
+```
+
+## 更加智能的当前行高亮
+
+我（原作者）很喜欢「当前行高亮」（请参阅 `:h cursorline`）这个功能，但我只想让这个效果出现在当前窗口，而且在插入模式中关闭这个效果：
+
+```vim
+autocmd InsertLeave,WinEnter * set cursorline
+autocmd InsertEnter,WinLeave * set nocursorline
+```
+
 ## 更快的关键字补全
+
+关键字补全（`<c-n>` 或 `<c-p>`）功能的工作方式是，无论 `'complete'` 设置中有什么，它都会尝试着去补全。这样，一些我们用不到的标签也会出现在补全列表中。而且，它会扫描很多文件，有时候运行起来非常慢。如果你不需要这些，那么完全可以像这样把它们禁用掉：
+
+```vim
+set complete-=i   " disable scanning included files
+set complete-=t   " disable searching tags
+```
+## 改变颜色主题的默认外观
+
+如果你想让状态栏在颜色主题更改后依然保持灰色，那么只需要这样设置：
+
+```vim
+autocmd ColorScheme * highlight StatusLine ctermbg=darkgray cterm=NONE guibg=darkgray gui=NONE
+```
+
+同理，如果你想让某一个颜色主题（比如 "lucius"）的状态栏为灰色（请使用 `:echo color_name` 来查看当前可用的所有颜色主题）：
+
+```vim
+autocmd ColorScheme lucius highlight StatusLine ctermbg=darkgray cterm=NONE guibg=darkgray gui=NONE
+```
 
 # 命令
 ## :global - 在所有匹配行执行命令
