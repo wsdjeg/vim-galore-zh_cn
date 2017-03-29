@@ -81,10 +81,10 @@ PR: PR的链接
 | [Smarter cursorline](https://github.com/mhinz/vim-galore#smarter-cursorline) | 星星丶S1nG | |
 | [Faster keyword completion](https://github.com/mhinz/vim-galore#faster-keyword-completion) | 星星丶S1nG | |
 | [Cosmetic changes to colorschemes](https://github.com/mhinz/vim-galore#cosmetic-changes-to-colorschemes) | 星星丶S1nG | |
-| [Commands](https://github.com/mhinz/vim-galore#commands-1) | | |
-| [:global and :vglobal](https://github.com/mhinz/vim-galore#global-and-vglobal) - Execute a command on all matching lines. | | |
-| [:normal and :execute](https://github.com/mhinz/vim-galore#normal-and-execute) - The scripting dream team. | | |
-| [:redir](https://github.com/mhinz/vim-galore#redir) - Redirect messages. | | |
+| [Commands](https://github.com/mhinz/vim-galore#commands-1) | hotleave | |
+| [:global and :vglobal](https://github.com/mhinz/vim-galore#global-and-vglobal) - Execute a command on all matching lines. | hotleave | |
+| [:normal and :execute](https://github.com/mhinz/vim-galore#normal-and-execute) - The scripting dream team. | hotleave | |
+| [:redir](https://github.com/mhinz/vim-galore#redir) - Redirect messages. | hotleave | |
 | [Debugging](https://github.com/mhinz/vim-galore#debugging-1) | | |
 | [General tips](https://github.com/mhinz/vim-galore#general-tips) | | |
 | [Verbosity](https://github.com/mhinz/vim-galore#verbosity) | | |
