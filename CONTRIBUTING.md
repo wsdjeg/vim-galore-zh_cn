@@ -81,10 +81,10 @@ PR: PR的链接
 | [Smarter cursorline](https://github.com/mhinz/vim-galore#smarter-cursorline) | 星星丶S1nG | |
 | [Faster keyword completion](https://github.com/mhinz/vim-galore#faster-keyword-completion) | 星星丶S1nG | |
 | [Cosmetic changes to colorschemes](https://github.com/mhinz/vim-galore#cosmetic-changes-to-colorschemes) | 星星丶S1nG | |
-| [Commands](https://github.com/mhinz/vim-galore#commands-1) | | |
-| [:global and :vglobal](https://github.com/mhinz/vim-galore#global-and-vglobal) - Execute a command on all matching lines. | | |
-| [:normal and :execute](https://github.com/mhinz/vim-galore#normal-and-execute) - The scripting dream team. | | |
-| [:redir](https://github.com/mhinz/vim-galore#redir) - Redirect messages. | | |
+| [Commands](https://github.com/mhinz/vim-galore#commands-1) | hotleave | |
+| [:global and :vglobal](https://github.com/mhinz/vim-galore#global-and-vglobal) - Execute a command on all matching lines. | hotleave | |
+| [:normal and :execute](https://github.com/mhinz/vim-galore#normal-and-execute) - The scripting dream team. | hotleave | |
+| [:redir](https://github.com/mhinz/vim-galore#redir) - Redirect messages. | hotleave | |
 | [Debugging](https://github.com/mhinz/vim-galore#debugging-1) | | |
 | [General tips](https://github.com/mhinz/vim-galore#general-tips) | | |
 | [Verbosity](https://github.com/mhinz/vim-galore#verbosity) | | |
@@ -99,12 +99,12 @@ PR: PR的链接
 | [Map CapsLock to Control](https://github.com/mhinz/vim-galore#map-capslock-to-control) | | |
 | [Easter eggs](https://github.com/mhinz/vim-galore#easter-eggs) | | |
 | [Why hjkl for navigation?](https://github.com/mhinz/vim-galore#why-hjkl-for-navigation) | | |
-| [Common problems](https://github.com/mhinz/vim-galore#common-problems-1) | | |
-| [Editing small files is slow](https://github.com/mhinz/vim-galore#editing-small-files-is-slow) | | |
-| [Editing huge files is slow](https://github.com/mhinz/vim-galore#editing-huge-files-is-slow) | | |
-| [Bracketed paste (or why do I have to set 'paste' all the time?)](https://github.com/mhinz/vim-galore#bracketed-paste-or-why-do-i-have-to-set-paste-all-the-time) | | |
-| [Delays when using escape key in terminal](https://github.com/mhinz/vim-galore#delays-when-using-escape-key-in-terminal) | | |
-| [Function search undo](https://github.com/mhinz/vim-galore#function-search-undo) | | |
+| [Common problems](https://github.com/mhinz/vim-galore#common-problems-1) | hotleave | |
+| [Editing small files is slow](https://github.com/mhinz/vim-galore#editing-small-files-is-slow) | hotleave | |
+| [Editing huge files is slow](https://github.com/mhinz/vim-galore#editing-huge-files-is-slow) | hotleave | |
+| [Bracketed paste (or why do I have to set 'paste' all the time?)](https://github.com/mhinz/vim-galore#bracketed-paste-or-why-do-i-have-to-set-paste-all-the-time) | hotleave | |
+| [Delays when using escape key in terminal](https://github.com/mhinz/vim-galore#delays-when-using-escape-key-in-terminal) | hotleave | |
+| [Function search undo](https://github.com/mhinz/vim-galore#function-search-undo) | hotleave | |
 | [Technical quirks](https://github.com/mhinz/vim-galore#technical-quirks-1) | | |
 | [Newline used for NUL](https://github.com/mhinz/vim-galore#newline-used-for-nul) | | |
 | [List of colorschemes](https://github.com/mhinz/vim-galore#list-of-colorschemes-1) | | |
