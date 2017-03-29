@@ -99,12 +99,12 @@ PR: PR的链接
 | [Map CapsLock to Control](https://github.com/mhinz/vim-galore#map-capslock-to-control) | | |
 | [Easter eggs](https://github.com/mhinz/vim-galore#easter-eggs) | | |
 | [Why hjkl for navigation?](https://github.com/mhinz/vim-galore#why-hjkl-for-navigation) | | |
-| [Common problems](https://github.com/mhinz/vim-galore#common-problems-1) | | |
-| [Editing small files is slow](https://github.com/mhinz/vim-galore#editing-small-files-is-slow) | | |
-| [Editing huge files is slow](https://github.com/mhinz/vim-galore#editing-huge-files-is-slow) | | |
-| [Bracketed paste (or why do I have to set 'paste' all the time?)](https://github.com/mhinz/vim-galore#bracketed-paste-or-why-do-i-have-to-set-paste-all-the-time) | | |
-| [Delays when using escape key in terminal](https://github.com/mhinz/vim-galore#delays-when-using-escape-key-in-terminal) | | |
-| [Function search undo](https://github.com/mhinz/vim-galore#function-search-undo) | | |
+| [Common problems](https://github.com/mhinz/vim-galore#common-problems-1) | hotleave | |
+| [Editing small files is slow](https://github.com/mhinz/vim-galore#editing-small-files-is-slow) | hotleave | |
+| [Editing huge files is slow](https://github.com/mhinz/vim-galore#editing-huge-files-is-slow) | hotleave | |
+| [Bracketed paste (or why do I have to set 'paste' all the time?)](https://github.com/mhinz/vim-galore#bracketed-paste-or-why-do-i-have-to-set-paste-all-the-time) | hotleave | |
+| [Delays when using escape key in terminal](https://github.com/mhinz/vim-galore#delays-when-using-escape-key-in-terminal) | hotleave | |
+| [Function search undo](https://github.com/mhinz/vim-galore#function-search-undo) | hotleave | |
 | [Technical quirks](https://github.com/mhinz/vim-galore#technical-quirks-1) | | |
 | [Newline used for NUL](https://github.com/mhinz/vim-galore#newline-used-for-nul) | | |
 | [List of colorschemes](https://github.com/mhinz/vim-galore#list-of-colorschemes-1) | | |
