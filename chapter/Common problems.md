@@ -1,11 +1,11 @@
-# Common problems
+# 常见问题
 
-## Editing small files is slow
+## 编辑小文件很慢
 
-## Editing huge files is slow
+## 编辑大文件很慢
 
-## Bracketed paste (or why do I have to set 'paste' all the time?)
+## 相同部分粘贴 (要不为什么我总要设置‘粘贴’？)
 
-## Delays when using escape key in terminal
+## 使用终端中 Esc 键时的延迟
 
-## Function search undo
+## 无法重复函数中执行的搜索
