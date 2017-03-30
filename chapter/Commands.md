@@ -3,13 +3,13 @@
 下面的命令都比较有用，最好了解一下。用 `:h :<command name>` 来了解更多关于它们的信息，如：`:h :global`。
 
 
-### :global 和 :vglobal
+### :global 和 :vglobal - 在所有匹配行执行命令
 
 在所有符合条件的行上执行某个命令。如： `:global /regexp/ print` 会在所有包含 "regexp" 的行上执行 `print` 命令（译者注：regexp 有正则表达式的意思，该命令同样支持正则表达式，在所有符合正则表达式的行上执行指定的命令）。
 
-趣闻：你们可能都知道老牌的 grep 命令，一个由 Ken Thompson 编写的过滤程序。它是干什么用的呢？它会输出所有符合指定正则表达式的行！现在猜一下 `:global /regexp/ print` 的简写形式是什么？没错！就是 `:g/re/p` 。 Ken Thompsom 在编写 grep 程序的时候是受了 vi `:global` 的启发。（译者注： https://robots.thoughtbot.com/how-grep-got-its-name）
+趣闻：你们可能都知道老牌的 grep 命令，一个由 Ken Thompson 编写的过滤程序。它是干什么用的呢？它会输出所有匹配指定正则表达式的行！现在猜一下 `:global /regexp/ print` 的简写形式是什么？没错！就是 `:g/re/p` 。 Ken Thompsom 在编写 grep 程序的时候是受了 vi `:global` 的启发。（译者注： https://robots.thoughtbot.com/how-grep-got-its-name）
 
-它的名字是 `:global`，理应仅作用在所有行上，但是它也是可以带范围限制的。假设你想使用 `:delete` 命令删除从当前行到下一个空行（由正则表达式 `^$` 匹配）范围内所有包含 "foo" 的行：
+既然它的名字是 `:global`，理应仅作用在所有行上，但是它也是可以带范围限制的。假设你想使用 `:delete` 命令删除从当前行到下一个空行（由正则表达式 `^$` 匹配）范围内所有包含 "foo" 的行：
 
 ```vim
 :,/^$/g/foo/d
@@ -19,13 +19,14 @@
 
 
 
-### :normal 和 :execute
+### :normal 和 :execute - 脚本梦之队
 
 这两个命令经常在 Vim 的脚本里使用。
 
-`:normal` 用于使用命令行进行普通模式的映射。如：`:normal! 4j` 会令光标下移4行（由于加了"!"，所以不会使用自定义的映射 "j"）。
+借助于 `:normal` 可以在命令行里进行普通模式的映射。如：`:normal! 4j` 会令光标下移 4 行（由于加了"!"，所以不会使用自定义的映射 "j"）。
 
 需要注意的是 `:normal` 同样支持数量，故 `:%norm! Iabc` 会在所有行前加上 "abc"。
+（原文：Mind that :normal also takes a count, so :%norm! Iabc would prepend "abc" to every line.）
 
 借助于 `:execute` 可以将命令和表达式混合在一起使用。假设你正在编辑一个 C 语言的文件，想切换到它的头文件：
 
@@ -43,16 +44,20 @@
 ```
 
 
-### :redir
+### :redir - 重定向消息
 
-许多命令都会输出消息，`:redir` 可以重定向这些输出。可以输出到文件、[寄存器](#register)中或是某个变量中。
+许多命令都会输出消息，`:redir` 用来重定向这些消息。它可以将消息输出到文件、[寄存器](#register)或是某个变量中。
 
 ```vim
+" 将消息重定向到变量 `neatvar` 中
 :redir => neatvar
+" 打印所有寄存器的内容
 :reg
+" 结束重定向
 :redir END
+" 输出变量
 :echo neatvar
-:" 为了有趣，我们把它输出到当前缓冲区
+" 为了有趣，我们把它输出到当前缓冲区
 :put =neatvar
 ```
 
