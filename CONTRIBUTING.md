@@ -85,11 +85,11 @@ PR: PR的链接
 | [:global and :vglobal](https://github.com/mhinz/vim-galore#global-and-vglobal) - Execute a command on all matching lines. | hotleave | |
 | [:normal and :execute](https://github.com/mhinz/vim-galore#normal-and-execute) - The scripting dream team. | hotleave | |
 | [:redir](https://github.com/mhinz/vim-galore#redir) - Redirect messages. | hotleave | |
-| [Debugging](https://github.com/mhinz/vim-galore#debugging-1) | | |
-| [General tips](https://github.com/mhinz/vim-galore#general-tips) | | |
-| [Verbosity](https://github.com/mhinz/vim-galore#verbosity) | | |
-| [Profiling startup time](https://github.com/mhinz/vim-galore#profiling-startup-time) | | |
-| [Profiling at runtime](https://github.com/mhinz/vim-galore#profiling-at-runtime) | | |
+| [Debugging](https://github.com/mhinz/vim-galore#debugging-1) | YDWX | |
+| [General tips](https://github.com/mhinz/vim-galore#general-tips) | YDWX | |
+| [Verbosity](https://github.com/mhinz/vim-galore#verbosity) | YDWX | |
+| [Profiling startup time](https://github.com/mhinz/vim-galore#profiling-startup-time) | YDWX | |
+| [Profiling at runtime](https://github.com/mhinz/vim-galore#profiling-at-runtime) | YDWX | |
 | [Debugging Vim scripts](https://github.com/mhinz/vim-galore#debugging-vim-scripts) | | |
 | [Debugging syntax files](https://github.com/mhinz/vim-galore#debugging-syntax-files) | | |
 | [Miscellaneous](https://github.com/mhinz/vim-galore#miscellaneous-1) | | |
