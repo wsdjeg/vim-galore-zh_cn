@@ -25,8 +25,7 @@
 
 借助于 `:normal` 可以在命令行里进行普通模式的映射。如：`:normal! 4j` 会令光标下移 4 行（由于加了"!"，所以不会使用自定义的映射 "j"）。
 
-需要注意的是 `:normal` 同样支持数量，故 `:%norm! Iabc` 会在所有行前加上 "abc"。
-（原文：Mind that :normal also takes a count, so :%norm! Iabc would prepend "abc" to every line.）
+需要注意的是 `:normal` 同样可以使用范围数（译者注：参考 `:h range` 和 `:h :normal-range` 了解更多），故 `:%norm! Iabc` 会在所有行前加上 "abc"。
 
 借助于 `:execute` 可以将命令和表达式混合在一起使用。假设你正在编辑一个 C 语言的文件，想切换到它的头文件：
 
@@ -61,6 +60,6 @@
 :put =neatvar
 ```
 
-（译者注：原文最后一条命令是 `:put =nicevar` 但是实际会变量未定义的错误）
+（译者注：原文最后一条命令是 `:put =nicevar` 但是实际会报变量未定义的错误）
 
 帮助文档：`:h :redir`
