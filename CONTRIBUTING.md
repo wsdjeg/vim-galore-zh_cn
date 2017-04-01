@@ -47,24 +47,24 @@ PR: PR的链接
 | [Folding](https://github.com/mhinz/vim-galore#folding) | [星星丶S1nG] | [#7] |
 | [Sessions](https://github.com/mhinz/vim-galore#sessions) | [星星丶S1nG] | [#7] |
 | [Locality](https://github.com/mhinz/vim-galore#locality) | [星星丶S1nG] | [#7] |
-| [Usage](https://github.com/mhinz/vim-galore#usage-1) | [hotleave] | |
-| [Getting help offline](https://github.com/mhinz/vim-galore#getting-help-offline) | [hotleave] | |
-| [Getting help offline (alternative)](https://github.com/mhinz/vim-galore#getting-help-offline-alternative) | [hotleave] | |
-| [Getting help online](https://github.com/mhinz/vim-galore#getting-help-online) | [hotleave] | |
-| [Autocmds in practice](https://github.com/mhinz/vim-galore#autocmds-in-practice) | [hotleave] | |
-| [User events](https://github.com/mhinz/vim-galore#user-events) | [hotleave] | |
-| [Nested autocmds](https://github.com/mhinz/vim-galore#nested-autocmds) | [hotleave] | |
-| [Clipboard](https://github.com/mhinz/vim-galore#clipboard) | [hotleave] | |
-| [Clipboard usage (Windows, OSX)](https://github.com/mhinz/vim-galore#clipboard-usage-windows-osx) | [hotleave] | |
-| [Clipboard usage (Linux, BSD, ...)](https://github.com/mhinz/vim-galore#clipboard-usage-linux-bsd-) | [hotleave] | |
-| [Restore cursor position when opening file](https://github.com/mhinz/vim-galore#restore-cursor-position-when-opening-file) | [hotleave] | |
-| [Handling backup, swap, undo, and viminfo files](https://github.com/mhinz/vim-galore#handling-backup-swap-undo-and-viminfo-files) | [hotleave] | |
-| [Editing remote files](https://github.com/mhinz/vim-galore#editing-remote-files) | [hotleave] | |
-| [Managing plugins](https://github.com/mhinz/vim-galore#managing-plugins) | [hotleave] | |
-| [Block insert](https://github.com/mhinz/vim-galore#block-insert) | [hotleave] | |
-| [Running external programs and using filters](https://github.com/mhinz/vim-galore#running-external-programs-and-using-filters) | [hotleave] | |
-| [Cscope](https://github.com/mhinz/vim-galore#cscope) | [hotleave] | |
-| [MatchIt](https://github.com/mhinz/vim-galore#matchit) | [hotleave] | |
+| [Usage](https://github.com/mhinz/vim-galore#usage-1) | [hotleave] | [#13] |
+| [Getting help offline](https://github.com/mhinz/vim-galore#getting-help-offline) | [hotleave] | [#13] |
+| [Getting help offline (alternative)](https://github.com/mhinz/vim-galore#getting-help-offline-alternative) | [hotleave] | [#13] |
+| [Getting help online](https://github.com/mhinz/vim-galore#getting-help-online) | [hotleave] | [#13] |
+| [Autocmds in practice](https://github.com/mhinz/vim-galore#autocmds-in-practice) | [hotleave] | [#13] |
+| [User events](https://github.com/mhinz/vim-galore#user-events) | [hotleave] | [#13] |
+| [Nested autocmds](https://github.com/mhinz/vim-galore#nested-autocmds) | [hotleave] | [#13] |
+| [Clipboard](https://github.com/mhinz/vim-galore#clipboard) | [hotleave] | [#13] |
+| [Clipboard usage (Windows, OSX)](https://github.com/mhinz/vim-galore#clipboard-usage-windows-osx) | [hotleave] | [#13] |
+| [Clipboard usage (Linux, BSD, ...)](https://github.com/mhinz/vim-galore#clipboard-usage-linux-bsd-) | [hotleave] | [#13] |
+| [Restore cursor position when opening file](https://github.com/mhinz/vim-galore#restore-cursor-position-when-opening-file) | [hotleave] | [#13] |
+| [Handling backup, swap, undo, and viminfo files](https://github.com/mhinz/vim-galore#handling-backup-swap-undo-and-viminfo-files) | [hotleave] | [#13] |
+| [Editing remote files](https://github.com/mhinz/vim-galore#editing-remote-files) | [hotleave] | [#13] |
+| [Managing plugins](https://github.com/mhinz/vim-galore#managing-plugins) | [hotleave] | [#13] |
+| [Block insert](https://github.com/mhinz/vim-galore#block-insert) | [hotleave] | [#13] |
+| [Running external programs and using filters](https://github.com/mhinz/vim-galore#running-external-programs-and-using-filters) | [hotleave] | [#13] |
+| [Cscope](https://github.com/mhinz/vim-galore#cscope) | [hotleave] | [#13] |
+| [MatchIt](https://github.com/mhinz/vim-galore#matchit) | [hotleave] | [#13] |
 | [Tips](https://github.com/mhinz/vim-galore#tips-1) | [星星丶S1nG] | [#15] |
 | [Saner behavior of n and N](https://github.com/mhinz/vim-galore#saner-behavior-of-n-and-n) | [星星丶S1nG] | [#15] |
 | [Saner command-line history](https://github.com/mhinz/vim-galore#saner-command-line-history) | [星星丶S1nG] | [#15] |
@@ -114,6 +114,7 @@ PR: PR的链接
 <!-- plublic links for prs -->
 [#4]: https://github.com/wsdjeg/vim-galore-zh_cn/pull/4
 [#7]: https://github.com/wsdjeg/vim-galore-zh_cn/pull/7
+[#13]: https://github.com/wsdjeg/vim-galore-zh_cn/pull/13
 [#15]: https://github.com/wsdjeg/vim-galore-zh_cn/pull/15
 [#18]: https://github.com/wsdjeg/vim-galore-zh_cn/pull/18
 
