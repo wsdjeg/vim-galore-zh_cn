@@ -47,24 +47,24 @@ PR: PR的链接
 | [Folding](https://github.com/mhinz/vim-galore#folding) | [星星丶S1nG] | [#7] |
 | [Sessions](https://github.com/mhinz/vim-galore#sessions) | [星星丶S1nG] | [#7] |
 | [Locality](https://github.com/mhinz/vim-galore#locality) | [星星丶S1nG] | [#7] |
-| [Usage](https://github.com/mhinz/vim-galore#usage-1) | hotleave | |
-| [Getting help offline](https://github.com/mhinz/vim-galore#getting-help-offline) | hotleave | |
-| [Getting help offline (alternative)](https://github.com/mhinz/vim-galore#getting-help-offline-alternative) | hotleave | |
-| [Getting help online](https://github.com/mhinz/vim-galore#getting-help-online) | hotleave | |
-| [Autocmds in practice](https://github.com/mhinz/vim-galore#autocmds-in-practice) | hotleave | |
-| [User events](https://github.com/mhinz/vim-galore#user-events) | hotleave | |
-| [Nested autocmds](https://github.com/mhinz/vim-galore#nested-autocmds) | hotleave | |
-| [Clipboard](https://github.com/mhinz/vim-galore#clipboard) | hotleave | |
-| [Clipboard usage (Windows, OSX)](https://github.com/mhinz/vim-galore#clipboard-usage-windows-osx) | hotleave | |
-| [Clipboard usage (Linux, BSD, ...)](https://github.com/mhinz/vim-galore#clipboard-usage-linux-bsd-) | hotleave | |
-| [Restore cursor position when opening file](https://github.com/mhinz/vim-galore#restore-cursor-position-when-opening-file) | hotleave | |
-| [Handling backup, swap, undo, and viminfo files](https://github.com/mhinz/vim-galore#handling-backup-swap-undo-and-viminfo-files) | hotleave | |
-| [Editing remote files](https://github.com/mhinz/vim-galore#editing-remote-files) | hotleave | |
-| [Managing plugins](https://github.com/mhinz/vim-galore#managing-plugins) | hotleave | |
-| [Block insert](https://github.com/mhinz/vim-galore#block-insert) | hotleave | |
-| [Running external programs and using filters](https://github.com/mhinz/vim-galore#running-external-programs-and-using-filters) | hotleave | |
-| [Cscope](https://github.com/mhinz/vim-galore#cscope) | hotleave | |
-| [MatchIt](https://github.com/mhinz/vim-galore#matchit) | hotleave | |
+| [Usage](https://github.com/mhinz/vim-galore#usage-1) | [hotleave] | |
+| [Getting help offline](https://github.com/mhinz/vim-galore#getting-help-offline) | [hotleave] | |
+| [Getting help offline (alternative)](https://github.com/mhinz/vim-galore#getting-help-offline-alternative) | [hotleave] | |
+| [Getting help online](https://github.com/mhinz/vim-galore#getting-help-online) | [hotleave] | |
+| [Autocmds in practice](https://github.com/mhinz/vim-galore#autocmds-in-practice) | [hotleave] | |
+| [User events](https://github.com/mhinz/vim-galore#user-events) | [hotleave] | |
+| [Nested autocmds](https://github.com/mhinz/vim-galore#nested-autocmds) | [hotleave] | |
+| [Clipboard](https://github.com/mhinz/vim-galore#clipboard) | [hotleave] | |
+| [Clipboard usage (Windows, OSX)](https://github.com/mhinz/vim-galore#clipboard-usage-windows-osx) | [hotleave] | |
+| [Clipboard usage (Linux, BSD, ...)](https://github.com/mhinz/vim-galore#clipboard-usage-linux-bsd-) | [hotleave] | |
+| [Restore cursor position when opening file](https://github.com/mhinz/vim-galore#restore-cursor-position-when-opening-file) | [hotleave] | |
+| [Handling backup, swap, undo, and viminfo files](https://github.com/mhinz/vim-galore#handling-backup-swap-undo-and-viminfo-files) | [hotleave] | |
+| [Editing remote files](https://github.com/mhinz/vim-galore#editing-remote-files) | [hotleave] | |
+| [Managing plugins](https://github.com/mhinz/vim-galore#managing-plugins) | [hotleave] | |
+| [Block insert](https://github.com/mhinz/vim-galore#block-insert) | [hotleave] | |
+| [Running external programs and using filters](https://github.com/mhinz/vim-galore#running-external-programs-and-using-filters) | [hotleave] | |
+| [Cscope](https://github.com/mhinz/vim-galore#cscope) | [hotleave] | |
+| [MatchIt](https://github.com/mhinz/vim-galore#matchit) | [hotleave] | |
 | [Tips](https://github.com/mhinz/vim-galore#tips-1) | [星星丶S1nG] | [#15] |
 | [Saner behavior of n and N](https://github.com/mhinz/vim-galore#saner-behavior-of-n-and-n) | [星星丶S1nG] | [#15] |
 | [Saner command-line history](https://github.com/mhinz/vim-galore#saner-command-line-history) | [星星丶S1nG] | [#15] |
@@ -81,10 +81,10 @@ PR: PR的链接
 | [Smarter cursorline](https://github.com/mhinz/vim-galore#smarter-cursorline) | [星星丶S1nG] | [#15] |
 | [Faster keyword completion](https://github.com/mhinz/vim-galore#faster-keyword-completion) | [星星丶S1nG] | [#15] |
 | [Cosmetic changes to colorschemes](https://github.com/mhinz/vim-galore#cosmetic-changes-to-colorschemes) | [星星丶S1nG] | [#15] |
-| [Commands](https://github.com/mhinz/vim-galore#commands-1) | hotleave | [#18] |
-| [:global and :vglobal](https://github.com/mhinz/vim-galore#global-and-vglobal) - Execute a command on all matching lines. | hotleave | [#18] |
-| [:normal and :execute](https://github.com/mhinz/vim-galore#normal-and-execute) - The scripting dream team. | hotleave | [#18] |
-| [:redir](https://github.com/mhinz/vim-galore#redir) - Redirect messages. | hotleave | [#18] |
+| [Commands](https://github.com/mhinz/vim-galore#commands-1) | [hotleave] | [#18] |
+| [:global and :vglobal](https://github.com/mhinz/vim-galore#global-and-vglobal) - Execute a command on all matching lines. | [hotleave] | [#18] |
+| [:normal and :execute](https://github.com/mhinz/vim-galore#normal-and-execute) - The scripting dream team. | [hotleave] | [#18] |
+| [:redir](https://github.com/mhinz/vim-galore#redir) - Redirect messages. | [hotleave] | [#18] |
 | [Debugging](https://github.com/mhinz/vim-galore#debugging-1) | YDWX | |
 | [General tips](https://github.com/mhinz/vim-galore#general-tips) | YDWX | |
 | [Verbosity](https://github.com/mhinz/vim-galore#verbosity) | YDWX | |
@@ -99,12 +99,12 @@ PR: PR的链接
 | [Map CapsLock to Control](https://github.com/mhinz/vim-galore#map-capslock-to-control) | #11 | |
 | [Easter eggs](https://github.com/mhinz/vim-galore#easter-eggs) | #11 | |
 | [Why hjkl for navigation?](https://github.com/mhinz/vim-galore#why-hjkl-for-navigation) | #11 | |
-| [Common problems](https://github.com/mhinz/vim-galore#common-problems-1) | hotleave | [#18] |
-| [Editing small files is slow](https://github.com/mhinz/vim-galore#editing-small-files-is-slow) | hotleave | [#18] |
-| [Editing huge files is slow](https://github.com/mhinz/vim-galore#editing-huge-files-is-slow) | hotleave | [#18] |
-| [Bracketed paste (or why do I have to set 'paste' all the time?)](https://github.com/mhinz/vim-galore#bracketed-paste-or-why-do-i-have-to-set-paste-all-the-time) | hotleave | [#18] |
-| [Delays when using escape key in terminal](https://github.com/mhinz/vim-galore#delays-when-using-escape-key-in-terminal) | hotleave | [#18] |
-| [Function search undo](https://github.com/mhinz/vim-galore#function-search-undo) | hotleave | [#18] |
+| [Common problems](https://github.com/mhinz/vim-galore#common-problems-1) | [hotleave] | [#18] |
+| [Editing small files is slow](https://github.com/mhinz/vim-galore#editing-small-files-is-slow) | [hotleave] | [#18] |
+| [Editing huge files is slow](https://github.com/mhinz/vim-galore#editing-huge-files-is-slow) | [hotleave] | [#18] |
+| [Bracketed paste (or why do I have to set 'paste' all the time?)](https://github.com/mhinz/vim-galore#bracketed-paste-or-why-do-i-have-to-set-paste-all-the-time) | [hotleave] | [#18] |
+| [Delays when using escape key in terminal](https://github.com/mhinz/vim-galore#delays-when-using-escape-key-in-terminal) | [hotleave] | [#18] |
+| [Function search undo](https://github.com/mhinz/vim-galore#function-search-undo) | [hotleave] | [#18] |
 | [Technical quirks](https://github.com/mhinz/vim-galore#technical-quirks-1) | | [#18] |
 | [Newline used for NUL](https://github.com/mhinz/vim-galore#newline-used-for-nul) | | |
 | [List of colorschemes](https://github.com/mhinz/vim-galore#list-of-colorschemes-1) | | |
@@ -114,8 +114,11 @@ PR: PR的链接
 <!-- plublic links for prs -->
 [#4]: https://github.com/wsdjeg/vim-galore-zh_cn/pull/4
 [#7]: https://github.com/wsdjeg/vim-galore-zh_cn/pull/7
+[#15]: https://github.com/wsdjeg/vim-galore-zh_cn/pull/15
+[#18]: https://github.com/wsdjeg/vim-galore-zh_cn/pull/18
 
 <!-- plublic links for users -->
 [wsdjeg]: https://github.com/wsdjeg
 [星星丶S1nG]: https://github.com/S1ngS1ng
+[Hotleave]: https://github.com/hotleave
 
