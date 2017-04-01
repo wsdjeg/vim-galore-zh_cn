@@ -8,13 +8,13 @@
 
 2. **屏幕重绘** 。有一些功能会强制重绘所有行。
 
-| 典型肇事者 | 原因？ | 解决方案？|
+| 典型肇事者 | 原因 | 解决方案 |
 |--------|--------|-----------|
 | `:set cursorline` | 会导致所有行重绘 |  `:set nocursorline` |
 | `:set cursorcolumn` | 会导致所有行重绘 | `:set nocursorcolumn` |
 | `:set relativenumber` | 会导致所有行重绘 | `:set norelativenumber` |
 | `:set foldmethod=syntax` | 如果语法文件已经很慢了，这只会变得更慢 | `:set foldmethod=manual`，`:set foldmethod=marker` 或者使用[快速折叠](https://github.com/Konfekt/FastFold)插件 |
-| `:set synmaxcol=3000` | 由于内部表示法，Vim 处理比较长的行时会有问题。让它高亮到3000列…… | `:set synmaxcol=200` |
+| `:set synmaxcol=3000` | 由于内部表示法，Vim 处理比较长的行时会有问题。让它高亮到 3000 列…… | `:set synmaxcol=200` |
 | matchparen.vim | Vim 默认加载的插件，用正则表达式查找配对的括号 | 禁用插件：`:h matchparen` |
 
 
@@ -23,7 +23,7 @@
 
 ### 编辑大文件的时候很慢
 
-Vim 处理大文件最大的问题就是它会一次性读取整个文件。这么做是由于缓冲区的内部机理导致的。（在 [vim_dev](https://groups.google.com/forum/#!topic/vim_dev/oY3i8rqYGD4/discussion) 中讨论）
+Vim 处理大文件最大的问题就是它会一次性读取整个文件。这么做是由于缓冲区的内部机理导致的（在 [vim_dev](https://groups.google.com/forum/#!topic/vim_dev/oY3i8rqYGD4/discussion) 中讨论）。
 
 如果只是想查看的话，`tail hugefile | vim -` 是一个不错的选择。
 
@@ -59,12 +59,14 @@ $ vim -n -u NONE -i NONE -N
 
 [点此](http://cirw.in/blog/bracketed-paste)查看该作者对于这个插件的更多描述。
 
+Neovim 尝试把这些变得更顺畅，如果终端支持的话，它会自动开启持续粘贴模式，无须再手动进行切换。
+
 
 ### 在终端中按 ESC 后有延时
 
-如果你视命令行如命的话，那么你肯定会用一个叫 _终端模拟器_ 的软件，如 xterm、gnome-terminal、iTerm2 等等。（与实际的[终端](https://en.wikipedia.org/wiki/Computer_terminal)不同）
+如果你经常使用命令行，那么肯定要接触_终端模拟器_，如 xterm、gnome-terminal、iTerm2 等等（与实际的[终端](https://en.wikipedia.org/wiki/Computer_terminal)不同）。
 
-终端模拟器与他们的祖辈一样，使用 [转义序列](https://zh.wikipedia.org/wiki/%E8%BD%AC%E4%B9%89%E5%BA%8F%E5%88%97) （也叫 _控制序列_ ）来控制光标移动、改变文本颜色等。它们就是简单的以转义字符开头的 ASCII 字符串（用[脱字符表示法](https://zh.wikipedia.org/wiki/%E8%84%B1%E5%AD%97%E7%AC%A6%E8%A1%A8%E7%A4%BA%E6%B3%95)表示成 `^[` ）。当遇到这样的字符串后，终端模拟器会从[终端信息](https://en.wikipedia.org/wiki/Terminfo)数据库中查找对应的动作。
+终端模拟器与他们的祖辈一样，使用 [转义序列](https://zh.wikipedia.org/wiki/%E8%BD%AC%E4%B9%89%E5%BA%8F%E5%88%97) （也叫_控制序列_）来控制光标移动、改变文本颜色等。转义序列就是以转义字符开头的 ASCII 字符串（用[脱字符表示法](https://zh.wikipedia.org/wiki/%E8%84%B1%E5%AD%97%E7%AC%A6%E8%A1%A8%E7%A4%BA%E6%B3%95)表示成 `^[` ）。当遇到这样的字符串后，终端模拟器会从[终端信息](https://en.wikipedia.org/wiki/Terminfo)数据库中查找对应的动作。
 
 为了使用问题更加清晰，我会先来解释一下什么是映射超时。在映射存在歧义的时候就会产生映射超时：
 
