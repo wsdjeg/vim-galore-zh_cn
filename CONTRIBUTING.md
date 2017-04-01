@@ -65,26 +65,26 @@ PR: PR的链接
 | [Running external programs and using filters](https://github.com/mhinz/vim-galore#running-external-programs-and-using-filters) | hotleave | |
 | [Cscope](https://github.com/mhinz/vim-galore#cscope) | hotleave | |
 | [MatchIt](https://github.com/mhinz/vim-galore#matchit) | hotleave | |
-| [Tips](https://github.com/mhinz/vim-galore#tips-1) | [星星丶S1nG] | |
-| [Saner behavior of n and N](https://github.com/mhinz/vim-galore#saner-behavior-of-n-and-n) | [星星丶S1nG] | |
-| [Saner command-line history](https://github.com/mhinz/vim-galore#saner-command-line-history) | [星星丶S1nG] | |
-| [Saner CTRL-L](https://github.com/mhinz/vim-galore#saner-ctrl-l) | [星星丶S1nG] | |
-| [Disable audible and visual bells](https://github.com/mhinz/vim-galore#disable-audible-and-visual-bells) | [星星丶S1nG] | |
-| [Quickly move current line](https://github.com/mhinz/vim-galore#quickly-move-current-line) | [星星丶S1nG] | |
-| [Quickly add empty lines](https://github.com/mhinz/vim-galore#quickly-add-empty-lines) | [星星丶S1nG] | |
-| [Quickly edit your macros](https://github.com/mhinz/vim-galore#quickly-edit-your-macros) | [星星丶S1nG] | |
-| [Quickly jump to header or source file](https://github.com/mhinz/vim-galore#quickly-jump-to-header-or-source-file) | [星星丶S1nG] | |
-| [Quickly change font size in GUI](https://github.com/mhinz/vim-galore#quickly-change-font-size-in-gui) | [星星丶S1nG] | |
-| [Change cursor style dependent on mode](https://github.com/mhinz/vim-galore#change-cursor-style-dependent-on-mode) | [星星丶S1nG] | |
-| [Don't lose selection when shifting sidewards](https://github.com/mhinz/vim-galore#dont-lose-selection-when-shifting-sidewards) | [星星丶S1nG] | |
-| [Reload a file on saving](https://github.com/mhinz/vim-galore#reload-a-file-on-saving) | [星星丶S1nG] | |
-| [Smarter cursorline](https://github.com/mhinz/vim-galore#smarter-cursorline) | [星星丶S1nG] | |
-| [Faster keyword completion](https://github.com/mhinz/vim-galore#faster-keyword-completion) | [星星丶S1nG] | |
-| [Cosmetic changes to colorschemes](https://github.com/mhinz/vim-galore#cosmetic-changes-to-colorschemes) | [星星丶S1nG] | |
-| [Commands](https://github.com/mhinz/vim-galore#commands-1) | hotleave | |
-| [:global and :vglobal](https://github.com/mhinz/vim-galore#global-and-vglobal) - Execute a command on all matching lines. | hotleave | |
-| [:normal and :execute](https://github.com/mhinz/vim-galore#normal-and-execute) - The scripting dream team. | hotleave | |
-| [:redir](https://github.com/mhinz/vim-galore#redir) - Redirect messages. | hotleave | |
+| [Tips](https://github.com/mhinz/vim-galore#tips-1) | [星星丶S1nG] | [#15] |
+| [Saner behavior of n and N](https://github.com/mhinz/vim-galore#saner-behavior-of-n-and-n) | [星星丶S1nG] | [#15] |
+| [Saner command-line history](https://github.com/mhinz/vim-galore#saner-command-line-history) | [星星丶S1nG] | [#15] |
+| [Saner CTRL-L](https://github.com/mhinz/vim-galore#saner-ctrl-l) | [星星丶S1nG] | [#15] |
+| [Disable audible and visual bells](https://github.com/mhinz/vim-galore#disable-audible-and-visual-bells) | [星星丶S1nG] | [#15] |
+| [Quickly move current line](https://github.com/mhinz/vim-galore#quickly-move-current-line) | [星星丶S1nG] | [#15] |
+| [Quickly add empty lines](https://github.com/mhinz/vim-galore#quickly-add-empty-lines) | [星星丶S1nG] | [#15] |
+| [Quickly edit your macros](https://github.com/mhinz/vim-galore#quickly-edit-your-macros) | [星星丶S1nG] | [#15] |
+| [Quickly jump to header or source file](https://github.com/mhinz/vim-galore#quickly-jump-to-header-or-source-file) | [星星丶S1nG] | [#15] |
+| [Quickly change font size in GUI](https://github.com/mhinz/vim-galore#quickly-change-font-size-in-gui) | [星星丶S1nG] | [#15] |
+| [Change cursor style dependent on mode](https://github.com/mhinz/vim-galore#change-cursor-style-dependent-on-mode) | [星星丶S1nG] | [#15] |
+| [Don't lose selection when shifting sidewards](https://github.com/mhinz/vim-galore#dont-lose-selection-when-shifting-sidewards) | [星星丶S1nG] | [#15] |
+| [Reload a file on saving](https://github.com/mhinz/vim-galore#reload-a-file-on-saving) | [星星丶S1nG] | [#15] |
+| [Smarter cursorline](https://github.com/mhinz/vim-galore#smarter-cursorline) | [星星丶S1nG] | [#15] |
+| [Faster keyword completion](https://github.com/mhinz/vim-galore#faster-keyword-completion) | [星星丶S1nG] | [#15] |
+| [Cosmetic changes to colorschemes](https://github.com/mhinz/vim-galore#cosmetic-changes-to-colorschemes) | [星星丶S1nG] | [#15] |
+| [Commands](https://github.com/mhinz/vim-galore#commands-1) | hotleave | [#18] |
+| [:global and :vglobal](https://github.com/mhinz/vim-galore#global-and-vglobal) - Execute a command on all matching lines. | hotleave | [#18] |
+| [:normal and :execute](https://github.com/mhinz/vim-galore#normal-and-execute) - The scripting dream team. | hotleave | [#18] |
+| [:redir](https://github.com/mhinz/vim-galore#redir) - Redirect messages. | hotleave | [#18] |
 | [Debugging](https://github.com/mhinz/vim-galore#debugging-1) | YDWX | |
 | [General tips](https://github.com/mhinz/vim-galore#general-tips) | YDWX | |
 | [Verbosity](https://github.com/mhinz/vim-galore#verbosity) | YDWX | |
@@ -99,13 +99,13 @@ PR: PR的链接
 | [Map CapsLock to Control](https://github.com/mhinz/vim-galore#map-capslock-to-control) | #11 | |
 | [Easter eggs](https://github.com/mhinz/vim-galore#easter-eggs) | #11 | |
 | [Why hjkl for navigation?](https://github.com/mhinz/vim-galore#why-hjkl-for-navigation) | #11 | |
-| [Common problems](https://github.com/mhinz/vim-galore#common-problems-1) | hotleave | |
-| [Editing small files is slow](https://github.com/mhinz/vim-galore#editing-small-files-is-slow) | hotleave | |
-| [Editing huge files is slow](https://github.com/mhinz/vim-galore#editing-huge-files-is-slow) | hotleave | |
-| [Bracketed paste (or why do I have to set 'paste' all the time?)](https://github.com/mhinz/vim-galore#bracketed-paste-or-why-do-i-have-to-set-paste-all-the-time) | hotleave | |
-| [Delays when using escape key in terminal](https://github.com/mhinz/vim-galore#delays-when-using-escape-key-in-terminal) | hotleave | |
-| [Function search undo](https://github.com/mhinz/vim-galore#function-search-undo) | hotleave | |
-| [Technical quirks](https://github.com/mhinz/vim-galore#technical-quirks-1) | | |
+| [Common problems](https://github.com/mhinz/vim-galore#common-problems-1) | hotleave | [#18] |
+| [Editing small files is slow](https://github.com/mhinz/vim-galore#editing-small-files-is-slow) | hotleave | [#18] |
+| [Editing huge files is slow](https://github.com/mhinz/vim-galore#editing-huge-files-is-slow) | hotleave | [#18] |
+| [Bracketed paste (or why do I have to set 'paste' all the time?)](https://github.com/mhinz/vim-galore#bracketed-paste-or-why-do-i-have-to-set-paste-all-the-time) | hotleave | [#18] |
+| [Delays when using escape key in terminal](https://github.com/mhinz/vim-galore#delays-when-using-escape-key-in-terminal) | hotleave | [#18] |
+| [Function search undo](https://github.com/mhinz/vim-galore#function-search-undo) | hotleave | [#18] |
+| [Technical quirks](https://github.com/mhinz/vim-galore#technical-quirks-1) | | [#18] |
 | [Newline used for NUL](https://github.com/mhinz/vim-galore#newline-used-for-nul) | | |
 | [List of colorschemes](https://github.com/mhinz/vim-galore#list-of-colorschemes-1) | | |
 | [List of plugins](https://github.com/mhinz/vim-galorecontents/plugins.md) | | |
