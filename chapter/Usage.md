@@ -22,7 +22,7 @@ Vim 自带了一套很完善的帮助文档，它们是一个个有固定排版�
 :helpgrep backwards
 ```
 
-上面的命令会在所有的帮助文件中搜索“backwards”，然后跳转到第一个匹配的位置。所有的匹配位置都会被添加到快速修复列表当中，用 `:cp / :cn` 可以在匹配位置之间进行切换。或者用 `:copen` 命令来打开快速修复窗口，将光标定位到你想要的位置，再按 回车就可以跳转到该匹配项。详细说明请参考 `:h quickfix`。
+上面的命令会在所有的帮助文件中搜索“backwards”，然后跳转到第一个匹配的位置。所有的匹配位置都会被添加到全局位置信息表，用 `:cp / :cn` 可以在匹配位置之间进行切换。或者用 `:copen` 命令来打开全局位置信息表，将光标定位到你想要的位置，再按 回车就可以跳转到该匹配项。详细说明请参考 `:h quickfix`。
 
 
 ### 获取离线帮助（补充）
@@ -35,7 +35,7 @@ Vim 自带了一套很完善的帮助文档，它们是一个个有固定排版�
 
 如果你知道你想要找什么，使用帮助系统的搜索会更简单一些，因为搜索出的主题都带有固定的格式。
 
-并且帮助系统中的主题包含了你当前使用的 Vim 版本的所特有特性，而网上那些已经过时或者是早期发布的话题是不会包含这些的。
+而且帮助系统中的主题包含了你当前使用的 Vim 版本的所特有特性，而网上那些已经过时或者是早期发布的话题是不会包含这些的。
 
 因此学习使用帮助系统以及它所用的语言是很有必要的。这里是一些例子（不一定全，我有可能忘了一些什么）。
 
@@ -63,7 +63,7 @@ Vim 自带了一套很完善的帮助文档，它们是一个个有固定排版�
 
 11. 在输入某个话题时按 CTRL-D，让 Vim 列出所有的近似项辅助你输入。
 
-12. 用 `:helpgrep` 在所有的帮助页面（通常还包括了已安装的插件的帮助页面）中进行搜索。参考 `:h :helpgrep` 来了解如何使用。当你搜索了一个话题之后，所有的匹配结果都被保存到了快速修复窗口（或位置窗口）当中，可以通过 `:copen` 或 `:lopen` 打开。在打开的窗口中可能通过 `/` 对搜索结果进行进一步的过滤。
+12. 用 `:helpgrep` 在所有的帮助页面（通常还包括了已安装的插件的帮助页面）中进行搜索。参考 `:h :helpgrep` 来了解如何使用。当你搜索了一个话题之后，所有的匹配结果都被保存到了全局位置信息表（或局部位置信息表）当中，可以通过 `:copen` 或 `:lopen` 打开。在打开的窗口中可能通过 `/` 对搜索结果进行进一步的过滤。
 
 13. `:h helphelp` 里介绍了如何使用帮助系统。
 
@@ -75,7 +75,7 @@ Vim 自带了一套很完善的帮助文档，它们是一个个有固定排版�
 
 17. 快速修复命令以 `:c` 开头，而位置列表命令以 `:l` 开头。
 
-18. `:h BufWinLeave` 讲的是 BufWinLeave 自动命令。还有， `:h autocommand-events` （译者注：原文是 `:h autocommands-events`，但是没有该帮助）讲的是所有可用的事件。
+18. `:h BufWinLeave` 讲的是 BufWinLeave 自动命令。还有，`:h autocommand-events` （译者注：原文是 `:h autocommands-events`，但是没有该帮助）讲的是所有可用的事件。
 
 19. 启动参数都以“-”开头，如：`:h -f` 会告诉你 Vim 中 “-f” 参数的作用。
 
@@ -155,7 +155,7 @@ autocmd VimEnter * nested edit $MYVIMRC
 
 ### 剪贴板
 
-如果你想在没有GUI支持的Unix系统中使用 Vim 的 `'clipboard` 选项，则需要 `+clipboard` 以及可选的 `+xterm_clipboard` 两个[特性](#what-kind-of-vim-am-i-running)支持。
+如果你想在没有GUI支持的Unix系统中使用 Vim 的 `'clipboard'` 选项，则需要 `+clipboard` 以及可选的 `+xterm_clipboard` 两个[特性](#what-kind-of-vim-am-i-running)支持。
 
 帮助文档：
 
@@ -165,7 +165,7 @@ autocmd VimEnter * nested edit $MYVIMRC
 :h gui-selections
 ```
 
-另外请参考：[持续粘贴（为什么我每次都要设置 'paste' 模式](#bracketed-paste-or-why-do-i-have-to-set-paste-all-the-time)
+另外请参考：[持续粘贴（为什么我每次都要设置 'paste' 模式](#持续粘贴为什么我每次都要设置-paste-模式)
 
 #### 剪贴板的使用（Windows, OSX）
 
@@ -275,7 +275,7 @@ autocmd BufReadPost *
 
 你可以让 Vim 在将修改写入到文件之前先备份原文件。默认情况下， Vim 会保存一个备份文件但是当修改成功写入后会立即删除它（`:set writebackup`）。如果你想一直保留这个备份文件的话，可以使用 `:set backup`。而如果你想禁用备份功能的话，可以使用 `:set nobackup nowritebackup`。
 
-咱们们来看一下上次我在 vimrc 中改了什么：
+咱们来看一下上次我在 vimrc 中改了什么：
 
 ```sh
 $ diff ~/.vim/vimrc ~/.vim/files/backup/vimrc-vimbackup
@@ -301,7 +301,7 @@ $ diff ~/.vim/vimrc ~/.vim/files/backup/vimrc-vimbackup
 
 **撤销文件**：
 
-[撤销树](#undo-tree)是保存在内存中的，并且会在 Vim 退出时清空。如果你想让它持久化到磁盘中，可以设置 `:set undofile`。这会把文件 `~/foo.c` 的撤销文件保存在 `~/foo.c.un~`。
+[内容变更历史记录](#%E5%86%85%E5%AE%B9%E5%8F%98%E6%9B%B4%E5%8E%86%E5%8F%B2%E8%AE%B0%E5%BD%95)是保存在内存中的，并且会在 Vim 退出时清空。如果你想让它持久化到磁盘中，可以设置 `:set undofile`。这会把文件 `~/foo.c` 的撤销文件保存在 `~/foo.c.un~`。
 
 帮助文档：`:h 'undofile'` 和 `:h undo-persistence`
 
@@ -379,7 +379,7 @@ Host awesome
 
 [Pathogen](https://github.com/tpope/vim-pathogen)是第一个比较流行的插件管理工具。实际上它只是修改了 _runtimepath_ （`:h 'rtp'`） 来引入所有放到该目录下的文件。你需要自己克隆插件的代码仓库到那个目录。
 
-真正的插件管理工具会在 Vim 中提供帮助你安装或更新插件的命令。在下文中是一些常用的插件管理工具：
+真正的插件管理工具会在 Vim 中提供帮助你安装或更新插件的命令。以下是一些常用的插件管理工具：
 
 * [dein](https://github.com/Shougo/dein.vim)
 * [plug](https://github.com/junegunn/vim-plug)
