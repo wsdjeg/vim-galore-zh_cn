@@ -1,30 +1,29 @@
 ## 插件列表
 
-#### [以功能区分](#by-topic-1)
+#### [以功能区分](#以功能区分-1)
 
 - [文本对齐](#文本对齐)
-- [Building and linting](#building-and-linting)
-- [Code completion](#code-completion)
+- [构建和可疑代码标记](#构建和可疑代码标记)
+- [代码补全](#代码补全)
 - [Cycle](#cycle)
-- [Commenters](#commenters)
-- [Delimiter](#delimiter)
-- [Fuzzy finders](#fuzzy-finders)
-- [Grep tools](#grep-tools)
-- [Indent](#indent)
-- [Navigation](#navigation)
-- [Snippets](#snippets)
-- [Statusline](#statusline)
-- [Surround](#surround)
-- [Taking notes](#taking-notes)
-- [Text objects](#text-objects)
+- [注释工具](#注释工具)
+- [分割符](#分割符)
+- [模糊搜索](#模糊搜索)
+- [Grep 工具](#grep-工具)
+- [缩进](#缩进)
+- [文件导航](#文件导航)
+- [代码片段](#代码片段)
+- [状态栏](#状态栏)
+- [文字环绕符](#文字环绕符)
+- [记笔记](#记笔记)
+- [文本对象](#文本对象)
 - [Tmux](#tmux)
-- [Undo history](#undo-history)
-- [Version control](#version-control)
-- [Writing](#writing)
-- [Misc](#misc)
+- [撤销历史](#撤销历史)
+- [版本控制](#版本控制)
+- [写作工具](#写作工具)
+- [其他](#其他)
 
-#### [以文件类型区分](#by-filetype-1)
-
+#### [以文件类型区分](#以文件类型区分-1)
 
 - [C and C++](#c-and-c)
 - [Clojure](#clojure)
@@ -44,13 +43,13 @@
 - [tabular](https://github.com/godlygeek/tabular)
 - [vim-easy-align](https://github.com/junegunn/vim-easy-align)
 
-#### Building and linting
+#### 构建和可疑代码标记
 
 - [ale](https://github.com/w0rp/ale)
 - [neomake](https://github.com/neomake/neomake)
 - [syntastic](https://github.com/vim-syntastic/syntastic)
 
-#### Code completion
+#### 代码补全
 
 - [VimCompletesMe](https://github.com/ajh17/VimCompletesMe)
 - [YouCompleteMe](https://github.com/Valloric/YouCompleteMe)
@@ -65,19 +64,19 @@
 - [switch.vim](https://github.com/AndrewRadev/switch.vim)
 - [vim-speeddating](https://github.com/tpope/vim-speeddating)
 
-#### Commenters
+#### 注释工具
 
 - [nerdcommenter](https://github.com/scrooloose/nerdcommenter)
 - [tcomment_vim](https://github.com/tomtom/tcomment_vim)
 - [vim-commentary](https://github.com/tpope/vim-commentary)
 
-#### Delimiter
+#### 分割符 
 
 - [auto-pairs](https://github.com/jiangmiao/auto-pairs)
 - [delimitMate](https://github.com/Raimondi/delimitMate)
 - [vim-endwise](https://github.com/tpope/vim-endwise)
 
-#### Fuzzy finders
+#### 模糊搜索
 
 - [Command-T](https://github.com/wincent/Command-T) (_requires +ruby_)
 - [ctrlp.vim](https://github.com/ctrlpvim/ctrlp.vim)
@@ -85,18 +84,18 @@
 - [fzf](https://github.com/junegunn/fzf)
 - [unite.vim](https://github.com/Shougo/unite.vim)
 
-#### Grep tools
+#### Grep 工具
 
 - [ctrlsf.vim](https://github.com/dyng/ctrlsf.vim)
 - [ferret](https://github.com/wincent/ferret)
 - [vim-grepper](https://github.com/mhinz/vim-grepper)
 
-#### Indent
+#### 缩进
 
 - [indentLine](https://github.com/Yggdroot/indentLine)
 - [vim-indent-guides](https://github.com/nathanaelkane/vim-indent-guides)
 
-#### Navigation
+#### 文件导航 
 
 - [nerdtree](https://github.com/scrooloose/nerdtree)
 - [tagbar](https://github.com/majutsushi/tagbar)
@@ -106,29 +105,29 @@
 - [vim-vinegar](https://github.com/tpope/vim-vinegar)
 - [vimfiler.vim](https://github.com/Shougo/vimfiler.vim) (_depends on other plugins_)
 
-Also see [fuzzy finders](#fuzzy-finders).
+见[fuzzy finders](#fuzzy-finders).
 
-#### Snippets
+#### 代码片段
 
 - [neosnippet.vim](https://github.com/Shougo/neosnippet.vim) (_depends on other plugins_)
 - [ultisnips](https://github.com/SirVer/ultisnips)
 - [vim-snipmate](https://github.com/garbas/vim-snipmate) (_depends on other plugins_)
 - [xptemplate](https://github.com/drmingdrmer/xptemplate)
 
-#### Statusline
+#### 状态栏
 
 - [lightline.vim](https://github.com/itchyny/lightline.vim)
 - [powerline](https://github.com/powerline/powerline)
 - [vim-airline](https://github.com/vim-airline/vim-airline)
 - [vim-flagship](https://github.com/tpope/vim-flagship)
 
-#### Surround
+#### 文字环绕符 
 
 - [vim-operator-surround](https://github.com/rhysd/vim-operator-surround)
 - [vim-sandwich](https://github.com/machakann/vim-sandwich)
 - [vim-surround](https://github.com/tpope/vim-surround)
 
-#### Taking notes
+#### 记笔记 
 
 - [vim-dotoo](https://github.com/dhruvasagar/vim-dotoo)
 - [vim-journal](https://github.com/junegunn/vim-journal)
@@ -137,7 +136,7 @@ Also see [fuzzy finders](#fuzzy-finders).
 - [vim-pad](https://github.com/fmoralesc/vim-pad)
 - [vimwiki](https://github.com/vimwiki/vimwiki)
 
-#### Text objects
+#### 文本对象
 
 - [targets.vim](https://github.com/wellle/targets.vim)
 - [vim-exchange](https://github.com/tommcdo/vim-exchange)
@@ -150,12 +149,12 @@ Also see [fuzzy finders](#fuzzy-finders).
 - [vim-tmux-navigator](https://github.com/christoomey/vim-tmux-navigator)
 - [vitality.vim](https://github.com/sjl/vitality.vim)
 
-#### Undo history
+#### 撤销历史 
 
 - [gundo.vim](https://github.com/sjl/gundo.vim)
 - [undotree](https://github.com/mbbill/undotree)
 
-#### Version control
+#### 版本控制
 
 - [agit.vim](https://github.com/cohama/agit.vim)
 - [committia.vim](https://github.com/rhysd/committia.vim)
@@ -171,12 +170,12 @@ Also see [fuzzy finders](#fuzzy-finders).
 - [vim-signify](https://github.com/mhinz/vim-signify)
 - [vimagit](https://github.com/jreybert/vimagit)
 
-#### Writing
+#### 写作工具
 
 - [vim-grammarous](https://github.com/rhysd/vim-grammarous)
 - [vim-online-thesaurus](https://github.com/beloglazov/vim-online-thesaurus)
 
-#### Misc
+#### 其他
 
 - [CoVim](https://github.com/FredKSchott/CoVim)
 - [FastFold](https://github.com/Konfekt/FastFold)
@@ -200,7 +199,7 @@ Also see [fuzzy finders](#fuzzy-finders).
 - [vim-startify](https://github.com/mhinz/vim-startify)
 - [vim-unimpaired](https://github.com/tpope/vim-unimpaired)
 
-## By filetype
+## 以文件类型区分
 
 #### C and C++
 
