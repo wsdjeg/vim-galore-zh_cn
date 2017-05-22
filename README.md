@@ -135,7 +135,7 @@ Moolenaar](https://en.wikipedia.org/wiki/Bram_Moolenaar) 于 1991 年发布初�
 
 通过阅读 [Why, oh WHY, do those #?@! nutheads use vi?](http://www.viemu.com/a-why-vi-vim.html) 来对 Vim 进行大致的了解。
 
-返回主目录[:arrow_heading_up:](https://github.com/wsdjeg/vim-galore-zh_cn/blob/master/README.md#简介)
+返回主目录 [:arrow_heading_up:](#简介)
 
 ## Vim 哲学
 
