@@ -31,9 +31,9 @@
 
 <!-- vim-markdown-toc GFM -->
 
-  - [简介](#简介)
-    - [什么是 Vim？](#什么是-vim)
-    - [Vim 哲学](#vim-哲学)
+- [简介](#简介)
+  - [什么是 Vim？](#什么是-vim)
+  - [Vim 哲学](#vim-哲学)
   - [入门](#入门)
   - [精简的 vimrc](#精简的-vimrc)
   - [我正在使用什么样的 Vim](#我正在使用什么样的-vim)
@@ -135,11 +135,9 @@
 
 <!-- vim-markdown-toc -->
 
-* * *
+# 简介
 
-## 简介
-
-### 什么是 Vim？
+## 什么是 Vim？
 
 [Vim](http://www.vim.org) 是一个历史悠久的文本编辑器，可以追溯到 [qed](https://en.wikipedia.org/wiki/QED_(text_editor))。[Bram
 Moolenaar](https://en.wikipedia.org/wiki/Bram_Moolenaar) 于 1991 年发布初始版本。
@@ -160,7 +158,7 @@ Moolenaar](https://en.wikipedia.org/wiki/Bram_Moolenaar) 于 1991 年发布初�
 
 返回主目录 [:arrow_heading_up:](#简介)
 
-### Vim 哲学
+## Vim 哲学
 
 Vim 采用模式编辑的理念，即它提供了多种模式，按键在不同的模式下作用不同。你可以在 _普通模式_ 下浏览文件，在 _插入模式_ 下插入文本，在 _可视模式_ 下选择行，在 _命令模式_ 下执行命令等等。起初这听起来可能很复杂，但是这有一个很大的优点：不需要通过同时按住多个键来完成操作，大多数时候你只需要依次按下这些按键即可。越常用的操作，所需要的按键数量越少。
 
