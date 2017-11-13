@@ -58,30 +58,35 @@
   - [折叠](#折叠)
   - [会话](#会话)
   - [局部化](#局部化)
-  - [用法](#用法)
-    - [获取离线帮助](#获取离线帮助)
-    - [获取离线帮助（补充）](#获取离线帮助补充)
-    - [获取在线帮助](#获取在线帮助)
-    - [执行自动命令](#执行自动命令)
-      - [用户自定义事件](#用户自定义事件)
-      - [事件嵌套](#事件嵌套)
-    - [剪切板](#剪切板)
-      - [剪贴板的使用（Windows, OSX）](#剪贴板的使用windows-osx)
-      - [剪贴板的使用（Linux, BSD, ...）](#剪贴板的使用linux-bsd-)
-    - [打开文件时恢复光标位置](#打开文件时恢复光标位置)
-    - [备份文件，交换文件，撤销文件以及 viminfo 文件的处理](#备份文件交换文件撤销文件以及-viminfo-文件的处理)
-    - [编辑远程文件](#编辑远程文件)
-    - [插件管理](#插件管理)
-    - [多行编辑](#多行编辑)
-    - [使用外部程序和过滤器](#使用外部程序和过滤器)
-    - [Cscope](#cscope)
-      - [1. 构建数据库](#1-构建数据库)
-      - [2. 添加数据库](#2-添加数据库)
-      - [3. 查询数据库](#3-查询数据库)
-    - [MatchIt](#matchit)
-        - [在 Vim 8 中安装](#在-vim-8-中安装)
-        - [在 Vim 7 或者更早的版本中安装](#在-vim-7-或者更早的版本中安装)
-        - [简短的介绍](#简短的介绍)
+- [用法](#用法)
+  - [获取离线帮助](#获取离线帮助)
+  - [获取离线帮助（补充）](#获取离线帮助补充)
+  - [获取在线帮助](#获取在线帮助)
+  - [执行自动命令](#执行自动命令)
+    - [用户自定义事件](#用户自定义事件)
+    - [事件嵌套](#事件嵌套)
+  - [剪切板](#剪切板)
+    - [剪贴板的使用（Windows, OSX）](#剪贴板的使用windows-osx)
+    - [剪贴板的使用（Linux, BSD, ...）](#剪贴板的使用linux-bsd-)
+  - [打开文件时恢复光标位置](#打开文件时恢复光标位置)
+  - [临时文件](#临时文件)
+    - [备份文件](#备份文件)
+    - [交换文件](#交换文件)
+    - [撤销文件](#撤销文件)
+    - [viminfo 文件](#viminfo-文件)
+    - [临时文件管理设置示例](#临时文件管理设置示例)
+  - [编辑远程文件](#编辑远程文件)
+  - [插件管理](#插件管理)
+  - [多行编辑](#多行编辑)
+  - [使用外部程序和过滤器](#使用外部程序和过滤器)
+  - [Cscope](#cscope)
+    - [1. 构建数据库](#1-构建数据库)
+    - [2. 添加数据库](#2-添加数据库)
+    - [3. 查询数据库](#3-查询数据库)
+  - [MatchIt](#matchit)
+    - [在 Vim 8 中安装](#在-vim-8-中安装)
+    - [在 Vim 7 或者更早的版本中安装](#在-vim-7-或者更早的版本中安装)
+    - [简短的介绍](#简短的介绍)
 - [技巧](#技巧)
   - [聪明地使用 n 和 N](#聪明地使用-n-和-n)
   - [聪明地使用命令行历史](#聪明地使用命令行历史)
@@ -123,7 +128,7 @@
     - [在终端中按 ESC 后有延时](#在终端中按-esc-后有延时)
     - [无法重复函数中执行的搜索](#无法重复函数中执行的搜索)
   - [主题列表](#主题列表)
-- [插件列表](#插件列表)
+  - [插件列表](#插件列表)
 - [Neovim](#neovim)
   - [加入我们](#加入我们)
   - [致谢：](#致谢)
@@ -889,9 +894,9 @@ q
 
 变量也有不同的作用域，详细内容请参考 [Vim scripting 的文档](http://vimdoc.sourceforge.net/htmldoc/usr_41.html)。
 
-## 用法
+# 用法
 
-### 获取离线帮助
+## 获取离线帮助
 
 Vim 自带了一套很完善的帮助文档，它们是一个个有固定排版格式的文本文件，通过标签可以访问这些文件的特定位置。
 
@@ -915,7 +920,7 @@ Vim 自带了一套很完善的帮助文档，它们是一个个有固定排版�
 
 上面的命令会在所有的帮助文件中搜索“backwards”，然后跳转到第一个匹配的位置。所有的匹配位置都会被添加到全局位置信息表，用 `:cp / :cn` 可以在匹配位置之间进行切换。或者用 `:copen` 命令来打开全局位置信息表，将光标定位到你想要的位置，再按 回车就可以跳转到该匹配项。详细说明请参考 `:h quickfix`。
 
-### 获取离线帮助（补充）
+## 获取离线帮助（补充）
 
 这个列表最初发表在 [vim_dev](https://groups.google.com/forum/#!forum/vim_dev)，由 @chrisbra 编辑的，他是 Vim 开发人员中最活跃的一个。
 
@@ -977,17 +982,17 @@ Vim 自带了一套很完善的帮助文档，它们是一个个有固定排版�
 
 另外在每个帮助页的顶端通常会包含一个用户文档链接（更多的从从用户的角度出发来主角命令的功能和用法，不涉及那么多细节）。如：`:h pattern.txt` 里包含了 `:h 03.9` 和 `:h usr_27` 两个章节的链接。
 
-### 获取在线帮助
+## 获取在线帮助
 
 如果你遇到了无法解决的问题，或者需要指引的话，可以参考 [Vim 使用](https://groups.google.com/forum/#!forum/vim_use)邮件列表。 [IRC](https://de.wikipedia.org/wiki/Internet_Relay_Chat) 也是一个很不错的资源。 [Freenode](https://freenode.net/) 上的 `#vim` 频道很庞大，并且里面有许多乐于助人的人。
 
 如果你想给 Vim 提交 Bug 的话，可以使用 [vim_dev](https://groups.google.com/forum/#!forum/vim_dev) 邮件列表。
 
-### 执行自动命令
+## 执行自动命令
 
 你可以触发任何事件，如：`:doautocmd BufRead`。
 
-#### 用户自定义事件
+### 用户自定义事件
 
 对于插件而言，创建你自己的自定义事件有时非常有用。
 
@@ -1017,7 +1022,7 @@ endif
 
 帮助文档：`:h User`
 
-#### 事件嵌套
+### 事件嵌套
 
 默认情况下，自动命令不能嵌套！如果某个自动命令执行了一个命令，这个命令再依次触发其它的事件，这是不可能的。
 
@@ -1037,7 +1042,7 @@ autocmd VimEnter * nested edit $MYVIMRC
 
 帮助文档：`:h autocmd-nested`
 
-### 剪切板
+## 剪切板
 
 如果你想在没有GUI支持的Unix系统中使用 Vim 的 `'clipboard'` 选项，则需要 `+clipboard` 以及可选的 `+xterm_clipboard` 两个[特性](#what-kind-of-vim-am-i-running)支持。
 
@@ -1051,7 +1056,7 @@ autocmd VimEnter * nested edit $MYVIMRC
 
 另外请参考：[持续粘贴（为什么我每次都要设置 'paste' 模式](#持续粘贴为什么我每次都要设置-paste-模式)
 
-#### 剪贴板的使用（Windows, OSX）
+### 剪贴板的使用（Windows, OSX）
 
 Windows 自带了[剪贴板](https://msdn.microsoft.com/en-us/library/windows/desktop/ms649012(v=vs.85).aspx)，OSX 则带了一个[粘贴板](https://developer.apple.com/library/mac/documentation/Cocoa/Conceptual/PasteboardGuide106/Introduction/Introduction.html#//apple_ref/doc/uid/TP40008100-SW1)
 
@@ -1086,7 +1091,7 @@ set guioptions+=a
 :h 'go_a'
 ```
 
-#### 剪贴板的使用（Linux, BSD, ...）
+### 剪贴板的使用（Linux, BSD, ...）
 
 如果你的系统使用了 [X 图形界面](http://www.x.org/wiki)，事情会变得有一点不同。X 图形界面实现了 [X 窗口系统协议](http://www.x.org/releases/X11R7.7/doc/xproto/x11protocol.html), 这个协议在1987年发布的主版本11，因此 X 也通常被称为 X11。
 
@@ -1132,7 +1137,7 @@ set clipboard^=unnamedplus      " + 寄存器
 :h clipboard-unnamedplus
 ```
 
-### 打开文件时恢复光标位置
+## 打开文件时恢复光标位置
 
 如果没有这个设置，每次打开文件时光标都将定位在第一行。而加入了这个设置以后，你就可以恢复到上次关闭文件时光标所在的位置了。
 
@@ -1149,11 +1154,11 @@ autocmd BufReadPost *
 
 这需要使用 viminfo 文件：`:h viminfo-`。
 
-### 备份文件，交换文件，撤销文件以及 viminfo 文件的处理
+## 临时文件
 
 根据选项的不同， Vim 最多会创建4种工作文件。
 
-**备份文件**：
+### 备份文件
 
 你可以让 Vim 在将修改写入到文件之前先备份原文件。默认情况下， Vim 会保存一个备份文件但是当修改成功写入后会立即删除它（`:set writebackup`）。如果你想一直保留这个备份文件的话，可以使用 `:set backup`。而如果你想禁用备份功能的话，可以使用 `:set nobackup nowritebackup`。
 
@@ -1167,7 +1172,7 @@ $ diff ~/.vim/vimrc ~/.vim/files/backup/vimrc-vimbackup
 
 帮助文档：`:h backup`
 
-**交换文件**：
+### 交换文件
 
 假设你有一个非常棒的科幻小说的构思。在按照故事情节已经写了好几个小时几十万字的时候..忽然停电了！而那时你才想起来你上次保存 `~/来自外太空的邪恶入侵者.txt` 是在.. 好吧，你从来没有保存过。
 
@@ -1179,13 +1184,13 @@ $ diff ~/.vim/vimrc ~/.vim/files/backup/vimrc-vimbackup
 
 帮助文档：`:h swap-file` 和 `:h usr_11`
 
-**撤销文件**：
+### 撤销文件
 
 [内容变更历史记录](#%E5%86%85%E5%AE%B9%E5%8F%98%E6%9B%B4%E5%8E%86%E5%8F%B2%E8%AE%B0%E5%BD%95)是保存在内存中的，并且会在 Vim 退出时清空。如果你想让它持久化到磁盘中，可以设置 `:set undofile`。这会把文件 `~/foo.c` 的撤销文件保存在 `~/foo.c.un~`。
 
 帮助文档：`:h 'undofile'` 和 `:h undo-persistence`
 
-**viminfo 文件**：
+### viminfo 文件
 
 备份文件、交换文件和撤销文件都是与文本状态相关的，而 viminfo 文件是用来保存在 Vim 退出时可能会丢失的其它的信息的。包括历史记录（命令历史、搜索历史、输入历史）、寄存器内容、标注、缓冲区列表、全局变量等等。
 
@@ -1193,33 +1198,34 @@ $ diff ~/.vim/vimrc ~/.vim/files/backup/vimrc-vimbackup
 
 帮助文档：`:h viminfo` 和 `:h 'viminfo'`
 
-* * *
+### 临时文件管理设置示例
 
 如果你跟我一样，也喜欢把这些文件放到一个位置（如：`~/.vim/files`）的话，可以使用下面的配置：
 
 ```vim
+" 如果文件夹不存在，则新建文件夹
+if !isdirectory($HOME.'/.vim/files') && exists('*mkdir')
+  call mkdir($HOME.'/.vim/files')
+endif
+
+" 备份文件
 set backup
 set backupdir   =$HOME/.vim/files/backup/
 set backupext   =-vimbackup
 set backupskip  =
+" 交换文件
 set directory   =$HOME/.vim/files/swap//
 set updatecount =100
+" 撤销文件
 set undofile
 set undodir     =$HOME/.vim/files/undo/
+" viminfo 文件
 set viminfo     ='100,n$HOME/.vim/files/info/viminfo
 ```
 
-目录 `~/.vim/files` 需要先自行创建，否则 Vim 会报错。如果你经常在新环境下工作的话，可以尝试让它自动创建：
+注意：如果你在一个多用户系统中编辑某个文件时， Vim 提示你交换文件已经存在的话，可能是因为有其他的用户此时正在编辑这个文件。而如果将交换文件放到自己的home目录的话，这个功能就失效了。因此服务器非常不建议将这些文件修改到HOME目录，避免多人同时编辑一个文件，却没有任何警告。
 
-```vim
-if exists('*mkdir') && !isdirectory($HOME.'/.vim/files')
-  call mkdir($HOME.'/.vim/files')
-endif
-```
-
-注意：如果你在一个多用户系统中编辑某个文件时， Vim 提示你交换文件已经存在的话，可能是因为有其他的用户此时正在编辑这个文件。而如果将交换文件放到自己的home目录的话，这个功能就失效了。
-
-### 编辑远程文件
+## 编辑远程文件
 
 Vim 自带的 netrw 插件支持对远程文件的编辑。实际上它将远程的文件通过 scp 复制到本地的临时文件中，再用那个文件打开一个缓冲区，然后在保存时把文件再复制回远程位置。
 
@@ -1246,11 +1252,9 @@ Vim 自带的 netrw 插件支持对远程文件的编辑。实际上它将远程
 
 确保你已经看过了 `:h netrw-ssh-hack` 和 `:h g:netrw_ssh_cmd`。
 
-* * *
-
 另外一种编辑远程文件的方法是使用 [sshfs](https://wiki.archlinux.org/index.php/Sshfs)，它会用 [FUSE](https://en.wikipedia.org/wiki/Filesystem_in_Userspace) 来挂载远程的文件系统到你本地的系统当中。
 
-### 插件管理
+## 插件管理
 
 [Pathogen](https://github.com/tpope/vim-pathogen)是第一个比较流行的插件管理工具。实际上它只是修改了 _runtimepath_ （`:h 'rtp'`） 来引入所有放到该目录下的文件。你需要自己克隆插件的代码仓库到那个目录。
 
@@ -1261,7 +1265,7 @@ Vim 自带的 netrw 插件支持对远程文件的编辑。实际上它将远程
 - [vim-addon-manager](https://github.com/MarcWeber/vim-addon-manager)
 - [vundle](https://github.com/VundleVim/Vundle.vim)
 
-### 多行编辑
+## 多行编辑
 
 这是一种可以同时输入多行连续文本的技术。参考这个[示例](https://raw.githubusercontent.com/mhinz/vim-galore/master/contents/images/content-block_insert.gif)。
 
@@ -1285,7 +1289,7 @@ set virtualedit=all
 
 如果你想探索更有趣的事情，可以看看[多光标](https://github.com/terryma/vim-multiple-cursors)
 
-### 使用外部程序和过滤器
+## 使用外部程序和过滤器
 
 免责声明：Vim 是单线程的，因此在 Vim 中以前端进程执行其它的程序时会阻止其它的一切。当然你可以使用 Vim 程序接口，如Lua，并且使用它的多线程支持，但是在那期间， Vim 的处理还是被阻止了。Neovim 添加了任务 API 解决了此问题。
 
@@ -1312,7 +1316,7 @@ set virtualedit=all
 :h :read!
 ```
 
-### Cscope
+## Cscope
 
 [Cscope](http://cscope.sourceforge.net/) 的功能比 [ctags](http://ctags.sourceforge.net/) 要完善，但是只支持C（通过设置cscope.files后同样支持C++以及Java）。
 
@@ -1329,7 +1333,7 @@ set virtualedit=all
 - 在目录结构中当前的源文件在哪个位置？
 - 哪些文件引用了这个头文件？
 
-#### 1. 构建数据库
+### 1. 构建数据库
 
 在你项目的根目录执行下面的命令：
 
@@ -1346,7 +1350,7 @@ $ find . -name "*.java" > cscope.files
 $ cscope -bq
 ```
 
-#### 2. 添加数据库
+### 2. 添加数据库
 
 打开你新创建的数据库连接：
 
@@ -1362,7 +1366,7 @@ $ cscope -bq
 
 （当然你可以添加多个连接。）
 
-#### 3. 查询数据库
+### 3. 查询数据库
 
 ```vim
 :cs find <kind> <query>
@@ -1398,20 +1402,20 @@ nnoremap <buffer> <leader>cd :cscope find d  <c-r>=expand('<cword>')<cr><cr>
 
 帮助文档：`:h cscope`
 
-### MatchIt
+## MatchIt
 
 由于 Vim 是用 C 语言编写的，因此许多功能都假设使用类似 C 语言的语法。默认情况下，如果你的光标在 `{` 或 `#endif` , 就可以使用 `%` 跳转到与之匹配的 `}` 或 `#ifdef`。
 
 Vim 自带了一个名为 matchit.vim 的插件，但是默认没有启用。启用后可以用 `%` 在HTML相匹配的标签或 VimL 的 if/else/endif 块之间进行跳转，它还带来了一些新的命令。
 
-##### 在 Vim 8 中安装
+### 在 Vim 8 中安装
 
 ```vim
 " vimrc
 packadd! matchit
 ```
 
-##### 在 Vim 7 或者更早的版本中安装
+### 在 Vim 7 或者更早的版本中安装
 
 ```vim
 "vimrc
@@ -1426,7 +1430,7 @@ runtime macros/matchit.vim
 :helptags ~/.vim/doc
 ```
 
-##### 简短的介绍
+### 简短的介绍
 
 至此这个插件已经可以使用了。 参考 `:h matchit-intro` 来获得支持的命令以及 `:h matchit-languages` 来获得支持的语言。
 
@@ -1884,7 +1888,7 @@ set ttimeoutlen=10    " unnoticeable small value
 
 ## 主题列表
 
-# 插件列表
+## 插件列表
 
 # Neovim
 
