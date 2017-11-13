@@ -64,7 +64,7 @@
     - [获取在线帮助](#获取在线帮助)
     - [执行自动命令](#执行自动命令)
       - [用户自定义事件](#用户自定义事件)
-      - [内部自带事件](#内部自带事件)
+      - [事件嵌套](#事件嵌套)
     - [剪切板](#剪切板)
       - [剪贴板的使用（Windows, OSX）](#剪贴板的使用windows-osx)
       - [剪贴板的使用（Linux, BSD, ...）](#剪贴板的使用linux-bsd-)
@@ -101,12 +101,12 @@
   - [命令](#命令)
     - [:global 和 :vglobal - 在所有匹配行执行命令](#global-和-vglobal---在所有匹配行执行命令)
     - [:normal 和 :execute - 脚本梦之队](#normal-和-execute---脚本梦之队)
-    - [:redir - 重定向消息](#redir---重定向消息)
+    - [重定向消息](#重定向消息)
 - [调试](#调试)
   - [常规建议](#常规建议)
+  - [调整日志等级](#调整日志等级)
   - [查看启动日志](#查看启动日志)
   - [查看运行时日志](#查看运行时日志)
-  - [调整日志等级](#调整日志等级)
   - [vim 脚本调试](#vim-脚本调试)
   - [语法文件调试](#语法文件调试)
 - [杂项](#杂项)
@@ -1017,7 +1017,7 @@ endif
 
 帮助文档：`:h User`
 
-#### 内部自带事件
+#### 事件嵌套
 
 默认情况下，自动命令不能嵌套！如果某个自动命令执行了一个命令，这个命令再依次触发其它的事件，这是不可能的。
 
@@ -1663,7 +1663,7 @@ autocmd ColorScheme lucius highlight StatusLine ctermbg=darkgray cterm=NONE guib
 :execute 'normal!' n . 'j'
 ```
 
-### :redir - 重定向消息
+### 重定向消息
 
 许多命令都会输出消息，`:redir` 用来重定向这些消息。它可以将消息输出到文件、[寄存器](#寄存器)或是某个变量中。
 
@@ -1680,7 +1680,14 @@ autocmd ColorScheme lucius highlight StatusLine ctermbg=darkgray cterm=NONE guib
 :put =neatvar
 ```
 
+再 Vim 8 中，可以更简单的方式即位：
+
+```
+:put =execute('reg')
+```
+
 （译者注：原文最后一条命令是 `:put =nicevar` 但是实际会报变量未定义的错误）
+（实测 neovim/vim8 下没问题）
 
 帮助文档：`:h :redir`
 
@@ -1688,11 +1695,66 @@ autocmd ColorScheme lucius highlight StatusLine ctermbg=darkgray cterm=NONE guib
 
 ## 常规建议
 
+如果你遇到了奇怪的行为，尝试用这个命令重现它：
+
+```
+vim -u NONE -N
+```
+
+这样会在不引用vimrc（默认设置）的情况下重启vim，并且在 **nocompatible** 模式下（使用vim默认设置而不是vi的）。（搜索 `:h --noplugin` 命令了解更多启动加载方式）
+
+如果仍旧能够出现该错误，那么这极有可能是vim本身的bug，请给 [vim_dev]("https://groups.google.com/forum/#!forum/vim_dev") 发送邮件反馈错误，多数情况下问题不会立刻解决，你还需要进一步研究
+
+许多插件经常会提供新的（默认的/自动的）操作。如果在保存的时候发生了，那么请用 `:verb au BufWritePost` 命令检查潜在的问题
+
+如果你在使用一个插件管理工具，将插件行注释调，再进行调试。
+
+问题还没有解决？如果不是插件的问题，那么肯定是你的自定义的设置的问题，可能是你的 options 或 autocmd 等等。
+
+到了一行行代码检查的时候了，不断地排除缩小检查范围知道你找出错误，根据二分法的原理你不会花费太多时间的。
+
+在实践过程中，可能就是这样，把 `:finish` 放在你的 **vimrc** 文件中间，Vim会跳过它之后的设置。如果问题还在，那么问题就出在`:finish`之前的设置中，再把`:finish`放到前一部分设置的中间位置。否则问题就出现在它后面的半部分设置，那么就把`:finish`放到后半部分的中间位置。不断的重复即可找到。
+
+## 调整日志等级
+
+Vim现在正在使用的另一个比较有用的方法是增加debug信息输出详细等级。现在Vim支持9个等级，可以用`:h 'verbose'`命令查看。
+
+```vim
+:e /tmp/foo
+:set verbose=2
+:w
+:set verbose=0
+```
+
+这可以显示出所有引用的文件、没有变化的文件或者各种各样的作用于保存的插件。
+
+如果你只是想用简单的命令来提高等级，也是用 `:verbose` ，放在其他命令之前，通过计数来指明等级，默认是1.
+
+```vim
+:verb set verbose
+"  verbose=1
+:10verb set verbose
+"  verbose=10
+```
+
+通常用等级1来显示上次从哪里设置的选项
+
+```vim
+:verb set ai?
+"      Last set from ~/.vim/vimrc
+```
+
+一般等级越高输出信息月详细。但是不要害怕，亦可以把输出导入到文件中：
+
+```vim
+:set verbosefile=/tmp/foo | 15verbose echo "foo" | vsplit /tmp/foo
+```
+
+你可以一开始的时候就打开verbosity，用 `-V` 选项，它默认设置调试等级为10。 例如：`vim -V5`
+
 ## 查看启动日志
 
 ## 查看运行时日志
-
-## 调整日志等级
 
 ## vim 脚本调试
 
