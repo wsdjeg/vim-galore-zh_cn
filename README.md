@@ -29,6 +29,8 @@
 - 原文作者：Marco Hinz
 - 本文地址：<https://github.com/wsdjeg/vim-galore-zh_cn>
 
+**注:转载清保留以上信息**
+
 <!-- vim-markdown-toc GFM -->
 
 - [简介](#简介)
