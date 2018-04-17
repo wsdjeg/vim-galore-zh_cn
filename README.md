@@ -22,6 +22,7 @@
 </div>
 
 [![掘金翻译计划](https://rawgit.com/aleen42/badges/master/src/juejin_translation.svg)](https://github.com/xitu/gold-miner/)
+[![Gitter](https://badges.gitter.im/vim-china/Lobby.svg)](https://gitter.im/vim-china/Lobby)
 
 > Vim from zero to hero - Vim 从入门到精通
 
@@ -507,7 +508,7 @@ Vim 为我们提供了如下的寄存器：
 | `A`-`Z` | 用户    | 全局标注，可以作用于不同文件。大写标注也称为「文件标注」。跳转时有可能会切换到另一个缓冲区                                            |
 | `0`-`9` | viminfo | `0` 代表 viminfo 最后一次被写入的位置。实际使用中，就代表 Vim 进程最后一次结束的位置。`1` 代表 Vim 进程倒数第二次结束的位置，以此类推 |
 
-如果想跳转到指定的标注，你可以先按下 `'` / `g'` 或者 `` ` `` / `` g` `` 然后按下标注名。
+如果想跳转到指定的标注，你可以先按下 `'` / `g'` 或者 `` ` `` / ``g` `` 然后按下标注名。
 
 如果你想定义当前文件中的标注，可以先按下 `m` 再按下标注名。比如，按下 `mm` 就可以把当前位置标注为 `m`。在这之后，如果你的光标切换到了文件的其他位置，只需要通过 `'m` 或者 `\`m`即可回到刚才标注的行。区别在于，`'m`会跳转回被标记行的第一个非空字符，而`\`m`会跳转回被标记行的被标记列。根据 viminfo 的设置，你可以在退出 Vim 的时候保留小写字符标注。请参阅`:h viminfo-'\` 来获取更多帮助。
 
@@ -1686,9 +1687,7 @@ autocmd ColorScheme lucius highlight StatusLine ctermbg=darkgray cterm=NONE guib
 
 再 Vim 8 中，可以更简单的方式即位：
 
-```
-:put =execute('reg')
-```
+    :put =execute('reg')
 
 （译者注：原文最后一条命令是 `:put =nicevar` 但是实际会报变量未定义的错误）
 （实测 neovim/vim8 下没问题）
@@ -1701,9 +1700,7 @@ autocmd ColorScheme lucius highlight StatusLine ctermbg=darkgray cterm=NONE guib
 
 如果你遇到了奇怪的行为，尝试用这个命令重现它：
 
-```
-vim -u NONE -N
-```
+    vim -u NONE -N
 
 这样会在不引用vimrc（默认设置）的情况下重启vim，并且在 **nocompatible** 模式下（使用vim默认设置而不是vi的）。（搜索 `:h --noplugin` 命令了解更多启动加载方式）
 
