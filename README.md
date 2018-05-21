@@ -23,6 +23,7 @@
 
 [![掘金翻译计划](https://rawgit.com/aleen42/badges/master/src/juejin_translation.svg)](https://github.com/xitu/gold-miner/)
 [![Gitter](https://badges.gitter.im/vim-china/Lobby.svg)](https://gitter.im/vim-china/Lobby)
+[![Telegram](https://img.shields.io/badge/chat-telegram-blue.svg)](https://t.me/VimHub)
 
 > Vim from zero to hero - Vim 从入门到精通
 
