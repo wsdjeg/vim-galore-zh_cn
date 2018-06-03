@@ -24,8 +24,9 @@
 [![掘金翻译计划](https://rawgit.com/aleen42/badges/master/src/juejin_translation.svg)](https://github.com/xitu/gold-miner/)
 [![Gitter](https://badges.gitter.im/vim-china/Lobby.svg)](https://gitter.im/vim-china/Lobby)
 [![Telegram](https://img.shields.io/badge/chat-telegram-blue.svg)](https://t.me/VimHub)
+[![QQ](https://img.shields.io/badge/QQ%e7%be%a4-667379969-blue.svg)](https://jq.qq.com/?_wv=1027&k=5Ssk8CS)
 
-> Vim from zero to hero - Vim 从入门到精通
+> Vim 从入门到精通，旨在翻译 vim-galore 的基础上做了更多的补充
 
 - 原文地址：<https://github.com/mhinz/vim-galore>
 - 原文作者：Marco Hinz
@@ -150,13 +151,14 @@ Moolenaar](https://en.wikipedia.org/wiki/Bram_Moolenaar) 于 1991 年发布初�
 
 获取 Vim：用包管理器安装或者直接到 vim.org [下载](http://www.vim.org/download.php)。
 
-对于 Windows 用户，可以从 [我的网盘](https://share.weiyun.com/da2be5937ac0e2bd3abc26355fad1204) 下载。该版本可轻易添加 `python` 、`python3` 、`lua` 等支持，只需要安装 python、lua 即可。
+对于 Windows 用户，可以从 [我的网盘](https://share.weiyun.com/da2be5937ac0e2bd3abc26355fad1204) 下载。
+该版本可轻易添加 `python` 、`python3` 、`lua` 等支持，只需要安装 python、lua 即可。
 
-讨论使用相关问题最好使用 [vim_use](https://groups.google.com/forum/#!forum/vim_use) 邮件列表或者使用 IRC([Freenode](https://freenode.net)) 的 `#vim` 频道。
+中文讨论使用相关问题最好使用 [vim_cn](https://groups.google.com/forum/#!forum/vim-cn) 邮件列表或者使用
+IRC([Freenode](https://freenode.net)) 的 `#vim-china` 频道。
 
-欢迎加入我们的中文讨论群：[![QQ](https://img.shields.io/badge/QQ%e7%be%a4-121056965-blue.svg)](https://jq.qq.com/?_wv=1027&k=43DB6SG)
-
-项目在 [Github](https://github.com/vim/vim) 上开发，项目讨论请订阅 [vim_dev](https://groups.google.com/forum/#!forum/vim_dev) 邮件列表。
+项目在 [Github](https://github.com/vim/vim) 上开发，项目讨论请订阅
+[vim_dev](https://groups.google.com/forum/#!forum/vim_dev) 邮件列表。
 
 通过阅读 [Why, oh WHY, do those #?@! nutheads use vi?](http://www.viemu.com/a-why-vi-vim.html) 来对 Vim 进行大致的了解。
 
