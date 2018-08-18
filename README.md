@@ -3,16 +3,10 @@
   <img src='https://raw.githubusercontent.com/mhinz/vim-galore/master/static/images/logo-vim-galore.png' alt='vim-galore logo' />
   <br /><br /><br /><br />
   <div>
-    <a href='https://github.com/mhinz/vim-galore'> 
-        <img src='https://img.shields.io/badge/Version:-Original-blue.svg'
-        alt='version: original' /> 
-    </a> 
-    <a href='http://postd.cc/?s=vim-galore'>
-      <img src='https://img.shields.io/badge/Translation:-Japanese-grey.svg' alt='tranlsation: japanese' />
-    </a>
-    <a href='https://github.com/lsrdg/vim-galore'>
-      <img src='https://img.shields.io/badge/Translation:-Portuguese-grey.svg' alt='translation: portuguese' />
-    </a>
+    <a href='https://github.com/wsdjeg/vim-galore-zh_cn'>Chinese</a> |
+    <a href='http://postd.cc/?s=vim-galore'>Japanese</a> |
+    <a href='https://github.com/lsrdg/vim-galore'>Portuguese</a> |
+    <a href='http://givi.olnd.ru/vim-galore/vim-galore-ru.html'>Russian</a>
     <div>
       <br />
       <sub>Licensed under <a href='https://creativecommons.org/licenses/by-sa/4.0'>CC BY-SA 4.0<a/>.</sub>
@@ -21,7 +15,6 @@
   <br /><br />
 </div>
 
-[![掘金翻译计划](https://rawgit.com/aleen42/badges/master/src/juejin_translation.svg)](https://github.com/xitu/gold-miner/)
 [![Gitter](https://badges.gitter.im/vim-china/Lobby.svg)](https://gitter.im/vim-china/Lobby)
 [![Telegram](https://img.shields.io/badge/chat-telegram-blue.svg)](https://t.me/VimHub)
 [![QQ](https://img.shields.io/badge/QQ%e7%be%a4-667379969-blue.svg)](https://jq.qq.com/?_wv=1027&k=5Ssk8CS)
