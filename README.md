@@ -17,7 +17,6 @@
 
 [![Gitter](https://badges.gitter.im/vim-china/Lobby.svg)](https://gitter.im/vim-china/Lobby)
 [![Telegram](https://img.shields.io/badge/chat-telegram-blue.svg)](https://t.me/VimHub)
-[![QQ](https://img.shields.io/badge/QQ%e7%be%a4-667379969-blue.svg)](https://jq.qq.com/?_wv=1027&k=5Ssk8CS)
 
 > Vim 从入门到精通，旨在翻译 vim-galore 的基础上做了更多的补充
 
@@ -125,9 +124,7 @@
     - [持续粘贴（为什么我每次都要设置 'paste' 模式）](#持续粘贴为什么我每次都要设置-paste-模式)
     - [在终端中按 ESC 后有延时](#在终端中按-esc-后有延时)
     - [无法重复函数中执行的搜索](#无法重复函数中执行的搜索)
-  - [主题列表](#主题列表)
-  - [插件列表](#插件列表)
-- [Neovim](#neovim)
+  - [[插件列表}(PLUGINS.md)](#插件列表pluginsmd)
   - [加入我们](#加入我们)
   - [致谢：](#致谢)
 
@@ -1943,11 +1940,7 @@ set ttimeoutlen=10    " unnoticeable small value
 
 帮助文档：`:h function-search-undo`。
 
-## 主题列表
-
-## 插件列表
-
-# Neovim
+## [插件列表}(PLUGINS.md)
 
 ## 加入我们
 
