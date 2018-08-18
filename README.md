@@ -117,7 +117,7 @@
   - [调整日志等级](#调整日志等级)
   - [查看启动日志](#查看启动日志)
   - [查看运行时日志](#查看运行时日志)
-  - [vim 脚本调试](#vim-脚本调试)
+  - [Vim脚本调试](#vim脚本调试)
   - [语法文件调试](#语法文件调试)
 - [杂项](#杂项)
   - [附加资源](#附加资源)
@@ -1760,13 +1760,77 @@ Vim现在正在使用的另一个比较有用的方法是增加debug信息输出
 
 ## 查看运行时日志
 
-## vim 脚本调试
+## Vim脚本调试
+
+如果你以前使用过命令行调试器的话，对于`:debug`命令你很快就会感到熟悉。
+
+只需要在任何其他命令之前加上`:debug`就会让你进入调试模式。也就是，被调试的Vim脚本会在第一行停止运行，同时该行会被显示出来。
+
+想了解可用的6个调试命令，可以查阅`:h >cont`和阅读下面内容。需要指出的是，类似gdb和其他相似调试器，调试命令可以使用它们的简短形式：`c`、 `q`、`n`、`s`、 `i`和 `f`。
+
+除了上面的之外，你还可以自由地使用任何Vim的命令。比如，`:echo myvar`，该命令会在当前的脚本代码位置和上下文上被执行。
+
+只需要简单使用`:debug 1`，你就获得了[REPL](https://en.wikipedia.org/wiki/Read%E2%80%93eval%E2%80%93print_loop)调试特性。
+
+当然，调试模式下是可以定义断点的，不然的话每一行都去单步调试就会十分痛苦。（断点之所以被叫做断点，是因为运行到它们的时候，运行就会停止下来。因此，你可以利用断点跳过自己不感兴趣的代码区域）。请查阅`:h :breakadd`、 `:h :breakdel`和 `:h :breaklist`获取更多细节。
+
+假设你需要知道你每次在保存一个文件的时候有哪些代码在运行：
+
+```vim
+:au BufWritePost
+" signify  BufWritePost
+"     *         call sy#start()
+:breakadd func *start
+:w
+" Breakpoint in "sy#start" line 1
+" Entering Debug mode.  Type "cont" to continue.
+" function sy#start
+" line 1: if g:signify_locked
+>s
+" function sy#start
+" line 3: endif
+>
+" function sy#start
+" line 5: let sy_path = resolve(expand('%:p'))
+>q
+:breakdel *
+```
+
+正如你所见，使用`<cr>`命令会重复之前的调试命令，也就是在该例子中的`s`命令。
+
+`:debug`命令可以和[verbose](#verbosity)选项一起使用。
+
 
 ## 语法文件调试
+
+语法文件由于包含错误的或者复制的正则表达式，常常会使得Vim的运行较慢。如果Vim在编译的时候包含了`+profile` [feature](#what-kind-of-vim-am-i-running)特性，就可以给用户提供一个超级好用的`:syntime`命令。
+
+```vim
+:syntime on
+" 多次敲击<c-l>来重绘窗口，这样的话就会使得相应的语法规则被重新应用一次
+:syntime off
+:syntime report
+```
+输出结果包含了很多的度量维度。比如，你可以通过结果知道哪些正则表达式耗时太久需要被优化；哪些正则表达式一直在别使用但重来没有一次成功匹配。
+
+请查阅`:h :syntime`。
+
+
 
 # 杂项
 
 ## 附加资源
+
+| 资源名称                                                                                                                                                                     | 简介                                  |
+| ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------- |
+| [七个高效的文本编辑习惯](http://www.moolenaar.net/habits.html)                                                                                                               | 作者：Bram Moolenaar（即 Vim 的作者） |
+| [七个高效的文本编辑习惯2.0（PDF版）](http://www.moolenaar.net/habits_2007.pdf)                                                                                               | 同上                                  |
+| [IBM DeveloperWorks: 使用脚本编写 Vim 编辑器](http://www.ibm.com/developerworks/views/linux/libraryview.jsp?sort_order=asc&sort_by=Title&search_by=scripting+the+vim+editor) | Vim 脚本编写五辑                      |
+| [《漫漫 Vim 路》](http://learnvimscriptthehardway.stevelosh.com)                                                                                                             | 使用魔抓定制 Vim 插件                 |
+| [《 Vim 实践 (第2版)》](http://www.amazon.com/Practical-Vim-Edit-Speed-Thought/dp/1680501275/)                                                                               | 轻取 Vim 最佳书籍                     |
+| [Vimcasts.org](http://vimcasts.org/episodes/archive)                                                                                                                         | Vim录屏演示                           |
+| [为什么是个脚本都用 vi？](http://www.viemu.com/a-why-vi-vim.html)                                                                                                            | 常见误区释疑                          |
+| [你不爱 vi，所以你不懂 Vim ](http://stackoverflow.com/a/1220118)                                                                                                             | 简明,扼要,准确的干货                  |
 
 ## Vim 配置集合
 
