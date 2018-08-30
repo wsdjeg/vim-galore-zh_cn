@@ -1,15 +1,6 @@
 # Vim 从入门到精通
 
-[![Gitter](https://badges.gitter.im/vim-china/Lobby.svg)](https://gitter.im/vim-china/Lobby)
-[![Telegram](https://img.shields.io/badge/chat-telegram-blue.svg)](https://t.me/VimHub)
-
-> 旨在翻译 vim-galore 的基础上做了更多的补充
-
-- 原文地址：<https://github.com/mhinz/vim-galore>
-- 原文作者：Marco Hinz
-- 本文地址：<https://github.com/wsdjeg/vim-galore-zh_cn>
-
-**注:转载清保留以上信息**
+> 本文主要在翻译 [mhinz/vim-galore](https://github.com/mhinz/vim-galore) 的基础添加了一些我在使用 Vim 及开发 Vim 插件的过程中积累的一些细节。
 
 <!-- vim-markdown-toc GFM -->
 
@@ -125,9 +116,12 @@ Moolenaar](https://en.wikipedia.org/wiki/Bram_Moolenaar) 于 1991 年发布初�
 Linux、Mac 用户，可以使用包管理器安装 Vim，对于 Windows 用户，可以从 [我的网盘](https://share.weiyun.com/da2be5937ac0e2bd3abc26355fad1204) 下载。
 该版本可轻易添加 `python` 、`python3` 、`lua` 等支持，只需要安装 python、lua 即可。
 
-中文讨论使用相关问题最好使用 [vim_cn](https://groups.google.com/forum/#!forum/vim-cn) 邮件列表或者使用
-IRC([Freenode](https://freenode.net)) 的 `#vim-china` 频道。同时可以关注 Github 上的 vim-china 中文社区：
-https://github.com/vim-china/vim-china.github.io
+中文 Vim 用户交流，可以加入 QQ 群，或者使用 [Vim 中文社区频道](https://github.com/vim-china/vim-china.github.io)
+
+- [121056965 Vim/SpaceVim 用户 ① 群](https://jq.qq.com/?_wv=1027&k=43DB6SG)
+- [755208473 Vim/SpaceVim 用户 ② 群](https://jq.qq.com/?_wv=1027&k=5uBbMuA)
+- [748697811 Vim/SpaceVim 用户 ③ 群](https://jq.qq.com/?_wv=1027&k=5DqbuMV)
+- [667379969 Vim/SpaceVim 用户 ④ 群](https://jq.qq.com/?_wv=1027&k=5z2C7BM)
 
 项目在 [Github](https://github.com/vim/vim) 上开发，项目讨论请订阅
 [vim_dev](https://groups.google.com/forum/#!forum/vim_dev) 邮件列表。
