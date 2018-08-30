@@ -1,24 +1,9 @@
-<div align='center'>
-  <br /><br /><br />
-  <img src='https://raw.githubusercontent.com/mhinz/vim-galore/master/static/images/logo-vim-galore.png' alt='vim-galore logo' />
-  <br /><br /><br /><br />
-  <div>
-    <a href='https://github.com/wsdjeg/vim-galore-zh_cn'>Chinese</a> |
-    <a href='http://postd.cc/?s=vim-galore'>Japanese</a> |
-    <a href='https://github.com/lsrdg/vim-galore'>Portuguese</a> |
-    <a href='http://givi.olnd.ru/vim-galore/vim-galore-ru.html'>Russian</a>
-    <div>
-      <br />
-      <sub>Licensed under <a href='https://creativecommons.org/licenses/by-sa/4.0'>CC BY-SA 4.0<a/>.</sub>
-    </div>
-  </div>
-  <br /><br />
-</div>
+# Vim 从入门到精通
 
 [![Gitter](https://badges.gitter.im/vim-china/Lobby.svg)](https://gitter.im/vim-china/Lobby)
 [![Telegram](https://img.shields.io/badge/chat-telegram-blue.svg)](https://t.me/VimHub)
 
-> Vim 从入门到精通，旨在翻译 vim-galore 的基础上做了更多的补充
+> 旨在翻译 vim-galore 的基础上做了更多的补充
 
 - 原文地址：<https://github.com/mhinz/vim-galore>
 - 原文作者：Marco Hinz
@@ -134,18 +119,15 @@
 
 ## 什么是 Vim？
 
-[Vim](http://www.vim.org) 是一个历史悠久的文本编辑器，可以追溯到 [qed](https://en.wikipedia.org/wiki/QED_(text_editor))。[Bram
+[Vim](https://github.com/vim/vim) 是一个历史悠久的文本编辑器，可以追溯到 [qed](https://en.wikipedia.org/wiki/QED_(text_editor))。[Bram
 Moolenaar](https://en.wikipedia.org/wiki/Bram_Moolenaar) 于 1991 年发布初始版本。
 
-该项目托管在 [vim.org](http://www.vim.org/index.php)。
-
-获取 Vim：用包管理器安装或者直接到 vim.org [下载](http://www.vim.org/download.php)。
-
-对于 Windows 用户，可以从 [我的网盘](https://share.weiyun.com/da2be5937ac0e2bd3abc26355fad1204) 下载。
+Linux、Mac 用户，可以使用包管理器安装 Vim，对于 Windows 用户，可以从 [我的网盘](https://share.weiyun.com/da2be5937ac0e2bd3abc26355fad1204) 下载。
 该版本可轻易添加 `python` 、`python3` 、`lua` 等支持，只需要安装 python、lua 即可。
 
 中文讨论使用相关问题最好使用 [vim_cn](https://groups.google.com/forum/#!forum/vim-cn) 邮件列表或者使用
-IRC([Freenode](https://freenode.net)) 的 `#vim-china` 频道。
+IRC([Freenode](https://freenode.net)) 的 `#vim-china` 频道。同时可以关注 Github 上的 vim-china 中文社区：
+https://github.com/vim-china/vim-china.github.io
 
 项目在 [Github](https://github.com/vim/vim) 上开发，项目讨论请订阅
 [vim_dev](https://groups.google.com/forum/#!forum/vim_dev) 邮件列表。
