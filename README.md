@@ -102,7 +102,6 @@
     - [无法重复函数中执行的搜索](#无法重复函数中执行的搜索)
   - [插件列表](#插件列表)
   - [加入我们](#加入我们)
-  - [致谢：](#致谢)
 
 <!-- vim-markdown-toc -->
 
@@ -116,19 +115,10 @@ Moolenaar](https://en.wikipedia.org/wiki/Bram_Moolenaar) 于 1991 年发布初�
 Linux、Mac 用户，可以使用包管理器安装 Vim，对于 Windows 用户，可以从 [我的网盘](https://share.weiyun.com/da2be5937ac0e2bd3abc26355fad1204) 下载。
 该版本可轻易添加 `python` 、`python3` 、`lua` 等支持，只需要安装 python、lua 即可。
 
-中文 Vim 用户交流，可以加入 QQ 群，或者使用 [Vim 中文社区频道](https://github.com/vim-china/vim-china.github.io)
-
-- [121056965 Vim/SpaceVim 用户 ① 群](https://jq.qq.com/?_wv=1027&k=43DB6SG)
-- [755208473 Vim/SpaceVim 用户 ② 群](https://jq.qq.com/?_wv=1027&k=5uBbMuA)
-- [748697811 Vim/SpaceVim 用户 ③ 群](https://jq.qq.com/?_wv=1027&k=5DqbuMV)
-- [667379969 Vim/SpaceVim 用户 ④ 群](https://jq.qq.com/?_wv=1027&k=5z2C7BM)
-
 项目在 [Github](https://github.com/vim/vim) 上开发，项目讨论请订阅
 [vim_dev](https://groups.google.com/forum/#!forum/vim_dev) 邮件列表。
 
 通过阅读 [Why, oh WHY, do those #?@! nutheads use vi?](http://www.viemu.com/a-why-vi-vim.html) 来对 Vim 进行大致的了解。
-
-返回主目录 [:arrow_heading_up:](#简介)
 
 ## Vim 哲学
 
@@ -138,8 +128,6 @@ Vim 采用模式编辑的理念，即它提供了多种模式，按键在不同�
 around paragraph_）。
 
 如果你能看见 Vim 老司机操作，你会发现他们使用 Vim 脚本语言就如同钢琴师弹钢琴一样。复杂的操作只需要几个按键就能完成。他们甚至不用刻意去想，因为这已经成为[肌肉记忆](https://en.wikipedia.org/wiki/Muscle_memory)了。这减少[认识负荷](https://en.wikipedia.org/wiki/Cognitive_load)并帮助人们专注于实际任务。
-
-返回主目录 [:arrow_heading_up:](#简介)
 
 ## 入门
 
@@ -1921,8 +1909,3 @@ set ttimeoutlen=10    " unnoticeable small value
 ## 加入我们
 
 可以协助我们核对翻译，或者从[章节列表](CONTRIBUTING.md)中认领章节进行翻译。
-
-## 致谢：
-
-- [Linux 中国翻译组](https://github.com/LCTT)
-- [掘金翻译计划](https://github.com/xitu/gold-miner)
