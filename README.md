@@ -102,6 +102,7 @@
     - [在终端中按 ESC 后有延时](#在终端中按-esc-后有延时)
     - [无法重复函数中执行的搜索](#无法重复函数中执行的搜索)
   - [插件列表](#插件列表)
+  - [进阶阅读](#进阶阅读)
   - [加入我们](#加入我们)
 
 <!-- vim-markdown-toc -->
@@ -1916,6 +1917,10 @@ set ttimeoutlen=10    " unnoticeable small value
 帮助文档：`:h function-search-undo`。
 
 ## [插件列表](PLUGINS.md)
+
+## 进阶阅读
+
+- [Vim 插件开发指南](https://github.com/wsdjeg/vim-plugin-dev-guide)
 
 ## 加入我们
 
