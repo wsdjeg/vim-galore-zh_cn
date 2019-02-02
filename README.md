@@ -3,6 +3,12 @@
 > 本文主要在翻译 [mhinz/vim-galore](https://github.com/mhinz/vim-galore)
 的基础添加了一些我在使用 Vim 及开发 Vim 插件的过程中积累的一些细节。
 
+**Vim 中文同步聊天室**
+
+- telegram： [@VimHub](https://t.me/VimHub)
+- gitter: [vim-china/Lobby](https://gitter.im/vim-china/Lobby)
+- IRC: [#vim-china](https://webchat.freenode.net/?channels=vim-china)
+
 <!-- vim-markdown-toc GFM -->
 
 - [简介](#简介)
