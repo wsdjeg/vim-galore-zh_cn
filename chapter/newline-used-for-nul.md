@@ -1,5 +1,5 @@
-## NUL ·ûÓÃÐÂÐÐ±íÊ¾
+## NUL ç¬¦ç”¨æ–°è¡Œè¡¨ç¤º
 
-ÎÄ¼þÖÐµÄ NUL ·û £¨`\0`£©£¬ÔÚÄÚ´æÖÐ±»ÒÔÐÂÐÐ£¨`\n`£©±£´æ£¬ÔÚ»º´æ¿Õ¼äÖÐÏÔÊ¾Îª `^@`¡£
+æ–‡ä»¶ä¸­çš„ NUL ç¬¦ ï¼ˆ`\0`ï¼‰ï¼Œåœ¨å†…å­˜ä¸­è¢«ä»¥æ–°è¡Œï¼ˆ`\n`ï¼‰ä¿å­˜ï¼Œåœ¨ç¼“å­˜ç©ºé—´ä¸­æ˜¾ç¤ºä¸º `^@`ã€‚
 
-¸ü¶àÐÅÏ¢Çë²Î¿´ `man 7 ascii` ºÍ `:h NL-used-for-Nul` ¡£
+æ›´å¤šä¿¡æ¯è¯·å‚çœ‹ `man 7 ascii` å’Œ `:h NL-used-for-Nul` ã€‚

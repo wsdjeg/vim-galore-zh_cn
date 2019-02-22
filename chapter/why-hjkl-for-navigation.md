@@ -1,8 +1,8 @@
-## ÎªÊ²Ã´ÓÃhjklÒÆ¶¯¹â±ê£¿
+## ä¸ºä»€ä¹ˆç”¨hjklç§»åŠ¨å…‰æ ‡ï¼Ÿ
 
-µ± [Bill Joy](https://en.wikipedia.org/wiki/Bill_Joy) ´´½¨[vi](https://en.wikipedia.org/wiki/Vi)£¬Vim µÄÇ°ÉíÊ±, ËûµÄ¹¤×÷ÊÇÔÚÒ»Ì¨[ADM-3A](https://en.wikipedia.org/wiki/ADM-3A)Íê³ÉµÄ£¬¶øÕâ¸ö»úÆ÷Ã»ÓĞÓÃ±ğµÄ¼ü¿ØÖÆ¹â±ê£¬¶øÕıÊÇÈçÄã²Âµ½µÄ hjkl ×÷Îª¹â±ê¿ØÖÆ¼ü¡£
+å½“ [Bill Joy](https://en.wikipedia.org/wiki/Bill_Joy) åˆ›å»º[vi](https://en.wikipedia.org/wiki/Vi)ï¼ŒVim çš„å‰èº«æ—¶, ä»–çš„å·¥ä½œæ˜¯åœ¨ä¸€å°[ADM-3A](https://en.wikipedia.org/wiki/ADM-3A)å®Œæˆçš„ï¼Œè€Œè¿™ä¸ªæœºå™¨æ²¡æœ‰ç”¨åˆ«çš„é”®æ§åˆ¶å…‰æ ‡ï¼Œè€Œæ­£æ˜¯å¦‚ä½ çŒœåˆ°çš„ hjkl ä½œä¸ºå…‰æ ‡æ§åˆ¶é”®ã€‚
 
-¼üÅÌ²¼¾Ö: [Çëµã»÷](https://raw.githubusercontent.com/mhinz/vim-galore/master/contents/images/content-adm-3a-layout.jpg)
+é”®ç›˜å¸ƒå±€: [è¯·ç‚¹å‡»](https://raw.githubusercontent.com/mhinz/vim-galore/master/contents/images/content-adm-3a-layout.jpg)
 
-ÕâÒ²¸æËßÁËÎÒÃÇÎªÊ²Ã´ Unix ÏµÍ³»áÒÔ`~`´ú±íÖ÷Ä¿Â¼¡£
+è¿™ä¹Ÿå‘Šè¯‰äº†æˆ‘ä»¬ä¸ºä»€ä¹ˆ Unix ç³»ç»Ÿä¼šä»¥`~`ä»£è¡¨ä¸»ç›®å½•ã€‚
 
