@@ -1,30 +1,30 @@
-## Ó³Éä´óĞ´Ëø¶¨¼ü£¨CapsLock£©µ½¿ØÖÆ¼ü£¨Ctrl£©
+## æ˜ å°„å¤§å†™é”å®šé”®ï¼ˆCapsLockï¼‰åˆ°æ§åˆ¶é”®ï¼ˆCtrlï¼‰
 
-´óĞ´Ëø¶¨¼üÊôÓÚ¼üÅÌÉÏ×îÉÙÓÃµ½µÄ°´¼ü£¬µ«ÊÇËüÒª±È¿ØÖÆ¼ü¸ü¼ÓÈİÒ×°´µ½£¬
-ÒòÎªËüÎ»ÓÚÄãÊÖ·ÅÔÚ¼üÅÌÊ±µÄ[ÆğÊ¼ĞĞ](https://raw.githubusercontent.com/mhinz/vim-galore/master/contents/images/content-homerow.png)¡£
-Èç¹ûÄãÇÃºÜ¶à´úÂëµÄ»°£¬Ó³Éä´óĞ´Ëø¶¨¼ü£¨CapsLock£©µ½¿ØÖÆ¼ü£¨Ctrl£©¿ÉÒÔÓĞĞ§½µµÍ
-[ÖØ¸´Ê¹Á¦ÉËº¦](https://de.wikipedia.org/wiki/Repetitive-Strain-Injury-Syndrom) (ps:ÎªÊ²Ã´½« jk Ó³ÉäÎª esc£¬¶ø²»ÊÇ jj£¬ÖØ¸´µã»÷Í¬Ò»¸ö°´¼ü¶ÔÊÖÖ¸ÉËº¦ºÜ´ó)¡£
+å¤§å†™é”å®šé”®å±äºé”®ç›˜ä¸Šæœ€å°‘ç”¨åˆ°çš„æŒ‰é”®ï¼Œä½†æ˜¯å®ƒè¦æ¯”æ§åˆ¶é”®æ›´åŠ å®¹æ˜“æŒ‰åˆ°ï¼Œ
+å› ä¸ºå®ƒä½äºä½ æ‰‹æ”¾åœ¨é”®ç›˜æ—¶çš„[èµ·å§‹è¡Œ](https://raw.githubusercontent.com/mhinz/vim-galore/master/contents/images/content-homerow.png)ã€‚
+å¦‚æœä½ æ•²å¾ˆå¤šä»£ç çš„è¯ï¼Œæ˜ å°„å¤§å†™é”å®šé”®ï¼ˆCapsLockï¼‰åˆ°æ§åˆ¶é”®ï¼ˆCtrlï¼‰å¯ä»¥æœ‰æ•ˆé™ä½
+[é‡å¤ä½¿åŠ›ä¼¤å®³](https://de.wikipedia.org/wiki/Repetitive-Strain-Injury-Syndrom) (ps:ä¸ºä»€ä¹ˆå°† jk æ˜ å°„ä¸º escï¼Œè€Œä¸æ˜¯ jjï¼Œé‡å¤ç‚¹å‡»åŒä¸€ä¸ªæŒ‰é”®å¯¹æ‰‹æŒ‡ä¼¤å®³å¾ˆå¤§)ã€‚
 
-ÓÑÇéÌáÊ¾£ºµ±ÄãÏ°¹ßÕâ¸öÉè¶¨ºó£¬Äã¾ÍÀë²»¿ªËüÁË¡£
+å‹æƒ…æç¤ºï¼šå½“ä½ ä¹ æƒ¯è¿™ä¸ªè®¾å®šåï¼Œä½ å°±ç¦»ä¸å¼€å®ƒäº†ã€‚
 
 **OSX**:
 
-`System Preferences -> Keyboard -> Keyboard Tab -> Modifier Keys`. ±ä¸ü
-"CapsLock" Îª "Control"¡£
+`System Preferences -> Keyboard -> Keyboard Tab -> Modifier Keys`. å˜æ›´
+"CapsLock" ä¸º "Control"ã€‚
 
 **Linux**:
 
-ÎªÁËÊ¹°´¼üÉúĞ§£¬Çë°ÑÒÔÏÂ¼¸ĞĞ·ÅÈë `~/.xmodmap` ÎÄ¼ş:
+ä¸ºäº†ä½¿æŒ‰é”®ç”Ÿæ•ˆï¼Œè¯·æŠŠä»¥ä¸‹å‡ è¡Œæ”¾å…¥ `~/.xmodmap` æ–‡ä»¶:
 
     remove Lock = Caps_Lock
     keysym Caps_Lock = Control_L
     add Control = Control_L
 
-ÓÃÒÔÏÂÃüÁîÊ¹Ö®ÉúĞ§<br> `$ xmodmap ~/.xmodmap`¡£
+ç”¨ä»¥ä¸‹å‘½ä»¤ä½¿ä¹‹ç”Ÿæ•ˆ<br> `$ xmodmap ~/.xmodmap`ã€‚
 
-Ìæ´ú·½·¨ÓĞ[caps2esc](https://github.com/oblitum/caps2esc) »òÕß
-[xcape](https://github.com/alols/xcape)¡£
+æ›¿ä»£æ–¹æ³•æœ‰[caps2esc](https://github.com/oblitum/caps2esc) æˆ–è€…
+[xcape](https://github.com/alols/xcape)ã€‚
 
 **Windows**:
 
-Çë²Î¿´ [superuser.com: ÔÚWindows8.1Ó³Éä´óĞ´Ëø¶¨¼üµ½¿ØÖÆ¼ü](http://superuser.com/questions/764782/map-caps-lock-to-control-in-windows-8-1)¡£
+è¯·å‚çœ‹ [superuser.com: åœ¨Windows8.1æ˜ å°„å¤§å†™é”å®šé”®åˆ°æ§åˆ¶é”®](http://superuser.com/questions/764782/map-caps-lock-to-control-in-windows-8-1)ã€‚
