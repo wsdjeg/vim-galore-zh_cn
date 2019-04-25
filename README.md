@@ -364,9 +364,11 @@ nnoremap <leader>h :helpgrep<space>
 这样，我们只需要先按 <kbd>\\</kbd> 然后连续按 <kbd>\\h</kbd> 就可以激活这个映射 `:helpgrep<space>`。如果你想通过先按 <kbd>空格</kbd> 键来触发，只需要这样做：
 
 ```vim
-let mapleader = ' '
+let g:mapleader = ' '
 nnoremap <leader>h :helpgrep<space>
 ```
+
+此处建议使用 `g:mapleader`，因为在 Vim 脚本中，函数外的变量缺省的作用域是全局变量，但是在函数内缺省作用域是局部变量，而设置快捷键前缀需要修改全局变量 `g:mapleader` 的值。
 
 另外，还有一个叫 `<localleader>` 的，可以把它理解为局部环境中的 `<leader>`，默认值依然为 <kbd>\\</kbd>。当我们需要只对某一个条件下（比如，特定文件类型的插件）的缓冲区设置特别的 `<leader>` 键，那么我们就可以通过修改当前环境下的 `<localleader>` 来实现。
 
