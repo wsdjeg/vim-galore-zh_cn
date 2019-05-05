@@ -1,48 +1,49 @@
 ## 插件列表
 
-#### [Colorschemes](#colorschemes-1)
 
-#### [By topic](#by-topic-1)
+<!-- vim-markdown-toc GFM -->
 
-- [Alignment](#alignment)
-- [Building and linting](#building-and-linting)
-- [Code completion](#code-completion)
-- [Commenters](#commenters)
-- [Cycle](#cycle)
-- [Delimiter](#delimiter)
-- [Fuzzy finders](#fuzzy-finders)
-- [Grep tools](#grep-tools)
-- [Indent](#indent)
-- [Misc](#misc)
-- [Navigation](#navigation)
-- [Plugin managers](#plugin-managers)
-- [Snippets](#snippets)
-- [Statusline](#statusline)
-- [Surround](#surround)
-- [Taking notes](#taking-notes)
-- [Testing](#testing)
-- [Text objects](#text-objects)
-- [Tmux](#tmux)
-- [Undo history](#undo-history)
-- [Version control](#version-control)
-- [Writing](#writing)
+- [颜色主题](#颜色主题)
+- [按功能分类](#按功能分类)
+  - [文本对齐](#文本对齐)
+  - [语法检查](#语法检查)
+  - [代码补全](#代码补全)
+  - [Cycle](#cycle)
+  - [代码注释](#代码注释)
+  - [自动补全括号](#自动补全括号)
+  - [模糊搜索](#模糊搜索)
+  - [文本搜索](#文本搜索)
+  - [代码对齐线](#代码对齐线)
+  - [Navigation](#navigation)
+  - [插件管理](#插件管理)
+  - [代码片段](#代码片段)
+  - [状态栏](#状态栏)
+  - [Surround](#surround)
+  - [Taking notes](#taking-notes)
+  - [Testing](#testing)
+  - [文本对象](#文本对象)
+  - [Tmux](#tmux)
+  - [Undo history](#undo-history)
+  - [Version control](#version-control)
+  - [Writing](#writing)
+  - [Misc](#misc)
+- [编程语言](#编程语言)
+  - [C、C++](#cc)
+  - [Clojure](#clojure)
+  - [Elixir](#elixir)
+  - [Go](#go)
+  - [HTML](#html)
+  - [Java](#java)
+  - [Javascript](#javascript)
+  - [Lua](#lua)
+  - [PHP](#php)
+  - [Python](#python)
+  - [TeX](#tex)
+  - [VimL](#viml)
 
-#### [By filetype](#by-filetype-1)
+<!-- vim-markdown-toc -->
 
-- [C and C++](#c-and-c)
-- [Clojure](#clojure)
-- [Elixir](#elixir)
-- [Go](#go)
-- [HTML](#html)
-- [Java](#java)
-- [Javascript](#javascript)
-- [Lua](#lua)
-- [PHP](#php)
-- [Python](#python)
-- [TeX](#tex)
-- [VimL](#viml)
-
-## 颜色主题
+### 颜色主题
 
 以下为一些比较流行的颜色主题：
 
@@ -69,7 +70,7 @@
 Alternatively, generate your own colorscheme using [themer](https://github.com/mjswensen/themer)
 or [Colortemplate](https://github.com/lifepillar/vim-colortemplate).
 
-## 按功能分类
+### 按功能分类
 
 #### 文本对齐
 
@@ -258,7 +259,7 @@ Also see [fuzzy finders](#fuzzy-finders).
 - [vim-startify](https://github.com/mhinz/vim-startify)
 - [vim-unimpaired](https://github.com/tpope/vim-unimpaired)
 
-## 编程语言
+### 编程语言
 
 #### C、C++
 
