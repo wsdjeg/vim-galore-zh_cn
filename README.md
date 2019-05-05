@@ -1978,7 +1978,7 @@ set ttimeoutlen=10    " unnoticeable small value
 ## 进阶阅读
 
 - [Vim 插件开发指南](https://github.com/wsdjeg/vim-plugin-dev-guide)
-- [差用插件列表](PLUGINS.md)
+- [常用插件列表](PLUGINS.md)
 
 
 ## 加入我们

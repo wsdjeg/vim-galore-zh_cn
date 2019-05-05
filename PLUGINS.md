@@ -23,8 +23,8 @@
   - [Testing](#testing)
   - [文本对象](#文本对象)
   - [Tmux](#tmux)
-  - [Undo history](#undo-history)
-  - [Version control](#version-control)
+  - [编辑历史管理](#编辑历史管理)
+  - [版本控制](#版本控制)
   - [Writing](#writing)
   - [Misc](#misc)
 - [编程语言](#编程语言)
@@ -203,12 +203,13 @@ Also see [fuzzy finders](#fuzzy-finders).
 - [vim-tmux-navigator](https://github.com/christoomey/vim-tmux-navigator)
 - [vitality.vim](https://github.com/sjl/vitality.vim)
 
-#### Undo history
+#### 编辑历史管理
 
+- [vim-mundo](https://github.com/simnalamburt/vim-mundo)
 - [gundo.vim](https://github.com/sjl/gundo.vim)
 - [undotree](https://github.com/mbbill/undotree)
 
-#### Version control
+#### 版本控制
 
 - [agit.vim](https://github.com/cohama/agit.vim)
 - [committia.vim](https://github.com/rhysd/committia.vim)
@@ -224,6 +225,7 @@ Also see [fuzzy finders](#fuzzy-finders).
 - [vim-lawrencium](https://bitbucket.org/ludovicchabant/vim-lawrencium)
 - [vim-signify](https://github.com/mhinz/vim-signify)
 - [vimagit](https://github.com/jreybert/vimagit)
+- [git-messenger.vim](https://github.com/rhysd/git-messenger.vim/)
 
 #### Writing
 
