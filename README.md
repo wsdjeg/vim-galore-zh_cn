@@ -1,7 +1,7 @@
 # Vim 从入门到精通
 
 > 本文主要在翻译 [mhinz/vim-galore](https://github.com/mhinz/vim-galore)
-的基础添加了一些我在使用 Vim 及开发 Vim 插件的过程中积累的一些细节。
+> 的基础添加了一些我在使用 Vim 及开发 Vim 插件的过程中积累的一些知识和常用插件列表。
 
 **Vim 中文同步聊天室**
 
@@ -100,10 +100,6 @@
 - [杂项](#杂项)
   - [附加资源](#附加资源)
   - [Vim 配置集合](#vim-配置集合)
-  - [内置插件](#内置插件)
-  - [将 Control 映射到 CapsLock](#将-control-映射到-capslock)
-  - [复活节彩蛋](#复活节彩蛋)
-  - [为何使用 hjkl](#为何使用-hjkl)
   - [常见问题](#常见问题)
     - [编辑小文件时很慢](#编辑小文件时很慢)
     - [编辑大文件的时候很慢](#编辑大文件的时候很慢)
@@ -1518,17 +1514,17 @@ Vim 不断地在内存中检查信息，只在退出的时候输出出来。（N
 看一下 `/tmp/profile.log` 文件，检查时运行的所有代码都会被显示出来，包括每一行代码运行的频率和时间。
 
 大多数代码都是用户不熟悉的插件代码，如果你是在解决一个确切的问题，
-直接跳到这个日志文件的末尾，那里有 `FUNCTIONS SORTED ON TOTAL TIME` 和 `FUNCTIONS SORTED ON SELF TIME` 两个部分，如果某个function运行时间过长一眼就可以看到。
+直接跳到这个日志文件的末尾，那里有 `FUNCTIONS SORTED ON TOTAL TIME` 和 `FUNCTIONS SORTED ON SELF TIME` 两个部分，如果某个 function 运行时间过长一眼就可以看到。
 
 ### 查看启动时间
 
-感觉Vim启动的慢？到了研究几个数字的时候了：
+感觉 Vim 启动的慢？到了研究几个数字的时候了：
 
 ```vim
 vim --startuptime /tmp/startup.log +q && vim /tmp/startup.log
 ```
 
-第一栏是最重要的因为它显示了**绝对运行时间**，如果在前后两行之间时间差有很大的跳跃，那么是第二个文件太大或者含有需要检查的错误的VimL代码。
+第一栏是最重要的因为它显示了**绝对运行时间**，如果在前后两行之间时间差有很大的跳跃，那么是第二个文件太大或者含有需要检查的错误的 VimL 代码。
 
 ## NUL 符用新行表示
 
@@ -1856,14 +1852,6 @@ Vim 现在正在使用的另一个比较有用的方法是增加 debug 信息输
 - [amix's vimrc](https://github.com/amix/vimrc)
 - [janus](https://github.com/carlhuda/janus)
 
-## 内置插件
-
-## 将 Control 映射到 CapsLock
-
-## 复活节彩蛋
-
-## 为何使用 hjkl
-
 ## 常见问题
 
 ### 编辑小文件时很慢
@@ -1979,7 +1967,6 @@ set ttimeoutlen=10    " unnoticeable small value
 
 - [Vim 插件开发指南](https://github.com/wsdjeg/vim-plugin-dev-guide)
 - [常用插件列表](PLUGINS.md)
-
 
 ## 加入我们
 
