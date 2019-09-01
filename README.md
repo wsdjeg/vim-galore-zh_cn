@@ -179,7 +179,7 @@ Vim 基于一个 [vi](https://en.wikipedia.org/wiki/Vi) 克隆，叫做 [Stevie]
 
 精简的 vimrc 地址：[minimal-vimrc](contents/minimal-vimrc.vim)
 
-如果你有兴趣，这里是我（原作者）的 [vimrc](https://github.com/mhinz/dotfiles/blob/master/vim/vimrc)。
+如果你有兴趣，这里是我（原作者）的 [vimrc](https://github.com/mhinz/dotfiles/blob/master/.vim/vimrc)。
 
 **建议**：大多数插件作者都维护不止一个插件并且将他们的 vimrc 放在 Github 上展示（通常放在叫做 "vim-config" 或者 "dotfiles" 的仓库中），所以当你发现你喜欢的插件时，去插件维护者的 Github 主页看看有没有这样的仓库。
 
