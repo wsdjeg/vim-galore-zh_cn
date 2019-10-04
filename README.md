@@ -16,6 +16,8 @@
   - [Vim 哲学](#vim-哲学)
   - [入门](#入门)
   - [精简的 vimrc](#精简的-vimrc)
+    - [Windows 系统](#windows-系统)
+    - [Linux 或者 Mac OS](#linux-或者-mac-os)
   - [我正在使用什么样的 Vim](#我正在使用什么样的-vim)
   - [备忘录](#备忘录)
 - [基础](#基础)
@@ -83,6 +85,7 @@
   - [在 GUI 中快速改变字体大小](#在-gui-中快速改变字体大小)
   - [根据模式改变光标类型](#根据模式改变光标类型)
   - [防止水平滑动的时候失去选择](#防止水平滑动的时候失去选择)
+  - [选择当前行至结尾，排除换行符](#选择当前行至结尾排除换行符)
   - [重新载入保存文件](#重新载入保存文件)
   - [更加智能的当前行高亮](#更加智能的当前行高亮)
   - [更快的关键字补全](#更快的关键字补全)
@@ -109,6 +112,7 @@
     - [无法重复函数中执行的搜索](#无法重复函数中执行的搜索)
   - [进阶阅读](#进阶阅读)
   - [加入我们](#加入我们)
+  - [参考资料](#参考资料)
 
 <!-- vim-markdown-toc -->
 
@@ -171,7 +175,44 @@ Vim 基于一个 [vi](https://en.wikipedia.org/wiki/Vi) 克隆，叫做 [Stevie]
 
 ## 精简的 vimrc
 
-用户的 vimrc 配置文件可以放在 `~/.vimrc`，或者为了更好的分离放在 `~/.vim/vimrc`，后者更便于通过版本控制软件备份和同步整个配置，比方说 Github。
+Vim 启动是会按照一定的优先顺序来搜索配置文件，这个顺序，可以通过 `:version` 命令查看。下面分 Windows 系统，
+和 \*niux 系统分别来说明 Vim 是如何载入配置文件的。
+
+### Windows 系统
+
+```
+   system vimrc file: "$VIM\vimrc"
+     user vimrc file: "$HOME\_vimrc"
+ 2nd user vimrc file: "$HOME\vimfiles\vimrc"
+ 3rd user vimrc file: "$VIM\_vimrc"
+      user exrc file: "$HOME\_exrc"
+  2nd user exrc file: "$VIM\_exrc"
+  system gvimrc file: "$VIM\gvimrc"
+    user gvimrc file: "$HOME\_gvimrc"
+2nd user gvimrc file: "$HOME\vimfiles\gvimrc"
+3rd user gvimrc file: "$VIM\_gvimrc"
+       defaults file: "$VIMRUNTIME\defaults.vim"
+    system menu file: "$VIMRUNTIME\menu.vim"
+```
+
+我们们只看上面这一段，Vim 会优先读取 user vimrc file: `$HOME\_vimrc`, 当这一文件不存在是，
+Vim 再去寻找 2nd user vimrc file: `$HOME\vimfiles\vimrc`; 倘若这个文件还是不存在，那么 Vim
+会去继续寻找 3rd user vimrc file: `$VIM\_vimrc`。 了解以上顺序后，就不会再因为 Vim
+总是不读取配置文件而感到烦恼了。
+
+### Linux 或者 Mac OS
+
+同 Windows 系统类似，也可以使用 `:version` 命令查看 vim 载入配置的优先顺序。
+
+```
+     系统 vimrc 文件: "/etc/vimrc"
+     用户 vimrc 文件: "$HOME/.vimrc"
+ 第二用户 vimrc 文件: "~/.vim/vimrc"
+      用户 exrc 文件: "$HOME/.exrc"
+       defaults file: "$VIMRUNTIME/defaults.vim"
+         $VIM 预设值: "/etc"
+  $VIMRUNTIME 预设值: "/usr/share/vim/vim81"
+```
 
 你可以在网上找到许多精简的 vimrc 配置文件，我的版本可能并不是最简单的版本，但是我的版本提供了一套我认为良好的，非常适合入门的设置。
 
