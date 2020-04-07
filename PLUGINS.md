@@ -145,6 +145,7 @@ or [Colortemplate](https://github.com/lifepillar/vim-colortemplate).
 - [vim-sneak](https://github.com/justinmk/vim-sneak)
 - [vim-vinegar](https://github.com/tpope/vim-vinegar)
 - [vimfiler.vim](https://github.com/Shougo/vimfiler.vim) (_depends on other plugins_)
+- [defx.nvim](https://github.com/Shougo/defx.nvim) (_requires +python3_)
 
 Also see [fuzzy finders](#fuzzy-finders).
 
