@@ -115,9 +115,11 @@ or [Colortemplate](https://github.com/lifepillar/vim-colortemplate).
 
 #### 模糊搜索
 
+- [leaderf](https://github.com/Yggdroot/LeaderF) (_requires +python3 or +python_)
+- [denite.nvim](https://github.com/Shougo/denite.nvim) (_requires +python3_)
+- [vim-clap](https://github.com/liuchengxu/vim-clap/)
 - [Command-T](https://github.com/wincent/Command-T) (_requires +ruby_)
 - [ctrlp.vim](https://github.com/ctrlpvim/ctrlp.vim)
-- [denite.nvim](https://github.com/Shougo/denite.nvim) (_requires +python3_)
 - [fzf](https://github.com/junegunn/fzf) (and [fzf.vim](https://github.com/junegunn/fzf.vim))
 - [unite.vim](https://github.com/Shougo/unite.vim)
 - [vim-fz](https://github.com/mattn/vim-fz)
