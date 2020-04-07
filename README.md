@@ -1,7 +1,19 @@
-# Vim 从入门到精通
-
-> 本文主要在翻译 [mhinz/vim-galore](https://github.com/mhinz/vim-galore)
-> 的基础添加了一些我在使用 Vim 及开发 Vim 插件的过程中积累的一些知识和常用插件列表。
+<div align='center'>
+  <br /><br /><br />
+  <img src='https://raw.githubusercontent.com/mhinz/vim-galore/master/static/images/logo-vim-galore.png' alt='vim-galore logo' />
+  <br /><br /><br /><br />
+  <div>
+    <a href='https://github.com/mhinz/vim-galore'>English</a> |
+    <a href='http://postd.cc/?s=vim-galore'>Japanese</a> |
+    <a href='https://github.com/lsrdg/vim-galore'>Portuguese</a> |
+    <a href='http://givi.olnd.ru/vim-galore/vim-galore-ru.html'>Russian</a>
+    <div>
+      <br />
+      <sub>Licensed under <a href='https://creativecommons.org/licenses/by-sa/4.0'>CC BY-SA 4.0<a/>.</sub>
+    </div>
+  </div>
+  <br /><br />
+</div>
 
 <!-- vim-markdown-toc GFM -->
 
