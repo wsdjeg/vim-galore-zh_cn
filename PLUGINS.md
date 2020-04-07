@@ -129,6 +129,7 @@ or [Colortemplate](https://github.com/lifepillar/vim-colortemplate).
 - [ctrlsf.vim](https://github.com/dyng/ctrlsf.vim)
 - [ferret](https://github.com/wincent/ferret)
 - [vim-grepper](https://github.com/mhinz/vim-grepper)
+- [flygrep](https://github.com/wsdjeg/FlyGrep.vim)
 
 #### 代码对齐线
 
