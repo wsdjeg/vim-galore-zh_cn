@@ -15,6 +15,8 @@
   <br /><br />
 </div>
 
+based on [vim-galore@d0bd3cf](https://github.com/mhinz/vim-galore/tree/d0bd3cf5895d44f546006c4c4ce43c6e396b3896)
+
 <!-- vim-markdown-toc GFM -->
 
 - [简介](#简介)
