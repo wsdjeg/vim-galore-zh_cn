@@ -200,7 +200,7 @@ Vim 启动是会按照一定的优先顺序来搜索配置文件，这个顺序�
     system menu file: "$VIMRUNTIME\menu.vim"
 ```
 
-我们们只看上面这一段，Vim 会优先读取 user vimrc file: `$HOME\_vimrc`, 当这一文件不存在是，
+我们只看上面这一段，Vim 会优先读取 user vimrc file: `$HOME\_vimrc`, 当这一文件不存在是，
 Vim 再去寻找 2nd user vimrc file: `$HOME\vimfiles\vimrc`; 倘若这个文件还是不存在，那么 Vim
 会去继续寻找 3rd user vimrc file: `$VIM\_vimrc`。 了解以上顺序后，就不会再因为 Vim
 总是不读取配置文件而感到烦恼了。
