@@ -14,6 +14,7 @@
 </div>
 
 [![Gitter](https://badges.gitter.im/SpaceVim/SpaceVim.svg)](https://gitter.im/SpaceVim/cn)
+[![telegram](https://img.shields.io/badge/chat-telegram-blue.svg)](https://t.me/joinchat/EazwP0TNHJ_Btbo2frsw9Q)
 
 <!-- vim-markdown-toc GFM -->
 
