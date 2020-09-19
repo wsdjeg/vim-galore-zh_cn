@@ -1,3 +1,5 @@
+# Vim 从入门到精通
+
 <div align='center'>
   <h1>Vim 从入门到精通</h1>
   <div>
@@ -201,7 +203,7 @@ Vim 启动是会按照一定的优先顺序来搜索配置文件，这个顺序�
     system menu file: "$VIMRUNTIME\menu.vim"
 ```
 
-我们们只看上面这一段，Vim 会优先读取 user vimrc file: `$HOME\_vimrc`, 当这一文件不存在是，
+我们只看上面这一段，Vim 会优先读取 user vimrc file: `$HOME\_vimrc`, 当这一文件不存在是，
 Vim 再去寻找 2nd user vimrc file: `$HOME\vimfiles\vimrc`; 倘若这个文件还是不存在，那么 Vim
 会去继续寻找 3rd user vimrc file: `$VIM\_vimrc`。 了解以上顺序后，就不会再因为 Vim
 总是不读取配置文件而感到烦恼了。
@@ -381,7 +383,7 @@ Vim 是一个文本编辑器。每次文本都是作为**缓冲区**的一部分
 :nnoremap a b
 ```
 
-经验法则：除非递归是必须的，否则总是使用非递归映射。
+经验法则：除递归映射是必须的，否则总是使用非递归映射。
 
 通过不给一个右值来检查你的映射。比如`:nmap` 显示所以普通模式下的映射，`:nmap <leader>` 显示所有以 `<leader>` 键开头的普通模式下的映射。
 
@@ -405,7 +407,7 @@ Vim 是一个文本编辑器。每次文本都是作为**缓冲区**的一部分
 nnoremap <leader>h :helpgrep<space>
 ```
 
-这样，我们只需要先按 <kbd>\\</kbd> 然后连续按 <kbd>\\h</kbd> 就可以激活这个映射 `:helpgrep<space>`。如果你想通过先按 <kbd>空格</kbd> 键来触发，只需要这样做：
+这样，我们只需要先按 <kbd>\\</kbd> 然后按 <kbd>h</kbd> 就可以激活这个映射 `:helpgrep<space>`。如果你想通过先按 <kbd>空格</kbd> 键来触发，只需要这样做：
 
 ```vim
 let g:mapleader = ' '
