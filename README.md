@@ -1,5 +1,3 @@
-# Vim 从入门到精通
-
 <div align='center'>
   <h1>Vim 从入门到精通</h1>
   <div>
