@@ -1,7 +1,5 @@
 <div align='center'>
-  <br /><br /><br />
-  <img src='https://raw.githubusercontent.com/mhinz/vim-galore/master/static/images/logo-vim-galore.png' alt='vim-galore logo' />
-  <br /><br /><br /><br />
+  <h1>Vim 从入门到精通</h1>
   <div>
     <a href='https://github.com/mhinz/vim-galore'>English</a> |
     <a href='http://postd.cc/?s=vim-galore'>Japanese</a> |
@@ -15,7 +13,7 @@
   <br /><br />
 </div>
 
-based on [vim-galore@d0bd3cf](https://github.com/mhinz/vim-galore/tree/d0bd3cf5895d44f546006c4c4ce43c6e396b3896)
+[![Gitter](https://badges.gitter.im/SpaceVim/SpaceVim.svg)](https://gitter.im/SpaceVim/cn)
 
 <!-- vim-markdown-toc GFM -->
 
