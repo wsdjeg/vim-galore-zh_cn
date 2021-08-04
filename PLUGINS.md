@@ -1,6 +1,5 @@
 ## 插件列表
 
-
 <!-- vim-markdown-toc GFM -->
 
 - [颜色主题](#颜色主题)
@@ -86,15 +85,17 @@ or [Colortemplate](https://github.com/lifepillar/vim-colortemplate).
 
 #### 代码补全
 
+- [VimCompletesMe](https://github.com/ajh17/VimCompletesMe)
+- [YouCompleteMe](https://github.com/Valloric/YouCompleteMe)
 - [asyncomplete.vim](https://github.com/prabirshrestha/asyncomplete.vim)
+- [completion-nvim](https://github.com/nvim-lua/completion-nvim)
 - [completor.vim](https://github.com/maralla/completor.vim)
 - [deoplete.nvim](https://github.com/Shougo/deoplete.nvim)
 - [neocomplete.vim](https://github.com/Shougo/neocomplete.vim)
+- [nvim-compe](https://github.com/hrsh7th/nvim-compe)
 - [nvim-completion-manager](https://github.com/roxma/nvim-completion-manager)
 - [supertab](https://github.com/ervandew/supertab)
 - [vim-mucomplete](https://github.com/lifepillar/vim-mucomplete)
-- [VimCompletesMe](https://github.com/ajh17/VimCompletesMe)
-- [YouCompleteMe](https://github.com/Valloric/YouCompleteMe)
 
 #### Cycle
 
