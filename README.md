@@ -15,7 +15,7 @@
 
 [![Gitter](https://badges.gitter.im/SpaceVim/SpaceVim.svg)](https://gitter.im/SpaceVim/cn)
 [![telegram](https://img.shields.io/badge/chat-telegram-blue.svg)](https://t.me/joinchat/1TvSIDrsaq0zMjZl)
-[![QQ](https://img.shields.io/badge/QQ群-936780016-blue.svg)](https://jq.qq.com/?_wv=1027&k=vWcLA71X)
+[![QQ](https://img.shields.io/badge/QQ群-941757196-blue.svg)](https://jq.qq.com/?_wv=1027&k=kueXBkg4)
 
 <!-- vim-markdown-toc GFM -->
 
