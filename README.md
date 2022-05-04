@@ -134,7 +134,7 @@
 1991 年发布初始版本。
 
 Linux、Mac 用户，可以使用包管理器安装 Vim，对于 Windows 用户，可以从
-[我的网盘](https://share.weiyun.com/da2be5937ac0e2bd3abc26355fad1204) 下载。
+[我的网盘](https://www.jianguoyun.com/p/DVBqom8QtY2QCBj7xL0EIAA) 下载。
 该版本可轻易添加 `python` 、`python3` 、`lua` 等支持，只需要安装 python、lua
 即可。
 
