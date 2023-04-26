@@ -153,13 +153,17 @@ Vim 采用模式编辑的理念，即它提供了多种模式，按键在不同�
 比如，要改变括号内的文本，需要执行 `ci(` （读做 `change inner parentheses`）；
 删除整个段落的内容，需要执行 `dap` （读做：`delete around paragraph`）。
 
-如果你能看见 Vim 老司机操作，你会发现他们使用 Vim 脚本语言就如同钢琴师弹钢琴一样。复杂的操作只需要几个按键就能完成。他们甚至不用刻意去想，因为这已经成为[肌肉记忆](https://en.wikipedia.org/wiki/Muscle_memory)了。这减少[认识负荷](https://en.wikipedia.org/wiki/Cognitive_load)并帮助人们专注于实际任务。
+如果你能看见 Vim 老司机操作，你会发现他们使用 Vim 脚本语言就如同钢琴师弹钢琴一样。
+复杂的操作只需要几个按键就能完成。他们甚至不用刻意去想，因为这已经成为[肌肉记忆](https://en.wikipedia.org/wiki/Muscle_memory)了。
+这减少[认识负荷](https://en.wikipedia.org/wiki/Cognitive_load)并帮助人们专注于实际任务。
 
 ## 入门
 
 Vim 自带一个交互式的教程，内含你需要了解的最基础的信息，你可以通过终端运行以下命令打开教程：
 
-    $ vimtutor
+```
+$ vimtutor
+```
 
 不要因为这个看上去很无聊而跳过，按照此教程多练习。你以前用的 IDE 或者其他编辑器很少是有“模式”概念的，因此一开始你会很难适应模式切换。但是你 Vim 使用的越多，[肌肉记忆](https://en.wikipedia.org/wiki/Muscle_memory) 将越容易形成。
 
@@ -255,10 +259,12 @@ endif
 
 相关帮助：
 
-    :h :version
-    :h feature-list
-    :h +feature-list
-    :h has-patch
+```
+:h :version
+:h feature-list
+:h +feature-list
+:h has-patch
+```
 
 返回主目录 [:arrow_heading_up:](#简介)
 
